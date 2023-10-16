@@ -4,7 +4,6 @@ urlname: 2019-07-01-python-mygene
 author: 章鱼猫先生
 date: 2019-07-01
 updated: "2023-08-24 11:42:50"
-comments: true
 ---
 
 ## 一、背景

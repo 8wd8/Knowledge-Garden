@@ -4,7 +4,6 @@ urlname: 2020-06-19-how-to-install-perl-modules
 author: 章鱼猫先生
 date: 2020-06-19
 updated: "2023-08-23 14:45:53"
-comments: true
 ---
 
 从 1994 年 10 月 17 日发布的  Perl 5.000 起，Perl  增加了模块的概念，用来提供面向对象编程的能力。这是 Perl 语言发展史上的一个里程碑。此后，广大自由软件爱好者开发了大量功能强大、构思精巧的 Perl 模块，极大地扩展了 Perl 语言的功能。

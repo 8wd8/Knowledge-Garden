@@ -4,7 +4,6 @@ urlname: 2019-09-30-pgsql-usage
 author: 章鱼猫先生
 date: 2019-09-30
 updated: "2023-08-22 11:03:01"
-comments: true
 ---
 
 关于 PostgreSQL 的基本用法，供初次使用者上手。以下内容基于 CentOS 操作系统，其他操作系统实在没有精力兼顾，但是大部分内容应该普遍适用。
