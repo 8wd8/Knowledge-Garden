@@ -50,7 +50,7 @@ edit_uri: edit/main/docs/
 site_author: Steven Shum
 
 # Copyright
-copyright: 版权所有 © 2023-<script>document.write(new Date().getFullYear())</script> <a href="https://github.com/orgs/BioITee/discussions" target="_blank">BioIT 爱好者</a>
+copyright: 版权所有
 
 nav:
     - 阅读说明: README.md
@@ -113,6 +113,8 @@ plugins:
       pagination: true
       pagination_per_page: 5
 
+hooks:
+  - hooks.py
       
 extra:
   homepage: https://doc.weiyan.cc
