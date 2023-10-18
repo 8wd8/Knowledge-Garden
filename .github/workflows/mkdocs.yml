@@ -29,6 +29,9 @@ jobs:
       - name: Generate index.md
         run: python3 makeindex.py -r -d docs/cookbook
 
+      - name: Fetch blog posts
+        run: python3 discussions2MkdocsBlog.py -r shenweiyan/Knowledge-Garden -t ${{ secrets.PERSONAL_ACCESS_TOKEN }} -o docs/blog/posts
+
       - name: Commit files
         run: |
           echo `date +"%Y-%m-%d %H:%M:%S"` begin ... > time.txt
