@@ -87,13 +87,12 @@ def __main__():
     gh_owner     = gh_repo.split("/")[0]
     gh_repo_name = gh_repo.split("/")[-1]
 
+    # 创建目录; 目录存在则先删除 md
     outdir = args.outdir if args.outdir else os.getcwd()
     if os.path.exists(outdir):
-        # 清除输出目录所有的 md
-        for file_path in Path(outdir).glob("*.md")
+        for file_path in Path(outdir).glob("*.md"):
             file_path.unlink()
     else:
-        # 创建输出目录
         os.makedirs(outdir)
 
     url = "https://api.github.com/graphql"
