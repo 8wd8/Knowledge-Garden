@@ -7,6 +7,7 @@ import requests
 import os
 import json
 from slugify import slugify
+from pathlib import Path
 
 def stop_err(msg):
     sys.stderr.write('%s\n' % msg)
