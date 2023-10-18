@@ -6,9 +6,7 @@ import argparse
 import requests
 import os
 import json
-import click
 from slugify import slugify
-from gitlab import Gitlab
 
 def stop_err(msg):
     sys.stderr.write('%s\n' % msg)
