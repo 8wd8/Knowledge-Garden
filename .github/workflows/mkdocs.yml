@@ -27,7 +27,7 @@ jobs:
           python-version: '3.9'
 
       - name: Install requirements
-        run: pip3 install requests slugify==8.0.1
+        run: pip3 install requests python-slugify
 
       - name: Generate index.md
         run: python3 makeindex.py -r -d docs/cookbook
