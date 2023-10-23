@@ -19,9 +19,9 @@ updated: "2021-06-25 11:02:02"
 $ mkdir -p /data/share
 ```
 
-**1. 使用 ACL 来为用户赋予目录的读写权限**
+## 1. 使用 ACL 来为用户赋予目录的读写权限
 
-\*\*重要提示：\*\*打算使用此方法的话，您需要确认您的 Linux 文件系统类型（如 ext3 和 ext4, NTFS, BTRFS）支持 ACL。
+**重要提示：** 打算使用此方法的话，您需要确认您的 Linux 文件系统类型（如 ext3 和 ext4, NTFS, BTRFS）支持 ACL。
 
 **1.1. 首先， 依照以下命令在您的系统中检查当前文件系统类型，并且查看内核是否支持 ACL：**
 
@@ -69,7 +69,7 @@ $ getfacl /data/share
 - [如何使用访问控制列表（ACL）为用户/组设置磁盘配额](http://www.tecmint.com/set-access-control-lists-acls-and-disk-quotas-for-users-groups/)
 - [如何使用访问控制列表（ACL）挂载网络共享](http://www.tecmint.com/rhcsa-exam-configure-acls-and-mount-nfs-samba-shares/)
 
-**2. 使用用户组来为用户赋予指定目录的读写权限**
+## 2. 使用用户组来为用户赋予指定目录的读写权限
 
 **2.1. 如果用户已经拥有了默认的用户组（通常组名与用户名相同），就可以简单的通过变更文件夹的所属用户组来完成。**
 
@@ -110,7 +110,21 @@ $ ls -l /data/share
 
 ok，在 Linux 上给用户赋予指定目录的读写权限就介绍到这里 ！
 
-**参考资料：**
+## 参考资料：
 
 - 高延斌，《[Linux ACL 体验](https://www.ibm.com/developerworks/cn/linux/l-acl/index.html)》，IBM Developer
 - Mr-Ping，《在 Linux 上给用户赋予指定目录的读写权限》，Linux 中国
+
+<script src="https://giscus.app/client.js"
+        data-repo="shenweiyan/Knowledge-Garden"
+        data-repo-id="R_kgDOKgxWlg"
+        data-mapping="number"
+        data-term="9"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
