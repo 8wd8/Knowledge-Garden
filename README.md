@@ -10,7 +10,7 @@
 
 ## 感谢
 
-本仓库基于 [https://github.com/LetTTGACO/elog](https://github.com/LetTTGACO/elog) 实现定期备份与更新。
+本仓库的 cookbook/notebook 等文档都是基于 [https://github.com/LetTTGACO/elog](https://github.com/LetTTGACO/elog) 实现的同步与备份。
 
 ## 最后
 不断迭代中，如果有帮助欢迎点个激励的⭐️
