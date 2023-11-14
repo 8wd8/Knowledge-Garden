@@ -1,16 +1,13 @@
 ---
 title: Python 导出公众号文章为 Markdown
 number: 7
+slug: discussion-7
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/7
 date: 2023-10-19
-createdAt: 2023-10-19T03:21:58Z
-lastEditedAt: 2023-10-19T03:32:09Z
-updatedAt: 2023-10-19T03:32:09Z
 authors: [shenweiyan]
 categories: 
   - 乱弹
 labels: []
-filename: Python-导出公众号文章为-Markdown.md
 ---
 
 记录一下个人使用 Python3 爬取个人公众号的所有文章，并把文章保存为 Markdown 格式的一些操作记录，主要介绍一下思路和一些简单的代码。
@@ -79,17 +76,17 @@ Python 导出公众号文章为 Markdown 最后的一步工作就是解析上一
 这些步骤都很简单，网上搜一下就有一大堆教程，感兴趣的可以去搜一下，这里文章就不写了。 
 
 
+
 <script src="https://giscus.app/client.js"
-    data-repo="shenweiyan/Knowledge-Garden"
-    data-repo-id="R_kgDOKgxWlg"
-    data-mapping="number"
-    data-term="7"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="light"
-    data-lang="zh-CN"
-    crossorigin="anonymous"
-    async>
+	data-repo="shenweiyan/Knowledge-Garden"
+	data-repo-id="R_kgDOKgxWlg"
+	data-mapping="number"
+	data-term="7"
+	data-reactions-enabled="1"
+	data-emit-metadata="0"
+	data-input-position="bottom"
+	data-theme="light"
+	data-lang="zh-CN"
+	crossorigin="anonymous"
+	async>
 </script>
-        
