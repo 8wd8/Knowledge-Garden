@@ -127,37 +127,37 @@ def __main__():
         if not discussion_category in categoriesWhitelist:
             continue
         
-        md_filename = slugify(discussion_title, allow_unicode=True, lowercase=False)+".md"
+        slug_name   = f'discussion-{discussion_number}'
+        create_date = discussion_createdAt[0:10]
+        md_filename = create_date + "-" + slugify(discussion_title, allow_unicode=True, lowercase=False) + ".md"    #2023-10-18-xxxxx.md
+        metadata    = ( f'---\n'
+                        f'title: {discussion_title}\n'
+                        f'number: {str(discussion_number)}\n'
+                        f'slug: {slug_name}\n'
+                        f'url: {discussion_url}\n'
+                        f'date: {discussion_createdAt[0:10]}\n'
+                        f'authors: [{discussion_author}]\n'
+                        f'categories: \n'
+                        f'  - {discussion_category}\n'
+                        f'labels: {discussion_labels}\n'
+                        f'---\n\n')
 
-        metadata = "---\ntitle: %s\nnumber: %s\nurl: %s\ndate: %s\ncreatedAt: %s\nlastEditedAt: %s\nupdatedAt: %s\nauthors: [%s]\ncategories: \n  - %s\nlabels: %s\nfilename: %s\n---\n\n" % (
-                    discussion_title,
-                    str(discussion_number),
-                    discussion_url,
-                    discussion_createdAt[0:10],
-                    discussion_createdAt,
-                    discussion_lastEditedAt,
-                    discussion_updatedAt,
-                    discussion_author,
-                    discussion_category,
-                    discussion_labels,
-                    md_filename)
-
-        comments = f"""
-<script src="https://giscus.app/client.js"
-    data-repo="shenweiyan/Knowledge-Garden"
-    data-repo-id="R_kgDOKgxWlg"
-    data-mapping="number"
-    data-term="{discussion_number}"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="light"
-    data-lang="zh-CN"
-    crossorigin="anonymous"
-    async>
-</script>
-        """
+        # 使用 giscus 加载评论
+        comments = ( f'\n\n<script src="https://giscus.app/client.js"\n'
+                     f'\tdata-repo="shenweiyan/Knowledge-Garden"\n'
+                     f'\tdata-repo-id="R_kgDOKgxWlg"\n'
+                     f'\tdata-mapping="number"\n'
+                     f'\tdata-term="{discussion_number}"\n'
+                     f'\tdata-reactions-enabled="1"\n'
+                     f'\tdata-emit-metadata="0"\n'
+                     f'\tdata-input-position="bottom"\n'
+                     f'\tdata-theme="light"\n'
+                     f'\tdata-lang="zh-CN"\n'
+                     f'\tcrossorigin="anonymous"\n'
+                     f'\tasync>\n'
+                     f'</script>\n')
         
+        # 保存输出的结果
         saved_md_file = os.path.join(outdir, md_filename)
         with open(saved_md_file, "w") as MD:
             MD.write(metadata)
