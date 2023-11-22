@@ -18,6 +18,7 @@ GitHub 讨论是一个可以在每个 GitHub 仓库上启用的论坛。它使�
 
 - [GG](https://github.com/lencx/gg) - Gatsby + GitHub
   - [lencx.tech](https://lencx.tech/#/)
+  - [gg-discussions](https://shenweiyan.github.io/gg-discussions/)，个人尝试对页面进行了一些调整
 
 - [Pure](https://github.com/LeetaoGoooo/pure) 一个基于 Github Discussion 的极简博客
 
