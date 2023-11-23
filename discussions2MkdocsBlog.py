@@ -82,7 +82,7 @@ def __main__():
     gh_token = args.github_token
     gh_repo  = args.github_repo
 
-    categoriesWhitelist = ['乱弹', '好玩', '资讯']
+    categoriesWhitelist = ['乱弹', '好玩', '资讯', '知识']
 
     gh_owner     = gh_repo.split("/")[0]
     gh_repo_name = gh_repo.split("/")[-1]
