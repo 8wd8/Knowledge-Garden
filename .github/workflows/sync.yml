@@ -36,7 +36,7 @@ jobs:
           JH_REPOSITORY: shenweiyan/Knowledge-Garden
           JH_PASSWORD: ${{ secrets.JIHU_PASSWORD }}
           
-      - name: Push to Gitee
+      - name: Push to Gitee Knowledge-Garden
         run: |
           remote_repo="https://shenweiyan:${GITEE_PASSWORD}@gitee.com/${GITEE_REPOSITORY}.git"
           git remote add gitee "${remote_repo}"
@@ -47,4 +47,17 @@ jobs:
           git push --tags --force gitee
         env:
           GITEE_REPOSITORY: shenweiyan/Knowledge-Garden
+          GITEE_PASSWORD: ${{ secrets.GITEE_PASSWORD }}
+
+      - name: Push to Gitee shenweiyan
+        run: |
+          remote_repo="https://shenweiyan:${GITEE_PASSWORD}@gitee.com/${GITEE_REPOSITORY}.git"
+          git remote add gitee "${remote_repo}"
+          git show-ref
+          git branch --verbose
+          # publish all
+          git push --all --force gitee
+          git push --tags --force gitee
+        env:
+          GITEE_REPOSITORY: shenweiyan/shenweiyan
           GITEE_PASSWORD: ${{ secrets.GITEE_PASSWORD }}
