@@ -53,7 +53,7 @@ site_author: Steven Shum
 copyright: 版权所有
 
 nav:
-    - 阅读说明: readme.md
+    - 阅读说明: index.md
     - 技术: 
         - cookbook/index.md
         - 生物信息: cookbook/生物信息
