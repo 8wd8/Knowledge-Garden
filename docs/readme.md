@@ -5,6 +5,11 @@ template: home.html
 
 本知识库基于 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署，有一部分文章来源于个人的 **[语雀知识库](https://www.yuque.com/shenweiyan)**，是作者关于生物信息学、互联网 IT、运维开发、软件测评使用等相关文章汇总。
 
+以下两个地址都可以访问本站点：     
+
+- <https://weiyan.cc>：基于 [Cloudflare Pages](https://pages.cloudflare.com/)，国内访问相对快一些；     
+- <https://doc.weiyan.cc>：基于 [GitHub Pages](https://pages.github.com/)，国内访问可能有一定延迟；
+
 <p align="center">
     <img src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/mkdocs/kg-readme-cover.gif" alt><br>
 </p>
