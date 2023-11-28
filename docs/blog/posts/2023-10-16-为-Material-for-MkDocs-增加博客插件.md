@@ -46,6 +46,19 @@ Material for MkDocs 使构建博客变得非常容易，无论是作为文档的
 </script>
 ```
 
+## 自定义归档页面
+
+[mkdocs-material](https://github.com/squidfunk/mkdocs-material) 的归档页面跟博客 index 主页面基本是一个样，如果想要列表式的自定义，可以参考 [squidfunk/mkdocs-material#6324](https://github.com/squidfunk/mkdocs-material/discussions/6324) 和 [squidfunk/mkdocs-material#6383](https://github.com/squidfunk/mkdocs-material/issues/6383)。
+
+官方在 [8ecee7b](https://github.com/squidfunk/mkdocs-material-insiders/commit/8ecee7b9dbdc5b2a0befd043a048ad25d56c784f) (Insiders) 中增加了几个个性化的新设置参数：  
+  
+- [`archive_pagination`](https://squidfunk.github.io/mkdocs-material/plugins/blog/#config.archive_pagination)
+- [`archive_pagination_per_page`](https://squidfunk.github.io/mkdocs-material/plugins/blog/#config.archive_pagination_per_page)
+- [`categories_pagination`](https://squidfunk.github.io/mkdocs-material/plugins/blog/#config.categories_pagination)
+- [`categories_pagination_per_page`](https://squidfunk.github.io/mkdocs-material/plugins/blog/#config.categories_pagination_per_page)
+
+所以，等开放给公用版本使用后，可以再好好折腾一下。
+
 
 <script src="https://giscus.app/client.js"
 	data-repo="shenweiyan/Knowledge-Garden"
