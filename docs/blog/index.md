@@ -1,4 +1,4 @@
 # 博客文章
 
-这是首发于 GitHub Discussion/Issues，并定期同步更新至 Material for MkDocs 上的博客文章。
+这是首发于 GitHub [Knowledge-Garden Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions)，并定期同步更新至 Material for MkDocs 本站点上的博客文章。
 
