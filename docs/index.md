@@ -60,7 +60,7 @@ template: home.html
 
 ## 致谢
 
-本知识库最开始受 Openbiox [《生信爱好者周刊》](https://github.com/openbiox/weekly)启发，经过各种折腾后决定开始使用 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署和更新。
+本知识库最开始受 Openbiox [《生信爱好者周刊》](https://github.com/openbiox/weekly)启发，是它让我第一次知道并认识了 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)。
 
 感谢 [LetTTGACO](https://github.com/LetTTGACO) 提供的 [Elog](https://elog.1874.cool/) 工具，提供了一个可以从语雀到本平台的优雅同步方案。
 
