@@ -5,10 +5,9 @@ docs_dir: "docs"
 site_dir: "site"
 extra_css: 
   - css/extra.css
-  - https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
+  - https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
-  - https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js
 theme:
   favicon: assets/logo.png
   name: material
