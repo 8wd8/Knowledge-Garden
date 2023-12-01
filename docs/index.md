@@ -36,9 +36,9 @@ template: home.html
 
 很长一段时间以来，一直都在使用 [语雀](https://www.yuque.com/shenweiyan) 来记录个人工作、生活的各种知识。
 
-从 2023 年下半年起出于某些原因，开始考虑数据多平台使用+备份+搜索的一些使用场景，几经考虑于是决定开始 All in GitHub 的一些探索，把语雀的一些文章记录同步到这里。同时开始探索 Issues + Discussions 来替换语雀小记，并最终选择了 All in GitHub [Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions)。
+从 2023 年下半年起出于某些原因，开始考虑数据多平台使用+备份+搜索的一些使用场景，几经考虑于是决定开始 All in GitHub 的一些探索，把语雀的一些文章记录同步到这里。同时开始探索 Issues + Discussions 来替换语雀小记，并最终选择了 All in [GitHub Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions)。
 
-我希望这是我最后一次折腾个人的站点(博客)，从为知笔记、[博客园](https://www.cnblogs.com/shenweiyan/)、[蚂蚁笔记](https://leanote.com/)、Jekyll、Hexo、Hugo ... 一路过来的人，曾经把太多的时间和精力都花费到 Themes/Html/CSS 的装潢上面了。内容才是核心，老老实实回归最简单的 Issues 和 Discussions 已经足够，另外，需要知道的是，博客其实就是写给自己看的，什么 SEO 流量、关注度、知名度还是需要一颗随缘的心态。
+我希望这是我**最后一次**折腾个人的站点（博客），作为从为知笔记、[博客园](https://www.cnblogs.com/shenweiyan/)、[蚂蚁笔记](https://leanote.com/)、Jekyll、Hexo、Hugo ... 一路过来的人，曾经把太多的时间和精力都花费到 Themes/Html/CSS 的装潢上面了。内容才是核心，老老实实回归最简单的 Issues 或者 Discussions 对我来说已经足够了，另外，需要知道的是，博客其实就是写给自己看的，什么 SEO 流量、关注度、知名度，只需要保持一颗随缘的心态就好。
 
 至于为什么选择 Mkdocs，尤其是 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)，主要基于下面几点考虑：
 
@@ -60,7 +60,7 @@ template: home.html
 
 ## 致谢
 
-本知识库受 Openbiox [《生信爱好者周刊》](https://github.com/openbiox/weekly)启发开始使用 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署。
+本知识库最开始受 Openbiox [《生信爱好者周刊》](https://github.com/openbiox/weekly)启发，经过各种折腾后决定开始使用 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署和更新。
 
 感谢 [LetTTGACO](https://github.com/LetTTGACO) 提供的 [Elog](https://elog.1874.cool/) 工具，提供了一个可以从语雀到本平台的优雅同步方案。
 
