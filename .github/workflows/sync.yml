@@ -22,29 +22,15 @@ jobs:
           GITHUB_REPOSITORY: shenweiyan/Knowledge-Garden
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           
-      - name: Push to Jihulab
-        run: |
-          remote_repo="https://shenweiyan:${JH_PASSWORD}@jihulab.com/${JH_REPOSITORY}.git"
-          git remote add jihulab "${remote_repo}"
-          # useful for debugging
-          git show-ref 
-          git branch --verbose
-          # publish all
-          git push --all --force jihulab
-          git push --tags --force jihulab
-        env:
-          JH_REPOSITORY: shenweiyan/Knowledge-Garden
-          JH_PASSWORD: ${{ secrets.JIHU_PASSWORD }}
-          
       - name: Push to Gitee Knowledge-Garden
         run: |
           remote_repo="https://shenweiyan:${GITEE_PASSWORD}@gitee.com/${GITEE_REPOSITORY}.git"
-          git remote add gitee "${remote_repo}"
+          git remote add gitee-kg "${remote_repo}"
           git show-ref
           git branch --verbose
           # publish all
-          git push --all --force gitee
-          git push --tags --force gitee
+          git push --all --force gitee-kg
+          git push --tags --force gitee-kg
         env:
           GITEE_REPOSITORY: shenweiyan/Knowledge-Garden
           GITEE_PASSWORD: ${{ secrets.GITEE_PASSWORD }}
@@ -52,12 +38,12 @@ jobs:
       - name: Push to Gitee shenweiyan
         run: |
           remote_repo="https://shenweiyan:${GITEE_PASSWORD}@gitee.com/${GITEE_REPOSITORY}.git"
-          git remote add gitee2 "${remote_repo}"
+          git remote add gitee-sh "${remote_repo}"
           git show-ref
           git branch --verbose
           # publish all
-          git push --all --force gitee2
-          git push --tags --force gitee2
+          git push --all --force gitee-sh
+          git push --tags --force gitee-sh
         env:
           GITEE_REPOSITORY: shenweiyan/shenweiyan
           GITEE_PASSWORD: ${{ secrets.GITEE_PASSWORD }}
