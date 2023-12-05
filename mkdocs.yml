@@ -55,7 +55,7 @@ nav:
     - 阅读说明: 
         - index.md
         - 作品: readme/work.md
-        - 资源: readme/res.md	
+        - 资源: readme/res.md
     - 技术: 
         - cookbook/index.md
         - 生物信息: cookbook/生物信息
