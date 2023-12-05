@@ -7,7 +7,7 @@ date: 2023-10-16
 authors: [shenweiyan]
 categories: 
   - 乱弹
-labels: []
+labels: ['mkdocs']
 ---
 
 Material for MkDocs 从 9.2.0 开始内置博客插件，内置博客插件添加了对从帖子文件夹构建博客的支持，这些帖子带有日期和其他结构化数据注释。
