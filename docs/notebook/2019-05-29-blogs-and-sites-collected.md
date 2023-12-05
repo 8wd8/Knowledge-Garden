@@ -12,8 +12,6 @@ updated: "2021-06-30 09:48:15"
 
 ## 客户端
 
-\*\*
-
 - Gridea：[https://github.com/getgridea](https://github.com/getgridea)
 
 一个静态博客写作客户端。
@@ -24,19 +22,23 @@ updated: "2021-06-30 09:48:15"
 
 ## 博客站点
 
-- 袁勇的个人主页：[http://yongyuan.name/cn/](http://yongyuan.name/cn/)
+- [猫四叔](https://yuanj.top/)
+
+来自成都理工大学，兴趣爱好很广泛，喜欢 读书、打篮球、跑步、历史、编程、city walk、 生物信息学 和有趣的东西。  
+
+- [袁勇的个人主页](http://yongyuan.name/cn/)
 
 快手 CV 算法工程师。基于 Jekyll，托管于 Github Pages 个人博客。
 
-- Jimmy Song blog：[https://jimmysong.io/](https://jimmysong.io/)
+- [Jimmy Song blog](https://jimmysong.io/)
 
 蚂蚁金服工程师。基于 [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll/) 主题的 Hugo 博客系统。
 
-- 杨青的个人博客：[http://man.yangqq.com/](http://man.yangqq.com/)
+- [杨青的个人博客](http://man.yangqq.com/)
 
 基于 PHP、帝国 CMS 的博客模板系列。
 
-- 璇珠杂俎博客，[https://www.oukohou.wang/](https://www.oukohou.wang/)
+- [璇珠杂俎博客](https://www.oukohou.wang/)
 
 达闼科技的深度学习算法工程师，Jekyll+Github Pages 博客。
 
