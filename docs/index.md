@@ -52,11 +52,11 @@ template: home.html
 
 ## 如何搜索
 
-1. 使用点[本站](https://doc.weiyan.cc/)自带的搜索（推荐方法）。
-
-2. 使用 [Sourcegraph.com](https://sourcegraph.com/github.com/shenweiyan/Knowledge-Garden) 进行搜索。
-
-3. 使用 GitHub 自带的搜索。
+1. 使用点本站自带的搜索（推荐方法）。
+2. 使用 [必应](https://cn.bing.com/)/[谷歌](https://www.google.com/) 进行搜索，如 `关键字(例如：生信) site:weiyan.cc` 。
+<p align="center">
+    <img style="max-width:600" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/weiyancc/google-weiyan-cc.png" alt="keywords-search"><br>
+</p>
 
 ## 致谢
 
