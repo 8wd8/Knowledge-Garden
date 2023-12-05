@@ -6,7 +6,7 @@ title: 作品
 
 ## 公众号
 
-[**BioIT 爱好者(ID: BioITee)**](https://www.bioitee.com/) 是一个专注于 Bio 生物信息学和 IT 互联网技术的个人订阅号，是一个集合了 Bio+IT 相关的数据分析、数据可视化、生物信息软件应用、服务器 / 集群运维、应用与平台开发部署等方面经验和知识，专注于分享和传播的平台。如果你喜欢生信，爱好 IT，乐于分享，欢迎关注并加入我们，一起跨界 Bio+IT。    
+[**BioIT 爱好者(ID: BioITee)**](https://www.bioitee.com/) 是一个专注于 BIO 生物信息学和 IT 互联网技术分享和传播的个人订阅号。如果你喜欢生信，爱好 IT，乐于分享，欢迎关注，一起跨界 Bio+IT。    
 <p align="center">
     <img style="max-width:400px" src="https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/website/portfolio/bioitee.png" alt="BioITee"><br>
 </p>
