@@ -7,8 +7,8 @@ template: home.html
 
 以下两个地址都可以访问本站点：     
 
-- <https://weiyan.cc>：基于 [Cloudflare Pages](https://pages.cloudflare.com/)，国内访问相对快一些；     
-- <https://doc.weiyan.cc>：基于 [GitHub Pages](https://pages.github.com/)，国内访问可能有一定延迟；
+- [weiyan.cc](https://weiyan.cc)：基于 [Cloudflare Pages](https://pages.cloudflare.com/)，国内访问相对快一些；     
+- [doc.weiyan.cc](https://doc.weiyan.cc)：基于 [GitHub Pages](https://pages.github.com/)，国内访问可能有一定延迟；
 
 <p align="center">
     <img src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/mkdocs/kg-readme-cover.gif" alt><br>
