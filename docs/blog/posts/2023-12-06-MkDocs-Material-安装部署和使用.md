@@ -1,13 +1,13 @@
 ---
 title: MkDocs Material 安装部署和使用
-number: 5
-slug: discussion-5
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/5
-date: 2023-10-16
+number: 37
+slug: discussion-37
+url: https://github.com/shenweiyan/Knowledge-Garden/discussions/37
+date: 2023-12-06
 authors: [shenweiyan]
 categories: 
   - 好玩
-labels: ['mkdocs']
+labels: []
 ---
 
 MkDocs 是一个快速、简单、华丽的静态网站生成器，适用于构建项目文档。文档源文件以 Markdown 编写，并使用一个 YAML 文件来进行配置。[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 是 [MkDocs](https://www.mkdocs.org/) 的一个主题配置，更加简洁美观，更新和维护也更加及时和频繁，且社区也更加活跃。
@@ -74,7 +74,7 @@ $ mkdocs serve -a 0.0.0.0:8000
 	data-repo="shenweiyan/Knowledge-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
-	data-term="5"
+	data-term="37"
 	data-reactions-enabled="1"
 	data-emit-metadata="0"
 	data-input-position="bottom"

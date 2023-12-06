@@ -1,13 +1,13 @@
 ---
 title: 为 Material for MkDocs 增加博客插件
-number: 4
-slug: discussion-4
-url: https://github.com/shenweiyan/Knowledge-Garden/discussions/4
-date: 2023-10-16
+number: 36
+slug: discussion-36
+url: https://github.com/shenweiyan/Knowledge-Garden/discussions/36
+date: 2023-12-06
 authors: [shenweiyan]
 categories: 
-  - 乱弹
-labels: ['mkdocs']
+  - 好玩
+labels: []
 ---
 
 Material for MkDocs 从 9.2.0 开始内置博客插件，内置博客插件添加了对从帖子文件夹构建博客的支持，这些帖子带有日期和其他结构化数据注释。
@@ -64,7 +64,7 @@ Material for MkDocs 使构建博客变得非常容易，无论是作为文档的
 	data-repo="shenweiyan/Knowledge-Garden"
 	data-repo-id="R_kgDOKgxWlg"
 	data-mapping="number"
-	data-term="4"
+	data-term="36"
 	data-reactions-enabled="1"
 	data-emit-metadata="0"
 	data-input-position="bottom"
