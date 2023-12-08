@@ -1,5 +1,5 @@
 mkdocs==1.5.3
-mkdocs-material>=9.4.12
+mkdocs-material==9.4.12
 mkdocs-rss-plugin
 mkdocs-git-revision-date-localized-plugin
 mkdocs-include-dir-to-nav==1.2.0
