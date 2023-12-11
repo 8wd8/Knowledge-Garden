@@ -64,6 +64,7 @@ nav:
     - 博客: 
         - blog/index.md
     - 语雀: yuque.md
+    - 留言: message.md
     - 关于:
         - readme/index.md
         - 开源作品: readme/work.md
