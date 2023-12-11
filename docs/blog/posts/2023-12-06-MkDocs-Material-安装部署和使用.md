@@ -68,7 +68,8 @@ $ mkdocs serve -a 0.0.0.0:8000
 这是一个个人非常期待的功能，大部分目前已经可以在 [Insiders](https://squidfunk.github.io/mkdocs-material/insiders/) 版本中使用，社区公开的版本尚无法使用。
 
 - 博客插件的自定义归档、目录页面每页文档数 - [squidfunk/mkdocs-material#6383](https://github.com/squidfunk/mkdocs-material/issues/6383)
-- 内置隐私插件（方便内网/国内部署加速访问）- [Built-in privacy plugin - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/plugins/privacy/)
+- 内置隐私插件（方便内网/国内部署加速访问）- [Built-in privacy plugin - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/plugins/privacy/)    
+    内置隐私插件(privacy plugin) 在 [9.5.0](https://github.com/squidfunk/mkdocs-material/releases/tag/9.5.0) 中已经k可以正常使用了，下一个值得期待的就是该插件的 [`assets_exclude`](https://squidfunk.github.io/mkdocs-material/plugins/privacy/#config.assets_exclude) 功能！
 
 <script src="https://giscus.app/client.js"
 	data-repo="shenweiyan/Knowledge-Garden"
