@@ -16,7 +16,7 @@ site_author: Steven Shum
 copyright: 版权所有
 
 theme:
-  favicon: assets/logo.png
+  favicon: assets/logo.ico
   name: material
   font:
     text: "Microsoft Yahei"
