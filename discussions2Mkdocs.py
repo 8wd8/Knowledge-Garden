@@ -76,24 +76,25 @@ def __main__():
     parser = argparse.ArgumentParser(description="Fetch GitHub discussions data to mkdocs blog")
     parser.add_argument('-r', '--github_repo', help="GitHub repository name with namespace")
     parser.add_argument('-t', '--github_token', help='GitHub access token.')
-    parser.add_argument('-o', '--outdir', help='Output directory.')
+    parser.add_argument('-o', '--outdir', default='docs', help='Output directory (%default).')
     args = parser.parse_args()
 
     gh_token = args.github_token
     gh_repo  = args.github_repo
+    outdir   = args.outdir
 
-    categoriesWhitelist = ['乱弹', '好玩', '资讯', '知识']
+    categoriesWhitelist = ['乱弹', '好玩', '资讯', '知识', '留言']
 
     gh_owner     = gh_repo.split("/")[0]
     gh_repo_name = gh_repo.split("/")[-1]
 
-    # 创建目录; 目录存在则先删除 md
-    outdir = args.outdir if args.outdir else os.getcwd()
-    if os.path.exists(outdir):
-        for file_path in Path(outdir).glob("*.md"):
+    # 创建博文保存目录, 如目录存在则先删除目录下的 md
+    blog_posts_dir = Path(outdir).joinpath('blog/posts')
+    if blog_posts_dir.exists():
+        for file_path in Path(blog_posts_dir).glob("*.md"):
             file_path.unlink()
     else:
-        os.makedirs(outdir)
+        blog_posts_dir.mkdir(parents=True, exist_ok=True)
 
     url = "https://api.github.com/graphql"
     headers = {"Authorization": f"Bearer %s" % gh_token}
@@ -157,12 +158,20 @@ def __main__():
                      f'\tasync>\n'
                      f'</script>\n')
         
-        # 保存输出的结果
-        saved_md_file = os.path.join(outdir, md_filename)
-        with open(saved_md_file, "w") as MD:
-            MD.write(metadata)
-            MD.write(discussion_body)
-            MD.write(comments)       
+        # 处理留言页面
+        if int(discussion_number) == 16:
+            saved_msg_file = Path(outdir).joinpath("message.md")
+            with open(saved_msg_file, "w") as MSG:
+                MSG.write("# 给作者留言\n\n")
+                MSG.write(discussion_body)
+                MSG.write(comments)
+        else:
+            # 保存博客的输出结果
+            saved_blog_file = blog_posts_dir.joinpath(md_filename)
+            with open(saved_blog_file, "w") as MD:
+                MD.write(metadata)
+                MD.write(discussion_body)
+                MD.write(comments)       
 
 if __name__ == "__main__":
     __main__()
