@@ -39,9 +39,11 @@ jobs:
 
       - name: Commit files
         run: |
-          echo `date +"%Y-%m-%d %H:%M:%S"` begin ... > update.log
+          current="`date +'%Y-%m-%d %H:%M:%S'`"
+          message="Add Changes By GitHub Actions: $current"
+          echo "$message" > update.log
           git add .
-          git commit -a -m "Add Changes By GitHub Actions" 
+          git commit -a -m "$message" 
 
       - name: Push Changes
         uses: ad-m/github-push-action@master
