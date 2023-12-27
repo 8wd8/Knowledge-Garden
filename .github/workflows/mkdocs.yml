@@ -43,7 +43,7 @@ jobs:
           #message="Add Changes By GitHub Actions: `$(TZ=CST6CDT date +%Y-%m-%d-%H:%M:%S)`"
           #echo "$message" > update.log
           git add .
-          git commit -a -m "Add Changes By GitHub Actions: $(TZ=UTC-8 date +%Y-%m-%d-%H:%M:%S) (CST UTC-8)" 
+          git commit -a -m "Add Changes By GitHub Actions: `$(TZ=UTC-8 date +%Y-%m-%d-%H:%M:%S)` (CST/UTC-8)" 
 
       - name: Push Changes
         uses: ad-m/github-push-action@master
