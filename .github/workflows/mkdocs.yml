@@ -40,7 +40,7 @@ jobs:
       - name: Commit files
         run: |
           #current="`date +'%Y-%m-%d %H:%M:%S'`"
-          message="Add Changes By GitHub Actions: `$(TZ=UTC-8 date +%Y-%m-%d-%H:%M:%S)` (CST/UTC-8)"
+          message="Add Changes By GitHub Actions: $(TZ=UTC-8 date +%Y-%m-%d-%H:%M:%S) (CST/UTC-8)"
           #echo "$message" > update.log
           git add .
           git commit -a -m "$message" 
