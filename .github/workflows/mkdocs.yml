@@ -34,16 +34,16 @@ jobs:
       - name: Generate index.md
         run: python3 makeindex.py -r -d docs/cookbook
 
-      - name: Fetch blog posts
+      - name: Fetch blog posts 
         run: python3 discussions2Mkdocs.py -r shenweiyan/Knowledge-Garden -t ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Commit files
         run: |
-          current="`date +'%Y-%m-%d %H:%M:%S'`"
-          message="Add Changes By GitHub Actions: $current"
-          echo "$message" > update.log
+          #current="`date +'%Y-%m-%d %H:%M:%S'`"
+          #message="Add Changes By GitHub Actions: `$(TZ=CST6CDT date +%Y-%m-%d-%H:%M:%S)`"
+          #echo "$message" > update.log
           git add .
-          git commit -a -m "$message" 
+          git commit -a -m "Add Changes By GitHub Actions: $(TZ=UTC-8 date +%Y-%m-%d-%H:%M:%S) (CST UTC-8)" 
 
       - name: Push Changes
         uses: ad-m/github-push-action@master
