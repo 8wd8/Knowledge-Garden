@@ -1,5 +1,5 @@
 ---
-title: 更改 CentOS/RHEL 6/7 中的时区
+title: 更改 RHEL 6/7 中的时区
 urlname: 2021-05-27-centos-rhel-6-7-timezone
 author: 章鱼猫先生
 date: 2021-05-27
@@ -18,7 +18,7 @@ updated: "2021-06-25 10:53:50"
 
 在 CentOS 6 中，时区文件位于 **/usr/share/zoneinfo** 下。所以，如果你的区域是美国/芝加哥(UTC-6) ，它应该是 **/usr/share/zoneinfo/America/Chicago** 等等。
 
-CentOS 6 使用位于 /etc 下的一个名为 "localtime" 的文件来确定当前设置的时区。
+CentOS 6 使用位于 `/etc` 下的一个名为 "localtime" 的文件来确定当前设置的时区。
 
     $ ls -la /etc/localtime
 
