@@ -122,7 +122,7 @@ def __main__():
         discussion_updatedAt    = discussion['updatedAt']
         discussion_body         = discussion['body']
         discussion_author       = discussion['author']['login']
-        discussion_category     = discussion['category']['name'].split()[-1]
+        discussion_category     = discussion['category']['name'].split('-')[-1]
         discussion_labels       = [label['name'] for label in discussion['labels']['nodes']] if discussion['labels']['nodes'] else []
 
         if not discussion_category in categoriesWhitelist:
