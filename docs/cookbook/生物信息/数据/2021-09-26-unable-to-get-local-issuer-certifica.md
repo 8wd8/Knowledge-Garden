@@ -1,5 +1,5 @@
 ---
-title: Python 获取 NCBI 基因名 SSL 证书出现异常？
+title: Python 获取 NCBI 基因名 SSL 证书出现异常
 urlname: 2021-09-26-unable-to-get-local-issuer-certifica
 author: 章鱼猫先生
 date: 2021-09-26
@@ -61,7 +61,7 @@ Traceback (most recent call last):
 urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)>
 ```
 
-根据网络上的解析，当使用 **urllib.urlope**n 打开一个 https 链接时，会验证一次 SSL 证书。而当目标网站使用的是自签名的证书时就会抛出如下异常：
+根据网络上的解析，当使用 **urllib.urlopen** 打开一个 https 链接时，会验证一次 SSL 证书。而当目标网站使用的是自签名的证书时就会抛出如下异常：
 
 **ssl.SSLCertVerificationError: \[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (\_ssl.c:1056)**
 
@@ -84,9 +84,9 @@ urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certifica
 DefaultVerifyPaths(cafile=None, capath='/Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl/certs', openssl_cafile_env='SSL_CERT_FILE', openssl_cafile='/Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl/cert.pem', openssl_capath_env='SSL_CERT_DIR', openssl_capath='/Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl/certs')
 ```
 
-由于在 **openssl_cafile** 中指定的 ca 文件（**cert.pem**）不存在，所以导致上面的错误。
+由于在 **openssl_cafile** 中指定的 CA 文件（**cert.pem**）不存在，所以导致上面的错误。
 
-2.  下载 ca 文件，将下载的 ca 文件放到 **openssl_cafile** 指定位置。注意，如果放到 \*\*openssl_capath \*\*目录下还会出现类似的问题，一定要放到 **openssl_cafile** 指定的位置。
+2.  下载 CA 文件，将下载的 CA 文件放到 **openssl_cafile** 指定位置。注意，如果放到 **openssl_capath** 目录下还会出现类似的问题，一定要放到 **openssl_cafile** 指定的位置。
 
 ```python
 $ cd /Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl
