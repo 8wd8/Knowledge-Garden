@@ -6,7 +6,7 @@ url: https://github.com/shenweiyan/Knowledge-Garden/discussions/33
 date: 2023-12-05
 authors: [shenweiyan]
 categories: 
-  - 资讯
+  - 好玩
 labels: []
 ---
 
