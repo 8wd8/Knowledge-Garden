@@ -41,6 +41,88 @@ GitHub Discussions 目前[最多支持 25 个 categories](https://github.com/org
     ...
 ```
 
+## GitHub GraphQL API
+
+GitHub Discussions 的 API 操作主要依赖 [GitHub GraphQL API](https://docs.github.com/zh/graphql/overview/about-the-graphql-api)。
+
+> ## 概述
+> 
+> GraphQL 是一种用于[应用编程接口（API）](https://www.redhat.com/zh/topics/api/what-are-application-programming-interfaces)的查询语言和服务器端运行时，它可以使客户端准确地获得所需的数据，没有任何冗余。
+>    
+> ## GraphQL 有什么用？    
+> GraphQL 旨在让 API 变得快速、灵活并且为开发人员提供便利。它甚至可以部署在名为 [GraphiQL](https://github.com/graphql/graphiql) 的[集成开发环境（IDE）](https://www.redhat.com/zh/topics/middleware/what-is-ide)中。作为 [REST](https://www.redhat.com/zh/topics/integration/whats-the-difference-between-soap-rest) 的替代方案，GraphQL 允许开发人员构建相应的请求，从而通过单个 API 调用从多个数据源中提取数据。
+>    
+> 此外，GraphQL 还可让 API 维护人员灵活地添加或弃用字段，而不会影响现有查询。开发人员可以使用自己喜欢的方法来构建 API，并且 GraphQL 规范将确保它们以可预测的方式在客户端发挥作用。
+>    
+> From：《[什么是 GraphQL？核心概念解析](https://www.redhat.com/zh/topics/api/what-is-graphql)》- 红帽
+
+- 中文文档：https://docs.github.com/zh/graphql/guides/introduction-to-graphql
+- 在线使用：https://docs.github.com/en/graphql/overview/explorer
+
+### 获取 discussions 主要信息
+```
+{
+  repository(owner: "shenweiyan", name: "Knowledge-Garden") {
+    discussions(orderBy: {field: CREATED_AT, direction: DESC}, categoryId: null, first: 5) {
+      nodes {
+        title
+        number
+        url
+        createdAt
+        lastEditedAt
+        updatedAt
+        body
+        bodyText
+        bodyHTML
+        author {
+          login
+        }
+        category {
+          name
+        }
+        labels(first: 100) {
+          nodes {
+            name
+          }
+        }
+        comments(first: 10) {
+          nodes {
+            body
+            author {
+              login
+            }
+          }
+        }
+      }
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+    }
+  }
+}
+```
+
+
+### 获取 discussions categoryId
+
+参考：《[how to get github discussions categoryId](https://qiita.com/shooter/items/d59fbb43d0f118c95092)》
+
+```
+{
+  repository(owner: "shenweiyan", name: "Knowledge-Garden") {
+    id
+    name
+    discussionCategories(first: 30) {
+      nodes {
+        id
+        name
+      }
+    }
+  }
+}
+```
+
 <script src="https://giscus.app/client.js"
 	data-repo="shenweiyan/Knowledge-Garden"
 	data-repo-id="R_kgDOKgxWlg"
