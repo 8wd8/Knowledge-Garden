@@ -6,7 +6,7 @@ url: https://github.com/shenweiyan/Knowledge-Garden/discussions/15
 date: 2023-11-09
 authors: [shenweiyan]
 categories: 
-  - 好玩
+  - 2.2-好玩
 labels: []
 ---
 

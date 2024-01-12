@@ -6,7 +6,7 @@ url: https://github.com/shenweiyan/Knowledge-Garden/discussions/20
 date: 2023-11-23
 authors: [shenweiyan]
 categories: 
-  - 知识
+  - 2.4-知识
 labels: []
 ---
 

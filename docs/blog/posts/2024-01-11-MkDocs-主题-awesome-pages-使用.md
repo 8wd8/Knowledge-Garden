@@ -6,7 +6,7 @@ url: https://github.com/shenweiyan/Knowledge-Garden/discussions/51
 date: 2024-01-11
 authors: [shenweiyan]
 categories: 
-  - 好玩
+  - 2.2-好玩
 labels: []
 ---
 
