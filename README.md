@@ -1,8 +1,12 @@
 # 维燕的知识花园
 
-这是一个 **All in [GitHub Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions)** 的知识库，没事在 GitHub 写写文章，喜欢的话请点 Star，想订阅点 Watch。
+这是一个 **All in [GitHub Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions)** 的知识库，没事在 GitHub 写写文章，喜欢的话请点 Star，想订阅点 Watch。     
 
-![订阅 GitHub Discussions](https://shub.weiyan.tech/website/watch-github-discussions.png)
+- 关注 Discussions
+  ![订阅 GitHub Discussions](https://shub.weiyan.tech/website/watch-github-discussions.png)
+
+- RSS 订阅 Discussions
+  <https://github.com/shenweiyan/Knowledge-Garden/discussions.atom>
 
 ## 特别说明
 

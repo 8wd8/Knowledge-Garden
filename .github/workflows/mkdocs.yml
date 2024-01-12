@@ -15,7 +15,7 @@ jobs:
       - name: 检查分支
         uses: actions/checkout@v3
 
-      - name: 配置Git用户名邮箱
+      - name: Git config
         run: |
           git config --global user.name "shenweiyan"
           git config --global user.email "weiyanshum@gmail.com"
@@ -23,19 +23,22 @@ jobs:
       - name: Git Pull
         run: git pull
 
-      - name: 安装Python3
+      - name: Install Python3
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
       - name: Install requirements
-        run: pip3 install requests python-slugify pytz
+        run: pip3 install requests python-slugify pytz PyYaml
 
       - name: Get All Discussions
         run: python3 script/getAllDiscussions.py -r shenweiyan/Knowledge-Garden -t ${{ secrets.PERSONAL_ACCESS_TOKEN }} -o docs/Discussions.txt
 
-      - name: Fetch blog posts 
-        run: python3 script/discussions2Mkdocs.py -r shenweiyan/Knowledge-Garden -t ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      - name: Generate blog posts 
+        run: python3 script/discussions2blog.py -i docs/Discussions.txt
+
+      - name: Generate mkdocs posts
+        run: python3 script/discussions2mkdocs.py -i docs/Discussions.txt -c nav.yml 
 
       - name: Commit files
         run: |
