@@ -26,16 +26,16 @@ jobs:
       - name: 安装Python3
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.11'
 
       - name: Install requirements
-        run: pip3 install requests python-slugify
+        run: pip3 install optparse requests python-slugify pytz
 
-      - name: Generate index.md
-        run: python3 makeindex.py -r -d docs/cookbook
+      - name: Get All Discussions
+        run: python3 script/getAllDiscussions.py -r shenweiyan/Knowledge-Garden -t ${{ secrets.PERSONAL_ACCESS_TOKEN }} -o docs/Discussions.txt
 
       - name: Fetch blog posts 
-        run: python3 discussions2Mkdocs.py -r shenweiyan/Knowledge-Garden -t ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        run: python3 script/discussions2Mkdocs.py -r shenweiyan/Knowledge-Garden -t ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Commit files
         run: |
