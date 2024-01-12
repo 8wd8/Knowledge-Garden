@@ -90,7 +90,7 @@ def __main__():
     # 获取一个时区对象（例如，北京的时区）
     beijing_timezone = pytz.timezone('Asia/Shanghai')
     # 使用时区对象将当前时间转换为具有时区信息的时间
-    current_time_with_timezone = beijing_timezone.localize(datetime.now())
+    beijing_time = datetime.utcnow().replace(tzinfo=pytz.utc).astimezone(beijing_timezone)
 
     gh_owner     = gh_repo.split("/")[0]
     gh_repo_name = gh_repo.split("/")[-1]
@@ -110,7 +110,7 @@ def __main__():
         allDiscussions = allDiscussions + discussions
 
     # 保存所有的 Discussions 为 txt 格式
-    discussionsDict = {'date': str(current_time_with_timezone), 'nodes': allDiscussions}
+    discussionsDict = {'date': str(beijing_time), 'nodes': allDiscussions}
     with open(outfile, "w") as OUT:
         OUT.write(str(discussionsDict))
        
