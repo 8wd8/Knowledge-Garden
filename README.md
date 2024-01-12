@@ -2,7 +2,7 @@
 
 这是一个 **All in [GitHub Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions)** 的知识库，没事在 GitHub 写写文章，喜欢的话请点 Star，想订阅点 Watch。     
 
-- 在 GitHub 关注 Discussions          
+- 在 GitHub 订阅 Discussions          
   ![订阅 GitHub Discussions](https://shub.weiyan.tech/website/watch-github-discussions.png)
 
 - 从 RSS 订阅 Discussions          
