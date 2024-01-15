@@ -6,7 +6,7 @@ url: https://github.com/shenweiyan/Knowledge-Garden/discussions/22
 date: 2023-11-23
 authors: [shenweiyan]
 categories: 
-  - 2.1-乱弹
+  - 乱弹
 labels: []
 ---
 
