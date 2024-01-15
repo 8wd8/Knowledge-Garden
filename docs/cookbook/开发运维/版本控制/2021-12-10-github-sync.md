@@ -1,9 +1,9 @@
 ---
-title: GitHub 代码实时同步 Gitee 和 Coding
+title: GitHub 代码实时同步至国内 GIT 站点
 urlname: 2021-12-10-github-sync
 author: 章鱼猫先生
 date: 2021-12-10
-updated: "2023-03-30 16:12:07"
+updated: "2024-01-15 16:12:07"
 ---
 
 GitHub 是一个神奇而强大的社区，它作为全世界最大的代码集中地，在上面，我们可以随意地下载或者参与各种著名开源项目和开源开发框架。
@@ -17,100 +17,60 @@ GitHub 是一个神奇而强大的社区，它作为全世界最大的代码集�
 
 但由于一些大家都知道的原因，国内访问 GitHub 有时候会不太稳定，这就可能导致你在安装 GitHub 上的一些软件（或者拉取代码）的时候，由于网络问题而失败。这时候你就想：
 
-1. 把代码同步一份到 gitee，从 gitee 进行拉取下载；
-2. 把代码同步一份到 coding，使用 coding 的网站托管/自动构建功能，实时部署你的站点应用。
+1. 把代码同步一份到 gitee/coding/gitcode 等托管平台，从这些托管平台进行拉取下载；
+2. 把代码同步一份到 gitee，使用 gitee 的网站托管/自动构建功能，实时部署你的站点应用。
 
-虽然，gitee 和 coding 都提供了从 GitHub 导入项目和强制更新的选项（coding 还提供了可以**通过触发时间来自动同步**），但都比较繁琐，在这里介绍一种通过 GitHub Actions 的方法是一步实现 GitHub 代码实时同步 gitee 和 coding。
+虽然，gitee/coding/gitcode 等平台都提供了从 GitHub 导入项目和强制更新的选项（coding 还提供了可以**通过触发时间来自动同步**），但都比较繁琐，在这里介绍一种通过 GitHub Actions 的方法是一步实现 GitHub 代码实时同步 gitee/coding/gitcode 等。
 
 ## 使用秘钥的方式
 
-首先说明一下，这种方式有点繁琐，而且只能把 GitHub 的代码同步到 gitee 码云上，暂时无法同步到 coding 上（至少在本人的测试中，coding 是没办法的）。
+**本方法主要基于 <https://github.com/Yikun/hub-mirror-action> 提供的 Actions 实现。**
 
-基于秘钥的方式同步，主要参考 [Gitee Pages Action](https://github.com/yanglbme/gitee-pages-action) 项目的做法，具体步骤如下。
+### 1. 基于 SSH 配置公钥和私钥
 
-### 配置密钥
+这一步可以参考或网上N多资料，如《[生成/添加SSH公钥 -Gitee](https://help.gitee.com/enterprise/code-manage/%E6%9D%83%E9%99%90%E4%B8%8E%E8%AE%BE%E7%BD%AE/%E9%83%A8%E7%BD%B2%E5%85%AC%E9%92%A5%E7%AE%A1%E7%90%86/%E7%94%9F%E6%88%90%E6%88%96%E6%B7%BB%E5%8A%A0SSH%E5%85%AC%E9%92%A5)》。      
+![ssh-keygen-ed25519](https://shub.weiyan.tech/kgarden/2024/01/ssh-keygen-ed25519.png)
 
-> **⚠️ 注意：Github 上的 SSH Keys 公钥和 Gitee 的个人设置页面配置的 SSH Keys 公钥内容必须是完全一致的！**
+### 2. 将私钥传到 GitHub 仓库
 
-密钥的配置步骤如下。
+通过 "**Settings → Secrets and variables → Actions → New repository secret**"，创建一个 `GITEE_PRIVATE_KEY` 变量，将私钥(`~/.ssh/id_ed25519`)内容拷贝到值区域。     
+![GITEE_PRIVATE_KEY](https://shub.weiyan.tech/kgarden/2024/01/gitee_private_key.png)
 
-首先，在命令行终端或 Git Bash 使用命令 **ssh-keygen -t rsa -C "<youremail@example.com>**" 生成 SSH Key，注意替换为自己的邮箱。生成的 **id_rsa 是私钥**，**id_rsa.pub 是公钥**。(注意此处不要设置密码，生成的公私钥用于下面 GitHub / Gitee 的配置，以保证公私钥成对，否则从 GitHub -> Gitee 的同步将会失败。)
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnLtojw2-D77uJnv9XmlQRGFrXoZ.png)
-第二，在 GitHub 项目的「**Settings** -> **Secrets** → **New repository secret**」路径下配置好命名为 **GITEE_RSA_PRIVATE_KEY** 和 **GITEE_PASSWORD** 的两个密钥。其中：
+### 3. 将公钥传到 Gitee
 
-- **GITEE_RSA_PRIVATE_KEY** 存放 **id_rsa 私钥**；
-- **GITEE_PASSWORD** 存放 Gitee **帐号的密码**；
+这样一来，就可以实现 GitHub 和 Gitee 之间的通信。而对于不同的公钥配置，Github 可以在[这里](https://github.com/settings/keys)配置，Gitee 可以在[这里](https://gitee.com/profile/sshkeys)配置，对于 GitHub → Giee 我们只需要配置 Giee 上配置公钥即可。    
+![ssh-pub-key](https://shub.weiyan.tech/kgarden/2024/01/ssh-pub-key.png)
 
-私钥文件内容 **/home/shenweiyan/.ssh/id_rsa**（如下仅为示例）：
+### 4. 在 Gitee 上创建一个私人令牌
+
+这个 token 记得保存，因为它只会出现一次。     
+![gitee-token](https://shub.weiyan.tech/kgarden/2024/01/gitee-token.png)
+
+### 5. GitHub 目标仓库粘贴 Gitee 私人令牌
+
+类似第 2 步，我们在想要同步到 Gitee 的 GitHub 源仓库中创建一个 `GITEE_TOKEN` 变量，将第 4 步生成的私人令牌作为值粘贴进去。     
+![add-gitee-token](https://shub.weiyan.tech/kgarden/2024/01/add-gitee-token.png)
+
+### 6. 修改配置文件中的源和目标设置
+
+最后，我们将配置文件中的源和目标设置为你自己的账号即可。
 ```
------BEGIN RSA PRIVATE KEY-----
-MIIEoQIBAAKCAQEAu8Y+QEgYbQG2g01THpSqG3SAEt9JrH0TvFGZI3DS0HjbRz46
-7qkiT+TXju7ilAEfX26JkstIxKDA9rOMlndsuhFuzT1kCB6+iA6Uoauu5/xNnRqf
-+tchWhSroJeQLo7WUuaoKKBaU1OgViIYBf431vNee9vuJobve2lKCuN1I5yT86lt
-2O/5fOCgwPd0p8S9v+xe4IADu0dgFQijZtc5VnvHQk0RRwORJsyaJIr+0z6AycoR
-EY/ZBPsJ3gJ0naRS81eEwEv87fS/bq8iYBaaWNzpB/G4LLywKvD8Yuyv0q9zKSUV
-jTgWE0/CgH14T3JTvyzFe5lYktj1GzAgX7Pu1wIBIwKCAQEAgMJz1E6xqdVJ86K8
-p0Fes72Zpop7qXpWrQTAx9hWC0uPDEft5XtKunEI1wo098ZBZgKnepoGAyxnD5EP
-Pp+xQvAGRk2qnhNiY0D8iYBaaWNzpB/G4LLywKvD8YuyvL/AunpbLhLtkeCsdbiI
-q8IpWAS1rFRkq5jj6phHAoGAc2t6PYMLPAgKKbQL+nCXBpK7pOduaKsZrFpNGBF2
-JmV+GOR0aFSkyHHvViXWF5QvYDy26/ROEVGEcHcAMF0iEvtsRa3WHv9otVf7tPJ6
-FjzQYbYN0zNvRR+eJrE9NoelvKG4HIMWYLtQqap2H6p2oQlkXeIvkhFR/wUf3HVN
-8o0CgYA2BIrBgMx5LtEcsbht7/dl/sj4oRmQhl7X+uA/ISjtk9hwCALLhCb+yevr
-Y+N74xj4Q1hA1ro477z6axoS8E0fATb9s4rieG7KC61u8lII0epEzDdQQ348yA7Y
-XLDII+15947YRnitPaI6J8E5Zpie6cdC1gtvZwws+9J+Qk5nBA==
------END RSA PRIVATE KEY-----
+src: github/<这里改成自己的GitHub名字>
+dst: gitee/<这里改成自己的Gitee名字>
 ```
 
-公钥文件内容 **/home/shenweiyan/.ssh/id_rsa.pub**（如下仅为示例）：
-```
-ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAu8Y+QEgYbQG2g01THpSqG3SAEt9JrH0TvFGZI3DS0HjbRz467qkiT+TXju7ilAEfX26JkstIxKDA9rOMlndsuhFpWAS1rFRkq5jj6phHAoGAc2t6PYMLPAgKKbQL+nCXBpK7pOduT3JTvyzFe5lYktj1GzAgX7Pu1w== ishenweiyan@foxmail.com
-```
+这样配置就完成了。提交你的修改，GitHub Action 就会开始启动并工作了。
 
-第三，在 GitHub 的个人设置页面「[Settings -> SSH and GPG keys](https://github.com/settings/keys)」配置 SSH Keys 公钥（即：**id_rsa.pub**），命名随意。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtcUhF3OCjBv7i0AZpOHWVpUoGkr.png)
-
-第四，在 Gitee 的个人设置页面「[安全设置 -> SSH 公钥](https://gitee.com/profile/sshkeys)」配置 SSH 公钥（即：**id_rsa.pub**），命名随意。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsey-rTV7Z0rZMAvirujPTPobsL5.png)
-
-### 创建 workflow
-
-在你的 GitHub 项目 **.github/workflows/** 文件夹下创建一个 .yml 文件，如 **sync.yml**，内容如下：
-
-```yaml
-name: SyncToGitee
-
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Github Sync to Gitee
-        uses: wearerequired/git-mirror-action@master
-        env:
-          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
-        with:
-          # 注意替换为你的 GitHub 源仓库地址
-          source-repo: git@github.com:shenweiyan/WebStack-Hugo.git
-          # 注意替换为你的 Gitee 目标仓库地址
-          destination-repo: git@gitee.com:shenweiyan/WebStack-Hugo.git
-```
-
-### 执行同步
-
-最后，修改代码（如修改 README），提交，成功触发同步！
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhNciqJ2JAce216HOdJhqNMLNylJ.png)
-
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8zbEMkhW6KnY1RqwtOwMX0ezP_.png)
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhC-7z6OHx5gKOtXGRdFbh3JL60z.png)
+> **注意**：     
+> [**Hub Mirror Action**](https://github.com/Yikun/hub-mirror-action) 默认会同步你个人账号(或者组织) 下的全部仓库，如果你只想同步当前一个仓库，可以参考 [**黑/白名单**](https://github.com/Yikun/hub-mirror-action?tab=readme-ov-file#%E9%BB%91%E7%99%BD%E5%90%8D%E5%8D%95) 和 [**静态名单（可用于单一仓库同步）**](https://github.com/Yikun/hub-mirror-action?tab=readme-ov-file#%E9%9D%99%E6%80%81%E5%90%8D%E5%8D%95%E5%8F%AF%E7%94%A8%E4%BA%8E%E5%8D%95%E4%B8%80%E4%BB%93%E5%BA%93%E5%90%8C%E6%AD%A5) 的配置。
 
 ## 使用账号密码的方式
 
 这个方法参考的是 [@abersheeran](https://github.com/abersheeran) 的 [push-to-mirror ](https://github.com/abersheeran/index.py/blob/a9ef1e2dca0c975108b942657679ec47908c7bcc/.github/workflows/setup.yml#L55-L82)方法，可以同步到 gitee 以及任何一个支持 git 的平台，其原理很简单，就拉取然后推送。
+
+从 2024-01 起，发现通过这种方法同步到 gitee，会提示 `Connection timed out`，但是同步 GitCode.com 是正常的，目前暂时没找到解决方法。     
+![sync-gitee Connection timed out](https://shub.weiyan.tech/kgarden/2024/01/sync-gitee-time-out.png)
+
 
 ### 配置账号密码
 
