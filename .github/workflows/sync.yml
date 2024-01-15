@@ -36,17 +36,10 @@ jobs:
           GITCODE_PASSWORD: ${{ secrets.GITCODE_PAT }}
 
       - name: Push to Gitee shenweiyan
-        run: |
-          remote_repo="https://shenweiyan:${GITEE_PASSWORD}@gitee.com/${GITEE_REPOSITORY}.git"
-          git remote add gitee-sh "${remote_repo}"
-          git show-ref
-          git branch --verbose
-          # publish all
-          git push --all --force gitee-sh
-          git push --tags --force gitee-sh
-        env:
-          GITEE_REPOSITORY: shenweiyan/shenweiyan
-          GITEE_PASSWORD: ${{ secrets.GITEE_PASSWORD }}
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: github/shenweiyan
+          dst: gitee/shenweiyan
 
       - name: Build Gitee Pages
         uses: yanglbme/gitee-pages-action@main
