@@ -61,7 +61,9 @@ def __main__():
             discussion_category     = discussion['category']['name']
             discussion_labels       = [label['name'] for label in discussion['labels']['nodes']] if discussion['labels']['nodes'] else []
 
-            if not discussion_category.startswith('2.'):
+            if discussion_category.startswith('2.'):
+                category_name = discussion_category.strip().split("-")[-1] 
+            else:
                 continue            
 
             slug_name   = f'discussion-{discussion_number}'
@@ -75,7 +77,7 @@ def __main__():
                             f'date: {discussion_createdAt[0:10]}\n'
                             f'authors: [{discussion_author}]\n'
                             f'categories: \n'
-                            f'  - {discussion_category}\n'
+                            f'  - {category_name}\n'
                             f'labels: {discussion_labels}\n'
                             f'---\n\n')
             
