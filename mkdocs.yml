@@ -19,7 +19,7 @@ theme:
   language: zh
   custom_dir: overrides
   favicon: assets/logo.ico
-  logo: assets/logo.png
+  logo: assets/octocat.png
   font:
     text: "Microsoft Yahei"
     code: "Consolas,Courier,courier new,stkaiti,kaiti,simkai,monospace"
