@@ -80,7 +80,9 @@ plugins:
       auto_caption: false    
       caption_position: bottom
   - search:
-      separator: '[\s\u200b\-]'
+      lang:
+          - en
+          - zh
   - git-revision-date-localized:
       type: iso_date
       timezone: Asia/Shanghai
