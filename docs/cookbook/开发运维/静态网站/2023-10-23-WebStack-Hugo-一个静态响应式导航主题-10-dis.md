@@ -10,7 +10,7 @@ categories:
 labels: ['语雀', '1.3.25-静态网站']
 ---
 
-> Via：[我给自己做了一个导航网站](https://mp.weixin.qq.com/s/gVWGjxG9qd7qSyX3N8Zgag) | [BioIT爱好者](https://www.bioitee.com)
+> Via：[我给自己做了一个导航网站](https://mp.weixin.qq.com/s/gVWGjxG9qd7qSyX3N8Zgag) | [BioIT爱好者](https://www.bioitee.com)    
 > **让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 [喝杯咖啡](https://camo.githubusercontent.com/a0a10133ed4ec653ab71072c03c1a23d096c3c8261c9ae939ade3d521e2cf95a/68747470733a2f2f736875622d313235313730383731352e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f656c6f672d636f6f6b626f6f6b2d696d672f466834353377663644625a6f7175415f473677424d575333755947432e6a706567) >.<**
 
 ## 主题开源地址
@@ -19,10 +19,8 @@ labels: ['语雀', '1.3.25-静态网站']
 
 ## 主题展示地址
 
-- ~~[https://nav.bioitee.com](https://nav.bioitee.com/) - Bio & IT 网址导航~~（**该链接后续将不可用**）
 - [https://www.bioit.top/](https://www.bioit.top/) - WebStack-Hugo 网址导航
 - [https://hao.bioitee.com/](https://hao.bioitee.com/) - 生信网址导航
-- [https://so.gd.cn](https://so.gd.cn/) - 搜搜化州 | 信息导航**
 
 ## 为什么做这个网站
 
@@ -88,7 +86,7 @@ labels: ['语雀', '1.3.25-静态网站']
 
 本安装部署在 Windows 7 x64 上测试没问题，相关操作同样适用于 Windows 10，如有任何问题，欢迎留言或者微信与我联系。
 
-### 第一，下载 Windows 版本的 hugo
+### 第一，下载 hugo
 
 下载链接：[https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases)，在这里我们下载 [hugo_0.89.4_Windows-64bit.zip](https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Windows-64bit.zip)。
 
@@ -102,7 +100,7 @@ labels: ['语雀', '1.3.25-静态网站']
 
 ![unzip hugo_0.89.4_Windows-64bit](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqBKVo5JoTzgOY1QsAczSYRmgv0k.png)
 
-### 第三，看 hugo 安装是否安装成功
+### 第三，检测 hugo 是否安装成功
 
 
 > **🏷️ 温馨提示：**
@@ -141,7 +139,7 @@ labels: ['语雀', '1.3.25-静态网站']
 
 ![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fqyg5wJJpttIrC7LVXg9bnCf6Wgv.png)
 
-### 第五，解压，重命名
+### 第五，解压和重命名
 
 把 **WebStack-Hugo-main.zip** 解压到当前目录。
 
@@ -164,7 +162,7 @@ labels: ['语雀', '1.3.25-静态网站']
 
 ![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpgjrR-xAq7fT8DRgT2iMyqGrPyZ.png)
 
-### 第七，启动 Hugo 预览服务器
+### 第七，启动预览
 
 在刚才已经打开的 Windows 命令运行窗口中，使用下面的命令执行 **hugo server**，启动站点——Hugo 可以启动一个 Web 服务器，同时构建站点内容到内存中并在检测到文件更改后重新渲染，方便我们在开发环境实时预览对站点所做的更改。
 
@@ -225,7 +223,7 @@ hugo server
 hugo -D
 ```
 
-## 导出 HTML 静态网页至 publishDir
+## 导出 HTML 静态资源
 
 Windows/Linux 下执行的 **hugo server** 命令将会通过热加载的方式临时启动一个 Hugo 服务器（Hugo 可以启动一个 Web 服务器，同时构建站点内容到内存中并在检测到文件更改后重新渲染，方便我们在开发环境实时预览对站点所做的更改），这个时候我们打开浏览器 [http://127.0.0.1:1313/](http://127.0.0.1:1313/)，就可以看到我们站点的样子了。
 
