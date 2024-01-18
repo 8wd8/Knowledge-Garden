@@ -59,6 +59,9 @@ markdown_extensions:
         permalink: True
         separator: "-"
         toc_depth: 5
+        slugify: !!python/object/apply:pymdownx.slugs.slugify
+            kwds:
+                case: lower
     - pymdownx.highlight
     - pymdownx.arithmatex:
         generic: true
