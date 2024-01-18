@@ -8,7 +8,7 @@ updated: "2024-01-15 16:12:07"
 
 GitHub 是一个神奇而强大的社区，它作为全世界最大的代码集中地，在上面，我们可以随意地下载或者参与各种著名开源项目和开源开发框架。
 
-**玩 GitHub 至少有以下几个好处：**
+**使用 GitHub 至少有以下几个好处：**
 
 1. 获取最新最热门最实用的开源组件，有助于开发公司项目；
 2. 获取最流行的技术相关源代码，有助于参考学习借鉴；
@@ -37,6 +37,8 @@ GitHub 是一个神奇而强大的社区，它作为全世界最大的代码集�
 ![GITEE_PRIVATE_KEY](https://shub.weiyan.tech/kgarden/2024/01/gitee_private_key.png)
 
 ### 3. 将公钥传到 Gitee
+
+我们只需要把公钥 `~/.ssh/id_ed25519.pub` 的内容，粘贴到 Gitee 即可。
 
 这样一来，就可以实现 GitHub 和 Gitee 之间的通信。而对于不同的公钥配置，Github 可以在[这里](https://github.com/settings/keys)配置，Gitee 可以在[这里](https://gitee.com/profile/sshkeys)配置，对于 GitHub → Giee 我们只需要配置 Giee 上配置公钥即可。    
 ![ssh-pub-key](https://shub.weiyan.tech/kgarden/2024/01/ssh-pub-key.png)
