@@ -15,13 +15,14 @@ site_author: Steven Shum
 copyright: 版权所有
 
 theme:
-  favicon: assets/logo.ico
   name: material
+  language: zh
+  custom_dir: overrides
+  favicon: assets/logo.ico
+  logo: assets/logo.png
   font:
     text: "Microsoft Yahei"
     code: "Consolas,Courier,courier new,stkaiti,kaiti,simkai,monospace"
-  language: zh
-  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tracking
