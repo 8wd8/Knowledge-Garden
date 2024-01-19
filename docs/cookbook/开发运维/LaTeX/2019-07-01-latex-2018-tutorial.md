@@ -6,7 +6,7 @@ date: 2019-07-01
 updated: "2023-04-26 15:07:23"
 ---
 
-# 一、背景
+## 一、背景
 
 前两天在自己的 Jupyter 服务器上想要把 notebook(.ipynb) 导出为 pdf 时发现 xelatex 没有安装：
 
@@ -17,7 +17,7 @@ updated: "2023-04-26 15:07:23"
 
 另外一点就是，对于经常做生信分析的童鞋而言，LaTeX，或者 Html+wkhtmltopdf 也许是当前生信报告生成与交付的两种主要解决方案（或许还有其他更好的，欢迎留言交流）。因此对于生信分析而言，LaTeX 也许并不陌生，但真正熟悉和掌握它的人却寥寥无几。
 
-# 二、概念
+## 二、概念
 
 TEX 是诞生于 20 世纪 70 年代末到 80 年代初的一款计算机排版软件，而且是命令行格式的，用来排版高质量的书籍，特别是包含有数学公式的书籍。TEX 以追求高质量为目标，很早就实现了矢量描述的计算机字体、细致的分页断行算法和数学排版功能，因其数学排版能力得到了学术界的广泛使用，也启发了后来复杂的商业计算机排版软件。
 
@@ -48,16 +48,18 @@ TEXLive 是 Tex 的一种比较流行的发行版，它是由 TUG（TEX User Gro
 
 [CTeX](http://www.ctex.org/CTeX)  中文套装是基于 Windows 下的  [MiKTeX](http://www.ctex.org/MiKTeX)  系统，集成了编辑器  [WinEdt](http://www.ctex.org/WinEdt)  和  [PostScript](http://www.ctex.org/PostScript/edit)  处理软件 Ghostscript 和 GSview 等主要工具。 [CTeX](http://www.ctex.org/CTeX)  中文套装在  [MiKTeX](http://www.ctex.org/MiKTeX)  的基础上增加了对中文的完整支持。 [CTeX](http://www.ctex.org/CTeX)  中文套装支持 CJK, xeCJK, CCT, TY 等多种中文  [TeX](http://www.ctex.org/TeX)  处理方式。
 
-# 三、安装
+## 三、安装
 
 TEXLive 常用有两种安装方式：从 TEXLive 光盘进行安装和从网络在线安装。这里我们介绍第二种。
 
-## 1. 镜像文件下载
+### 1. 镜像文件下载
 
-TexLive 历史版本下载地址：[ftp://tug.org/historic/systems/texlive/]()
+TexLive 历史版本下载地址：<https://www.tug.org/historic/>。
 
 TexLive 的镜像文件下载推荐使用 [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)，国内下载速度极快。
-<https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso>
+
+- 最新版本：<https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/>
+- 历史版本：<https://mirrors.tuna.tsinghua.edu.cn/tex-historic-archive/systems/texlive/>
 
 ## 2. 镜像挂载
 
