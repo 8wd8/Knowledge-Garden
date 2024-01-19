@@ -1,29 +1,29 @@
 ---
-title: LaTeX 折腾系列 | Linux 字体安装的一点记录
+title: Linux 字体安装
 urlname: 2020-02-10-linux-install-fonts
 author: 章鱼猫先生
 date: 2020-02-10
 updated: "2021-06-30 09:38:15"
 ---
 
-在使用 LaTeX 进行中文字体编译排版过程中，发现 CentOS 6.5 中缺乏很大一部分中文字体，以至于在编译过程中频繁抛出缺乏字体的错误。 现在基于 windows 的 ttf 字体，以 **“微软雅黑”**  体为例，简单记录一下 Linux 下如何安装 windows 字体。
+在使用 LaTeX 进行中文字体编译排版过程中，发现 CentOS 6.5 中缺乏很大一部分中文字体，以至于在编译过程中频繁抛出缺乏字体的错误。现在基于 windows 的 ttf 字体，以 **“微软雅黑”** 体为例，简单记录一下 Linux 下如何安装 windows 字体。
 
-1 . 首先获得一套”微软雅黑”字体库( Google 去下载，或者去 `C:\Windows\Fonts` 下直接复制)，包含两个文件 msyh.ttf （普通）、 msyhbd.ttf （加粗）；
+1. 首先获得一套”微软雅黑”字体库( Google 去下载，或者去 `C:\Windows\Fonts` 下直接复制)，包含两个文件 msyh.ttf （普通）、 msyhbd.ttf （加粗）；
 
-2 . 在 `/usr/share/fonts` 目录下建立一个子目录，例如 `win` ，命令如下：
+2. 在 `/usr/share/fonts` 目录下建立一个子目录，例如 `win` ，命令如下：
 
 ```bash
 $ mkdir /usr/share/fonts/win
 ```
 
-3.  将 `msyh.ttf`  和 `msyhbd.ttf`  复制到该目录下，例如这两个文件放在 `/home/shenweiyan`  下，使用命令：
+3. 将 `msyh.ttf` 和 `msyhbd.ttf` 复制到该目录下，例如这两个文件放在 `/home/shenweiyan` 下，使用命令：
 
 ```bash
 $ cd /home/shenweiyan
 $ cp msyh.ttf msyhbd.ttf  /usr/share/fonts/win/
 ```
 
-4 . 建立字体索引信息，更新字体缓存：
+4. 建立字体索引信息，更新字体缓存：
 
 ```bash
 $ cd /usr/share/fonts/win
