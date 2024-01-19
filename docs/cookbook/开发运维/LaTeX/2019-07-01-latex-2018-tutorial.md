@@ -1,5 +1,5 @@
 ---
-title: LaTeX 2018 安装与使用教程
+title: LaTeX 安装教程
 urlname: 2019-07-01-latex-2018-tutorial
 author: 章鱼猫先生
 date: 2019-07-01
@@ -12,10 +12,11 @@ updated: "2023-04-26 15:07:23"
 
 ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp9hxWhI_H98Nn23qhXB_PF-t6FC.png)
 500 : Internal Server Error 如下：
+```bash
+nbconvert failed: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
+```
 
-    nbconvert failed: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
-
-另外一点就是，对于经常做生信分析的童鞋而言，LaTeX，或者 Html+wkhtmltopdf 也许是当前生信报告生成与交付的两种主要解决方案（或许还有其他更好的，欢迎留言交流）。因此对于生信分析而言，LaTeX 也许并不陌生，但真正熟悉和掌握它的人却寥寥无几。
+另外一点就是，对于经常做生信分析的童鞋而言，LaTeX，或者 Html+wkhtmltopdf 也许是当前生信报告生成与交付的两种主要解决方案（如果还有其他更好的，欢迎留言告诉我）。因此对于生信分析而言，LaTeX 也许并不陌生，但真正熟悉和掌握它的人却寥寥无几。
 
 ## 二、概念
 
@@ -50,7 +51,7 @@ TEXLive 是 Tex 的一种比较流行的发行版，它是由 TUG（TEX User Gro
 
 ## 三、安装
 
-TEXLive 常用有两种安装方式：从 TEXLive 光盘进行安装和从网络在线安装。这里我们介绍第二种。
+TEXLive 常用有两种安装方式：从 TEXLive 光盘进行安装和从网络在线安装。这里我们以 TexLive 2018 版本为例介绍第二种安装方法。
 
 ### 1. 镜像文件下载
 
@@ -61,7 +62,7 @@ TexLive 的镜像文件下载推荐使用 [清华大学开源软件镜像站](ht
 - 最新版本：<https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/>
 - 历史版本：<https://mirrors.tuna.tsinghua.edu.cn/tex-historic-archive/systems/texlive/>
 
-## 2. 镜像挂载
+### 2. 镜像挂载
 
 TEXLive 镜像文件下载完之后，推荐使用 root 用户进行安装。
 
@@ -181,7 +182,7 @@ Welcome to TeX Live!
 ......
 ```
 
-** FAQ-1：Digest::MD5 **
+**FAQ-1：Digest::MD5**
 
 ```bash
 Can't locate Digest/MD5.pm in @INC (@INC contains: ./tlpkg /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at tlpkg/TeXLive/TLCrypto.pm line 9.
@@ -192,13 +193,13 @@ Compilation failed in require at ./install-tl line 55.
 BEGIN failed--compilation aborted at ./install-tl line 55.
 ```
 
-`Can't locate Digest/MD5.pm`  是因为系统的 perl(/usr/bin/perl) 中没有安装 `Digest::MD5`  模块，我们可以去 [CPAN](https://metacpan.org/pod/Digest::MD5)  下载手动安装，也可以在线安装：
+`Can't locate Digest/MD5.pm`  是因为系统的 perl(`/usr/bin/perl`) 中没有安装 `Digest::MD5`  模块，我们可以去 [CPAN](https://metacpan.org/pod/Digest::MD5)  下载手动安装，也可以在线安装：
 
 ```bash
 $ sudo yum install perl-Digest-MD5
 ```
 
-** FAQ-2：perl-TK**
+**FAQ-2：perl-TK**
 
 ```bash
 Error message from loading Tk:
@@ -206,8 +207,10 @@ Error message from loading Tk:
 ```
 
 在线安装 Tk 的 perl 模块(通过 [CPAN](https://metacpan.org/pod/distribution/Tk/Tk.pod)手动安装，这里不详述，有兴趣的可自行谷歌一下)：
-
-    $ sudo yum install perl-Tk
+```bash
+$ sudo yum install perl-Tk
+$ perl -e "use Tk"   # 测试 TK 是否安装成功
+```
 
 最后，卸载镜像：
 
@@ -231,7 +234,7 @@ $ sudo fuser -m -v -k /mnt/textlive/
 $ sudo umount /mnt/textlive/
 ```
 
-Texlive2017 有一个[详细指南](https://www.tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf)，其中也有详细介绍各平台各种安装方法。
+这里有一个更加详细的[TEX Live 指南](https://www.tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf)，其中也有详细介绍各平台各种安装方法。
 
 ## 四、设置环境变量
 
@@ -255,8 +258,9 @@ Hello \LaTeX! 你好，这是一个测试文档。
 ```
 
 使用命令，最后打开生成的 tex-test.pdf 文件：
-
-    xelatex tex-test.tex
+```bash
+xelatex tex-test.tex
+```
 
 ## 六、中文支持
 
@@ -268,11 +272,11 @@ CJK 宏包提供了两种环境：CJK 环境和 CJK\* 环境，这两种环境�
 
 xeCJK 是在 CCT 和 CJK 包基础上发展起来的，支持多种标点格式。也有人说，xeCJK package 搭上 XeLaTeX 是最好的中文 TeX 处理方式。总的来说 xeCJK 主要特点：
 
-1.  分别设置 CJK 和英文字体；
-2.  自动忽略 CJK 文字间的空格而保留其它空格，允许在非标点汉字和英文字母 (a-z, A-Z) 间断行；
-3.  提供多种标点处理方式：全角式、半角式、开明式、行末半角式；
-4.  自动调整中英文间空白。
-5.  TexLive 2018 已经默认安装了 xeCJK，我们可以使用下面的命令查看 TexLive 已经安装的包以及包的具体信息：
+1. 分别设置 CJK 和英文字体；
+2. 自动忽略 CJK 文字间的空格而保留其它空格，允许在非标点汉字和英文字母 (a-z, A-Z) 间断行；
+3. 提供多种标点处理方式：全角式、半角式、开明式、行末半角式；
+4. 自动调整中英文间空白。
+5. TexLive 2018 已经默认安装了 xeCJK，我们可以使用下面的命令查看 TexLive 已经安装的包以及包的具体信息：
 
 ```bash
 # 查看 TexLive 所有已经安装的包
@@ -284,17 +288,17 @@ $ tlmgr install pkgname
 ```
 
 结合 xeCJK 宏包来配置字体，下面是一个小例子：
-
-    \documentclass{article}
-    \usepackage{xeCJK}
-    \setCJKmainfont{SimSun}
-    \begin{document}
-    你好，TeX Live 2018！
-    \end{document}
+```katex
+\documentclass{article}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\begin{document}
+你好，TeX Live 2018！
+\end{document}
+```
 
 ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrniQGthPg4PVIqBj2AHm_GWJUk_.png)
 
----
 
 ## 七、参考资料
 
