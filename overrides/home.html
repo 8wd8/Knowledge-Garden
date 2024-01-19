@@ -3,26 +3,20 @@
 -#}
 {% extends "base.html" %}
 {% block htmltitle %}
-      {% if page.meta and page.meta.title %}
+    {% if page.meta and page.meta.title %}
         <title>{{ page.meta.title }}</title>
-      {% elif page.title and not page.is_homepage %}
+    {% elif page.title and not page.is_homepage %}
         <title>{{ page.title | striptags }}</title>
-      {% else %}
+    {% else %}
         <title>{{ config.site_name }}</title>
-      {% endif %}
+    {% endif %}
 {% endblock %}
 
-{% block container %}
-    <div class="md-content" data-md-component="content">
-      <article class="md-content__inner md-typeset">
-        {% block content %}
-          {% include "partials/mycontent.html" %}
-        {% endblock %}
-      </article>
-    </div>
+{% block content %}
+    {% include "partials/mycontent.html" %}
 {% endblock %}
 
 {% block extrahead %}
-      <!--style>.md-typeset h1,.md-content__button {display:none !important}; </style-->
-      <style>.md-header__topic {font-weight:700 !important}</style>
+    <style>.md-content__button {display:none !important}; </style>
+    <style>.md-header__topic {font-weight:700 !important}</style>
 {% endblock %}
