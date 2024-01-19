@@ -80,7 +80,7 @@ mount: /dev/loop0 is write-protected, mounting read-only
 $ sudo mount -o loop texlive2018.iso /mnt/textlive -o ro
 ```
 
-## 3. 镜像安装
+### 3. 镜像安装
 
 TEXLive 镜像的安装有两种方法：一是可以启动安装程序的图形化界面进行安装配置；二是直接在命令行中进行。这里主要介绍一下命令行下的安装。
 
@@ -160,7 +160,7 @@ Directories customization:
 Actions:
   return to main menu
   quit
-Enter command:R
+Enter command: R
 ......
 Actions:
   start installation to hard disk
@@ -181,8 +181,7 @@ Welcome to TeX Live!
 ......
 ```
 
-\*\* FAQ-1：Digest::MD5 \*\* **~~\_\_
-\_\_~~**
+** FAQ-1：Digest::MD5 **
 
 ```bash
 Can't locate Digest/MD5.pm in @INC (@INC contains: ./tlpkg /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at tlpkg/TeXLive/TLCrypto.pm line 9.
@@ -199,7 +198,7 @@ BEGIN failed--compilation aborted at ./install-tl line 55.
 $ sudo yum install perl-Digest-MD5
 ```
 
-**\*\***FAQ-2：perl-TK**\*\***
+** FAQ-2：perl-TK**
 
 ```bash
 Error message from loading Tk:
@@ -234,7 +233,7 @@ $ sudo umount /mnt/textlive/
 
 Texlive2017 有一个[详细指南](https://www.tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf)，其中也有详细介绍各平台各种安装方法。
 
-# 四、设置环境变量
+## 四、设置环境变量
 
 将 texlive 部分目录添加到环境变量(\~/.bashrc)，编辑完记得 source 刷新一下：
 
@@ -244,7 +243,7 @@ export MANPATH=/usr/local/software/texlive/2018/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/usr/local/software/texlive/2018/texmf-dist/doc/info:$INFOPATH
 ```
 
-# 五、使用与测试
+## 五、使用与测试
 
 编辑一个 tex-test.tex 文件：
 
@@ -259,7 +258,7 @@ Hello \LaTeX! 你好，这是一个测试文档。
 
     xelatex tex-test.tex
 
-# 六、中文支持
+## 六、中文支持
 
 LaTeX 默认是不支持中文的，想要支持中文排版，这里需要引入一个"宏包" 的概念。关于宏包，我们可以理解为一些指令的集合，用于专门处理某个特定的专题（如排版，字体等方面的细节问题），使用者可以方便地根据需要选用某个宏包。
 
@@ -297,7 +296,7 @@ $ tlmgr install pkgname
 
 ---
 
-# 七、参考资料
+## 七、参考资料
 
 - CTAN，[xecjk – Support for CJK documents in XeLaTeX](https://ctan.org/pkg/xecjk)
 - Tass，Regular Tass Office Hour，《[CJK, xeCJK 與 cwTeX 對於中文支援的比較](http://rtassoh.blogspot.com/2010/08/cjk-xecjk-cwtex.html)》
