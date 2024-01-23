@@ -62,13 +62,13 @@ def __main__():
             if discussion_category.startswith('2.'):
                 continue
         
-            slug_name   = f'discussion-{discussion_number}'
+            slug_name   = f'kg-discussions-{discussion_number}'
             create_date = discussion_createdAt[0:10]
-            md_filename = f'{create_date}-{slugify(discussion_title, allow_unicode=True, lowercase=False)}-{discussion_number}-dis.md'
+            md_filename = f'{create_date}-{slugify(discussion_title, allow_unicode=True, lowercase=False)}-dis{discussion_number}.md'
             metadata    = ( f'---\n'
                             f'title: {discussion_title}\n'
                             f'number: {str(discussion_number)}\n'
-                            f'slug: {slug_name}\n'
+                            f'slug: {slug_name}/\n'
                             f'url: {discussion_url}\n'
                             f'date: {discussion_createdAt[0:10]}\n'
                             f'authors: [{discussion_author}]\n'
@@ -105,7 +105,7 @@ def __main__():
                 savedPostDir = Path(outputDir).joinpath(savedPostDir)
                 # 如目录存在则先删除目录下对应的 *-dis.md, 否则创建 Posts 保存目录
                 if savedPostDir.exists():
-                    for md in savedPostDir.glob(f'*-{discussion_number}-dis.md'):
+                    for md in savedPostDir.glob(f'*-dis{discussion_number}.md'):
                         md.unlink()
                 else:
                     Path(savedPostDir).mkdir(parents=True, exist_ok=True) #如果目录不存在,先创建博文保存目录

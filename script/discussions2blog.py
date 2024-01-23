@@ -66,13 +66,13 @@ def __main__():
             else:
                 continue            
 
-            slug_name   = f'discussion-{discussion_number}'
+            slug_name   = f'kg-discussions-{discussion_number}'
             create_date = discussion_createdAt[0:10]
             md_filename = create_date + "-" + slugify(discussion_title, allow_unicode=True, lowercase=False) + ".md"    #2023-10-18-xxxxx.md
             metadata    = ( f'---\n'
                             f'title: {discussion_title}\n'
                             f'number: {str(discussion_number)}\n'
-                            f'slug: {slug_name}\n'
+                            f'slug: {slug_name}/\n'
                             f'url: {discussion_url}\n'
                             f'date: {discussion_createdAt[0:10]}\n'
                             f'authors: [{discussion_author}]\n'

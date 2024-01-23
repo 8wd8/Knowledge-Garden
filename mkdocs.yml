@@ -104,6 +104,7 @@ plugins:
 
 hooks:
   - hooks.py
+  - meta_slugs.py
       
 extra:
   homepage: https://doc.weiyan.cc
