@@ -1,7 +1,7 @@
 ---
 title: MkDocs 主题 awesome-pages 使用
 number: 51
-slug: discussion-51
+slug: kg-discussions-51/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/51
 date: 2024-01-11
 authors: [shenweiyan]

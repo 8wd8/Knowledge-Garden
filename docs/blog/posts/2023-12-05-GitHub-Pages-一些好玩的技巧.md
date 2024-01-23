@@ -1,7 +1,7 @@
 ---
 title: GitHub Pages 一些好玩的技巧
 number: 33
-slug: discussion-33
+slug: kg-discussions-33/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/33
 date: 2023-12-05
 authors: [shenweiyan]

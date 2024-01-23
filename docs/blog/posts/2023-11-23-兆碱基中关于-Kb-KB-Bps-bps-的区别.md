@@ -1,7 +1,7 @@
 ---
 title: 兆碱基中关于 Kb、KB、Bps、bps 的区别
 number: 20
-slug: discussion-20
+slug: kg-discussions-20/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/20
 date: 2023-11-23
 authors: [shenweiyan]

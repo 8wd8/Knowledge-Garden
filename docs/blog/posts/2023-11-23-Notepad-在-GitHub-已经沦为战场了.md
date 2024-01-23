@@ -1,7 +1,7 @@
 ---
 title: Notepad++ 在 GitHub 已经沦为战场了
 number: 22
-slug: discussion-22
+slug: kg-discussions-22/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/22
 date: 2023-11-23
 authors: [shenweiyan]

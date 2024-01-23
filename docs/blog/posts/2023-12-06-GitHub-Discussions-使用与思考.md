@@ -1,7 +1,7 @@
 ---
 title: GitHub Discussions 使用与思考
 number: 38
-slug: discussion-38
+slug: kg-discussions-38/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/38
 date: 2023-12-06
 authors: [shenweiyan]
