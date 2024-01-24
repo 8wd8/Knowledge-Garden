@@ -10,9 +10,15 @@ categories:
 labels: []
 ---
 
-从2023年7月起我的文档都保存在了 GitHub Discussions 上，作为博客、IED 编辑器，以及评论使用，GitHub Discussions 是完全没问题的。
+从2023年7月起我所有可公开的文档都保存在了 GitHub Discussions 上，作为博客、IED 编辑器，以及评论使用，GitHub Discussions 是完全没问题的。
 
 <!-- more -->
+
+## 体验与感受
+
+由于 GitHub 是直接 markdown 源码进行书写，正常的导出基本不会有格式错乱的问题，这一点非常好。不像有一些富文本的编辑器，动不动就给你增加几个换行或者空格什么的额外字符。
+
+借助 GitHub GraphQL API + Python 进行导出非常顺滑，导出来的文档可以随意折腾，可玩性非常大。
 
 ## 专业书籍文档
 
@@ -122,6 +128,10 @@ GitHub Discussions 的 API 操作主要依赖 [GitHub GraphQL API](https://docs.
   }
 }
 ```
+
+### 其他的一些问题
+
+目前，通过 GitHub GraphQL API 暂时无法获取 Sections 的信息。
 
 <script src="https://giscus.app/client.js"
 	data-repo="shenweiyan/Knowledge-Garden"
