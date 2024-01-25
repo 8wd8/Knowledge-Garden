@@ -134,7 +134,7 @@ template: home.html
 
 ## 赞赏
 
-如果你觉得到本知识库对你有帮助，欢迎赞赏，有你的支持，我们一定会越来越好！
+如果你觉得本站点的一些文章或者工具对你有所帮助(启发)，欢迎赞赏，有你的支持，我们一定会越来越好！
 
 <figure markdown>
 ![微信-支付宝赞赏码](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/mkdocs/donate.jpg "感谢你的一路支持")
