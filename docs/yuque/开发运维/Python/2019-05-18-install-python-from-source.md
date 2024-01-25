@@ -6,19 +6,19 @@ date: 2019-05-18
 updated: "2023-06-01 16:38:47"
 ---
 
-编程，作为生物信息学的一个基础性技能，是任何一个生信工程师都无法绕开话题。也许有些人还在纠结 Perl 和 Python 到底应该学习哪一个，但作为目前最火最流行的编程语言 Python 还是非常值得尝试的。它不但可以进行文本处理，在统计、网站、游戏、爬虫、数据可视化等方面也有非常强大的应用，比起曾经的 Perl 真的强大和全面很多，且比 Perl 更容易入手。不管从长远发展，还是短期需要，学会 Python，看懂 Perl (或者先学   Python，后学 Perl) 应该是每一个生信工程必备的基础技能之一。
+编程，作为生物信息学的一个基础性技能，是任何一个生信工程师都无法绕开话题。也许有些人还在纠结 Perl 和 Python 到底应该学习哪一个，但作为目前最火最流行的编程语言 Python 还是非常值得尝试的。它不但可以进行文本处理，在统计、网站、游戏、爬虫、数据可视化等方面也有非常强大的应用，比起曾经的 Perl 真的强大和全面很多，且比 Perl 更容易入手。不管从长远发展，还是短期需要，学会 Python，看懂 Perl (或者先学 Python，后学 Perl) 应该是每一个生信工程必备的基础技能之一。
 
 工欲善其事，必先利其器。关于 Python 安装教程在网上一搜一大把，但总感觉不够全面，尤其对于中间出现的一些问题的解决方法不尽如人意。鉴于此，本文基于  CentOS/Ubuntu Linux 对 Python 的源码编译安装进行了一下简单的总结，记录如下。
 
-- **Update 2024-01-25：** 基于本文档在 CentOS 7.7.1908 安装 Python-3.11.6 成功！
-- **Update 2021-12-21：** 基于本文档在 Ubuntu 20.04 LTS 安装 Python-3.10.1 成功！
-- **Update 2021-09-15：** 参考此文档在 Red Hat Enterprise 6.5 安装 Python-3.9.5 成功！
+- **2024-01-25：** 在 CentOS 7.7.1908 安装 Python-3.11.6 成功！
+- **2021-12-21：** 在 Ubuntu 20.04 LTS 安装 Python-3.10.1 成功！
+- **2021-09-15：** 在 Red Hat Enterprise 6.5 安装 Python-3.9.5 成功！
 
-## 1. RHEL
+## RHEL/CentOS
 
 以下的内容中，我们以安装 Python-3.7.3 为例进行说明。
 
-### 1.1 安装环境
+### 安装环境
 
 Red Hat 6.5 + GCC 4.4.7（GCC-4.8.5/5.3.1）。GCC 高级版本手动/yum 安装参考以下文章。
 
@@ -40,7 +40,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-### 1.2 解决依赖
+### 解决依赖
 
 如果您拥有 root 权限，请执以下依赖安装：
 
@@ -71,7 +71,7 @@ yum install readline readline-devel sqlite sqlite-devel tk-devel
 
 如果您没有 root 权限，可以参考《[手把手教你在 Linux 源码安装最新版本的 R](https://www.yuque.com/shenweiyan/cookbook/install-latest-r-from-source)》一文，手动一个个去解决以上的依赖。
 
-#### 1.2.1 \_sqlite3 依赖
+#### _sqlite3
 
 执行 **make** 过程中提示 **\_sqlite3 not found**，如下：
 
@@ -104,7 +104,7 @@ $ ll /usr/include/sqlite3.h
 
 但是，执行 make 依然出现以上报错，参考下面的方法《[python build from source: cannot build optional module sqlite3 - Stack Overflow](https://stackoverflow.com/questions/32779768/python-build-from-source-cannot-build-optional-module-sqlite3)》。
 
-1.  手动安装 sqlite3。
+1.    手动安装 sqlite3。
 
 ```bash
 $ wget https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz --no-check-certificate
@@ -115,8 +115,8 @@ $ make
 $ make install
 ```
 
-2.  找到 **sqlite3.h** 文件的保存目录。
-3.  修改 **setup.py** 文件，在 sqlite_inc_paths 中加上 sqlite3.h 的文件路径。
+2. 找到 **sqlite3.h** 文件的保存目录。
+3. 修改 **setup.py** 文件，在 `sqlite_inc_paths` 中加上 `sqlite3.h` 的文件路径。
 
 ```bash
 sqlite_inc_paths = [ '/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/include',
@@ -129,13 +129,13 @@ sqlite_inc_paths = [ '/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/include',
                    ]
 ```
 
-4.  配置环境。
+4. 配置环境。
 
 ```bash
 $ export LD_LIBRARY_PATH=/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/lib:$LD_LIBRARY_PATH
 ```
 
-#### 1.2.2 \_ssl 依赖
+#### _ssl
 
 Python3 需要引用 `openssl`  模块，但是 python3.7+ 在 CentOS 中要求的 openssl 版本最低为 1.0.2，而 CentOS 默认的为 1.0.1（CentOS-6.x 通过 `yum`  源安装的 openssl 的最高版本是 1.0.1），所以需要手动更新 openssl。
 
@@ -169,10 +169,10 @@ source $HOME/.bashrc
 
 **请注意：**
 
-1.  **openssl** 编译（config）的时候 **必须要加上 shared  参数**，否者源码安装 Python 即使添加了 `--with-openssl`  的自定义路径，依然会导致 `Could not build the ssl module!`  报错！
-2.  从 <https://www.openssl.org/source/> 下载的源码 openssl-1.0.2s、openssl-1.0.2m，包括  CentOS-7.5 使用 `yum`  安装的最高版本的 openssl-1.0.2k 目前发现依然会导致 `Could not build the ssl module` ，建议从 <https://www.openssl.org/source/old/> 下载 1.1.1 的源码编译安装。
+1. **openssl** 编译（config）的时候 **必须要加上 shared  参数**，否者源码安装 Python 即使添加了 `--with-openssl`  的自定义路径，依然会导致 `Could not build the ssl module!`  报错！
+2. 从 <https://www.openssl.org/source/> 下载的源码 openssl-1.0.2s、openssl-1.0.2m，包括  CentOS-7.5 使用 `yum`  安装的最高版本的 openssl-1.0.2k 目前发现依然会导致 `Could not build the ssl module` ，建议从 <https://www.openssl.org/source/old/> 下载 1.1.1 的源码编译安装。
 
-#### 1.2.3 \_lzma 依赖
+#### _lzma
 
 正常情况下，下面的方法可以解决该问题（如果您有 root 权限的话）。
 
@@ -201,7 +201,7 @@ $ make install
 $ export LD_LIBRARY_PATH=/Bioinfo/Pipeline/SoftWare/xz-5.2.5/lib:$LD_LIBRARY_PATH
 ```
 
-#### 1.2.4 \_ctypes 依赖
+#### _ctypes
 
 在 CentOS 6.x 安装 `libffi-devel`  的时候出现以下问题：
 
@@ -236,7 +236,7 @@ $ make
 $ make install
 ```
 
-#### 1.2.5 pygraphviz 依赖（可选）
+#### pygraphviz (可选)
 
 如果你不需要使用 pygraphviz，可以不用管这个依赖。
 
@@ -322,7 +322,7 @@ Installing collected packages: pygraphviz
 Successfully installed pygraphviz-1.5
 ```
 
-### 1.3 编译安装
+### 编译安装
 
 第一，下载 Python 源码，解压。
 
@@ -418,7 +418,7 @@ source ~/.bashrc
 
 运行命令 `python -V` ，查看是否出现 3.7.3  的版本，出现即为安装成功。
 
-### 1.4 安装 pip+setuptools
+### 安装 pip+setuptools
 
 **说明：** Python >= 3.10 在安装时候，默认会同时安装 **pip3**！如果你的 python < 3.10，可以参考下面的方法安装 pip。
 
@@ -430,9 +430,9 @@ python3 get-pip.py
 
 至此，CentOS Linux release 6.5 下的 python-3.7.3  全部安装完成。如果在安装过程中出现其他的报错，建议把 error 关键信息直接复制到 Google 进行检索，参考其他人的解决方法。
 
-### 1.5 其他异常与解决
+### 其他异常与解决
 
-#### 1.5.1 _bz2
+#### _bz2
 
 - 系统：CentOS Linux release 7.7.1908 (Core)
 - GCC：gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-39)
@@ -473,7 +473,7 @@ $ make install
 - Python-3.6.9 中的 `./configure --help` 中没有 `--with-openssl` 参数！有点神奇，我也不知道原因。
 - 安装完成可以用 `from _bz2 import BZ2Compressor, BZ2Decompressor` 测试一下 `_bz2`  是否可用。
 
-#### 1.5.2 init_import_site
+#### init_import_site
 
 如果在 `make` 过程中提示 `init_import_site: Failed to import the site module`：
 
@@ -493,9 +493,9 @@ make: *** [profile-opt] Error 2
 
 个人在 CentOS 7.7.1908 + GCC 4.8.5 安装 Python 3.11.6 就遇到了这个问题，最后在 [这里](https://www.linuxquestions.org/questions/centos-111/build-python-3-11-from-source-on-centos-7-a-4175719297/) 找到了原因 —— GCC 版本太低了，因此我们只需要升级一下 GCC 的版本就可以。
 
-## 2. Ubuntu/Debian
+## Ubuntu/Debian
 
-### 2.1 安装环境
+### 安装环境
 
 Ubuntu 20.04 + GCC 9.3.0。
 
@@ -503,7 +503,7 @@ Ubuntu 20.04 + GCC 9.3.0。
 apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 ```
 
-### 2.2 解决依赖
+### 解决依赖
 
 | 缺少库名称 | 安装命令                         |
 | ---------- | -------------------------------- |
@@ -521,11 +521,11 @@ apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev l
 | \_lzma     | apt install lzma-dev liblzma-dev |
 | \_ctypes   | apt install libffi-dev           |
 
-### 2.3 编译安装
+### 编译安装
 
 Ubuntu/Debian 下 Python 编译安装的命令跟 CentOS/RedHat 是一样的，具体参考 [#1.3 编译安装 ](#eGHk1)一节的内容。
 
-## F. 参考资料
+## 参考资料
 
 1. 行者无疆-ITer,《[python2.7 源码编译安装](https://www.cnblogs.com/ITer-jack/p/8305912.html)》, 博客园
 2. Scott Frazer,《[How do I compile Python 3.4 with custom OpenSSL?](https://stackoverflow.com/questions/23548188/how-do-i-compile-python-3-4-with-custom-openssl)》, Stack Overflow
