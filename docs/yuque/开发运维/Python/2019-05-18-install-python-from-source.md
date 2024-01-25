@@ -1,5 +1,5 @@
 ---
-title: 生物信息学 Python 入门之源码安装
+title: Python 源码编译安装
 urlname: 2019-05-18-install-python-from-source
 author: 章鱼猫先生
 date: 2019-05-18
@@ -10,6 +10,7 @@ updated: "2023-06-01 16:38:47"
 
 工欲善其事，必先利其器。关于 Python 安装教程在网上一搜一大把，但总感觉不够全面，尤其对于中间出现的一些问题的解决方法不尽如人意。鉴于此，本文基于  CentOS/Ubuntu Linux 对 Python 的源码编译安装进行了一下简单的总结，记录如下。
 
+- **Update 2024-01-25：** 基于本文档在 CentOS 7.7.1908 安装 Python-3.11.6 成功！
 - **Update 2021-12-21：** 基于本文档在 Ubuntu 20.04 LTS 安装 Python-3.10.1 成功！
 - **Update 2021-09-15：** 参考此文档在 Red Hat Enterprise 6.5 安装 Python-3.9.5 成功！
 
@@ -471,6 +472,26 @@ $ make install
 
 - Python-3.6.9 中的 `./configure --help` 中没有 `--with-openssl` 参数！有点神奇，我也不知道原因。
 - 安装完成可以用 `from _bz2 import BZ2Compressor, BZ2Decompressor` 测试一下 `_bz2`  是否可用。
+
+#### 1.5.2 init_import_site
+
+如果在 `make` 过程中提示 `init_import_site: Failed to import the site module`：
+
+```bash
+Fatal Python error: init_import_site: Failed to import the site module
+Python runtime state: initialized
+Traceback (most recent call last):
+  File "/home/shenweiyan/src/Python-3.11.6/Lib/site.py", line 73, in <module>
+    import os
+  File "/home/shenweiyan/src/Python-3.11.6/Lib/os.py", line 29, in <module>
+    from _collections_abc import _check_methods
+SystemError: <built-in function compile> returned NULL without setting an exception
+make[1]: *** [Python/frozen_modules/abc.h] Error 1
+make[1]: Leaving directory `/home/shenweiyan/src/Python-3.11.6'
+make: *** [profile-opt] Error 2
+```
+
+个人在 CentOS 7.7.1908 + GCC 4.8.5 安装 Python 3.11.6 就遇到了这个问题，最后在 [这里](https://www.linuxquestions.org/questions/centos-111/build-python-3-11-from-source-on-centos-7-a-4175719297/) 找到了原因 —— GCC 版本太低了，因此我们只需要升级一下 GCC 的版本就可以。
 
 ## 2. Ubuntu/Debian
 
