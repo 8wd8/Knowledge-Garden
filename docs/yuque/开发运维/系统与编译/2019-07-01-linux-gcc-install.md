@@ -80,7 +80,7 @@ $ ln -s lsl isl-0.14
 
 在此脚本里可以看到依赖包的版本号依次是 mpc-0.8.1，mpfr-2.4.2，gmp-4.3.2；另外我们下载 isl-0.14。
 
-在 GCC-7.3.0 中，所有的依赖包都可以通过 **./contrib/download_prerequisites** 一键完成下载。
+在 GCC-7.3.0 中，所有的依赖包都可以通过 **`./contrib/download_prerequisites`** 一键完成下载。
 ![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm6vKB8MMGgGNgdn0wvGcoiSL5EF.png)
 
 ## 3. 编译安装
@@ -141,14 +141,14 @@ make distclean
 
 ## 4. 配置环境变量
 
-GCC 安装完成后，需要包新安装的 gcc 添加到  `PATH`  个人相应的`**LD_LIBRARY_PATH**`：
+GCC 安装完成后，需要包新安装的 gcc 添加到  `PATH`  个人相应的 **`LD_LIBRARY_PATH`**：
 
 ```shell
 export PATH=/Bioinfo/SoftWare/gcc-4.8.5/bin:$PATH
 export LD_LIBRARY_PATH=/Bioinfo/SoftWare/gcc-4.8.5/lib64:$LD_LIBRARY_PATH
 ```
 
-如果不想把新装 GCC 添加到  **\~/.bashrc**  中的  **PATH**  和 L**D_LIBRARY_PATH**  让它永久起作用，但是在安装软件时又想使用新安装的高级版本的 GCC 来编译软件，可以：
+如果不想把新装 GCC 添加到 **`~/.bashrc`** 中的 **`PATH`** 和 **`LD_LIBRARY_PATH`** 让它永久起作用，但是在安装软件时又想使用新安装的高级版本的 GCC 来编译软件，可以：
 
 - 在软件编译前先执行上面两个  **export**  语句，再执行后面的编译安装命令；
 - 或者在软件编译安装时直接在编译参数中添加 gcc/g++ 和其动态库的路径就可以。
