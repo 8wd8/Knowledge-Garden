@@ -27,16 +27,16 @@ body {
 
 这里就涉及一个 **萍方** vs **苹方** vs **PingFang** 区别的一个问题。
 
-> 猛地看上去，萍方/苹方/pingfang 应该是同一个字体。但是，实际上的效果，却并不相同。那么，到底谁是真正的 pingfang sc呢？    
+> 猛地看上去，萍方/苹方/PingFang 应该是同一个字体。但是，实际上的效果，却并不相同。那么，到底谁是真正的 pingfang sc呢？    
 >     
-> 这里以能否**以 pingfang sc 为名称识别出来，作为标准**。为什么这么说呢？因为网页里面的 font-family，写的都是pingfang sc，也许萍方/苹方都是差不多的字体，但是不能在网页里面自动识别出来。所以，就等于零。
+> 这里以能否**以 PingFang SC 为名称识别出来，作为标准**。为什么这么说呢？因为网页里面的 font-family，写的都是 pingfang sc，也许萍方/苹方都是差不多的字体，但是不能在网页里面自动识别出来。所以，就等于零。
 > 
 > ```
 > body {
 >    font-family: PingFang SC,microsoft yahei,sans-serif;
 > }
 > ```
-> 比如，上述css定义，就来自于腾讯云主页。在实际的应用过程中，只有安装好的 pingfang sc 系列字体才能被识别【如下图中的右侧字体】。**注意：萍方/苹方，在安装的时候，文件名也都是 pingfang-sc 之类的文件名。但是，安装完成的真正成品，可不是这个拼音名字。进而导致字体不能识别。**
+> 比如，上述 css 定义，就来自于腾讯云主页。在实际的应用过程中，只有安装好的 pingfang sc 系列字体才能被识别【如下图中的右侧字体】。**注意：萍方/苹方，在安装的时候，文件名也都是 pingfang-sc 之类的文件名。但是，安装完成的真正成品，可不是这个拼音名字。进而导致字体不能识别。**
 > ![pingfang sc 区别](https://shub.weiyan.tech/kgarden/2024/01/fingfang-sc.png)
 >     
 > From 《[由 pingfang sc 字体缺失，所暴露的字体加载顺序的潜规则](https://newsn.net/say/css-font-family-pingfang.html)》
@@ -47,10 +47,12 @@ body {
 
 ### 安装 PingFang SC
 
-> 国内大多数网页，在定义网页字体的时候，都是先定义pingfang sc，然后定义微软雅黑。那么：
-> - 正常来说，win 系统是不会安装 pingfang sc 字体的，所以，显示微软雅黑，页面正常。
-> - 但是，一旦单独安装了 pingfang sc light，页面就会识别出这个 light 字体，页面不正常。
-> - 解决方案是：再安装一个 pingfang sc regular，页面会在 light 之前优先识别 regular，页面正常。
+名称为 **PingFang SC** (英文) 的字体找了很久才在 GitHub 翻到一个：[shenweiyan/PingFangSC-Fonts](https://github.com/shenweiyan/PingFangSC-Fonts)，如有需要可以直接下载安装。
+
+> 国内大多数网页，在定义网页字体的时候，都是先定义 PingFang SC，然后定义微软雅黑。那么：
+> - 正常来说，win 系统是不会安装 PingFang SC 字体的，所以，显示微软雅黑，页面正常。
+> - 但是，一旦单独安装了 PingFang SC Light，页面就会识别出这个 Light 字体，页面不正常。
+> - 解决方案是：再安装一个 PingFang SC Regular，页面会在 Light 之前优先识别 Regular，页面正常。
 
 >    
 > 如果您非要在 win 下面安装 pingfang sc 字体，可能要三思而后安装了。李鬼似乎有点多...
