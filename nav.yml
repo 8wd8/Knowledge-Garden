@@ -44,9 +44,11 @@
 1.5.2-R可视化: tech/可视化/R可视化
 3: GALAXY
 3.1: 版本说明
-3.1.1-Releases: galaxy/版本说明/Releases
+3.1.1-Releases: galaxy/release
 3.2: 管理员文档
-3.2.1-管理: galaxy/管理员文档/管理
-3.2.2-专题: galaxy/管理员文档/专题
+3.2.1-GalaxyAdmin: galaxy/admin/Administration
+3.2.2-GalaxyTopic: galaxy/admin/SpecialTopics
 3.3: 开发者文档
-3.3.1-开发: galaxy/开发者文档/开发
+3.3.1-GalaxyDevel: galaxy/devel/Development
+3.4: 其他文档
+3.4.1-GalaxyOther: galaxy/other
