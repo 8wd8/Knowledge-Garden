@@ -10,7 +10,7 @@ categories:
 labels: ['1.2.3-Python']
 ---
 
-学习了解了 Series 和 DataFrame 的基本数据结构和索引的相关概念之后，就可以练习基本的 Excel操作。Pandas 读取一个 Excel 文件后会将其转化为 DataFrame 对象，每一列或行就是一个 Series 对象。这里我们看下如何对一个 excel 进行读写，以及 Sheet、行列、表头处理的一些常用技巧。
+在使用 Pandas 前需要学习了解一下 Series 和 DataFrame 的基本数据结构和索引的相关概念，之后就可以练习基本的 Excel操作。Pandas 读取一个 Excel 文件后会将其转化为 DataFrame 对象，每一列或行就是一个 Series 对象。这里我们看下如何对一个 excel 进行读写，以及 Sheet、行列、表头处理的一些常用技巧。
 
 ## 读取 Excel
 
