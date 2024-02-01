@@ -7,7 +7,7 @@ date: 2024-01-09
 authors: [shenweiyan]
 categories: 
   - 1.3-折腾
-labels: ['1.3.10-Windows']
+labels: ['公众号', '1.3.10-Windows']
 ---
 
 曾经在 《[为 Windows 系统替换优雅的苹果字体](https://www.weiyan.cc/cookbook/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/windows/2021-02-19-win-font/)》中提到可在 Windows 中使用苹方字体替代默认的微软雅黑，这里就有一个问题即需要在 Wondows 下安装苹方字体 —— 如果你的字体安装错误，很有可能导致你的浏览器或其他应用出现乱码。
