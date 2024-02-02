@@ -34,8 +34,8 @@ docs: ## Generate HTML documentation.
 	$(IN_VENV) $(MAKE) -C doc clean
 	$(IN_VENV) $(MAKE) -C doc html
 ```
-- `$(MAKE)`就是预设的 `make` 这个命令的名称（或者路径）。
-- `-C`：到指定目录下读取 Makefile 文件并执行（给出指定的目录的路径）。
+- `$(MAKE)`就是预设的 `make` 这个命令的名称（或者路径）。    
+- `-C`：到指定目录下读取 Makefile 文件并执行（给出指定的目录的路径）。     
 
 第二步，读取 `doc` 目录下的 [Makefile](https://github.com/galaxyproject/galaxy/blob/dev/doc/Makefile) 文件，并执行 `make html`。
 ```
