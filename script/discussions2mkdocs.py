@@ -62,7 +62,7 @@ def __main__():
             if discussion_category.startswith('2.'):
                 continue
         
-            slug_name   = f'kg-discussions-{discussion_number}'
+            slug_name   = f'discussions-{discussion_number}'
             create_date = discussion_createdAt[0:10]
             md_filename = f'{create_date}-{slugify(discussion_title, allow_unicode=True, lowercase=False)}-dis{discussion_number}.md'
             metadata    = ( f'---\n'
