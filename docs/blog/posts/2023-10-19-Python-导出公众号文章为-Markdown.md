@@ -1,7 +1,7 @@
 ---
 title: Python 导出公众号文章为 Markdown
 number: 7
-slug: kg-discussions-7/
+slug: discussions-7/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/7
 date: 2023-10-19
 authors: [shenweiyan]

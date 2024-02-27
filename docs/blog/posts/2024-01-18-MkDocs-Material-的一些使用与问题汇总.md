@@ -1,7 +1,7 @@
 ---
 title: MkDocs Material  的一些使用与问题汇总
 number: 52
-slug: kg-discussions-52/
+slug: discussions-52/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/52
 date: 2024-01-18
 authors: [shenweiyan]

@@ -1,7 +1,7 @@
 ---
 title: Galaxy Project 的 Sphinx 文档部署
 number: 46
-slug: kg-discussions-46/
+slug: discussions-46/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/46
 date: 2024-01-05
 authors: [shenweiyan]

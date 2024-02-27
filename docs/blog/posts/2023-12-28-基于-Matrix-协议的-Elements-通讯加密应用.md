@@ -1,7 +1,7 @@
 ---
 title: 基于 Matrix 协议的 Elements 通讯加密应用
 number: 42
-slug: kg-discussions-42/
+slug: discussions-42/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/42
 date: 2023-12-28
 authors: [shenweiyan]

@@ -1,7 +1,7 @@
 ---
 title: 苹果字体 PingFang SC 的一些踩坑记录
 number: 49
-slug: kg-discussions-49/
+slug: discussions-49/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/49
 date: 2024-01-09
 authors: [shenweiyan]

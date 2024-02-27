@@ -1,7 +1,7 @@
 ---
 title: Mkdocs material 对指定页面隐藏 H1 标题
 number: 53
-slug: kg-discussions-53/
+slug: discussions-53/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/53
 date: 2024-01-19
 authors: [shenweiyan]

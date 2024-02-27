@@ -1,7 +1,7 @@
 ---
 title: WebStack-Hugo | 一个静态响应式导航主题
 number: 10
-slug: kg-discussions-10/
+slug: discussions-10/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/10
 date: 2023-10-23
 authors: [shenweiyan]

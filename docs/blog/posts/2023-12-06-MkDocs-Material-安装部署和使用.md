@@ -1,7 +1,7 @@
 ---
 title: MkDocs Material 安装部署和使用
 number: 37
-slug: kg-discussions-37/
+slug: discussions-37/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/37
 date: 2023-12-06
 authors: [shenweiyan]

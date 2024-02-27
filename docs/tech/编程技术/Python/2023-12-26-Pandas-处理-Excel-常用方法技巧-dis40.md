@@ -1,7 +1,7 @@
 ---
 title: Pandas 处理 Excel 常用方法技巧
 number: 40
-slug: kg-discussions-40/
+slug: discussions-40/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/40
 date: 2023-12-26
 authors: [shenweiyan]

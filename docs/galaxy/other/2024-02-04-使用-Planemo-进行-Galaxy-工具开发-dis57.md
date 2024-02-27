@@ -1,7 +1,7 @@
 ---
 title: 使用 Planemo 进行 Galaxy 工具开发
 number: 57
-slug: kg-discussions-57/
+slug: discussions-57/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/57
 date: 2024-02-04
 authors: [shenweiyan]

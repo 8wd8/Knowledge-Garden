@@ -1,7 +1,7 @@
 ---
 title: Mkdocs material 使用自定义 slug 和 url
 number: 54
-slug: kg-discussions-54/
+slug: discussions-54/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/54
 date: 2024-01-23
 authors: [shenweiyan]

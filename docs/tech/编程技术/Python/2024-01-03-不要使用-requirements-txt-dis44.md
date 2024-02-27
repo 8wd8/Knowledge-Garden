@@ -1,7 +1,7 @@
 ---
 title: 不要使用 requirements.txt
 number: 44
-slug: kg-discussions-44/
+slug: discussions-44/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/44
 date: 2024-01-03
 authors: [shenweiyan]

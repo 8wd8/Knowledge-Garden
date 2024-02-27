@@ -1,7 +1,7 @@
 ---
 title: 基于 GitHub Discussions 的博客与站点
 number: 15
-slug: kg-discussions-15/
+slug: discussions-15/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/15
 date: 2023-11-09
 authors: [shenweiyan]

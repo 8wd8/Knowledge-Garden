@@ -1,7 +1,7 @@
 ---
 title: 为 Material for MkDocs 增加博客插件
 number: 36
-slug: kg-discussions-36/
+slug: discussions-36/
 url: https://github.com/shenweiyan/Knowledge-Garden/discussions/36
 date: 2023-12-06
 authors: [shenweiyan]
