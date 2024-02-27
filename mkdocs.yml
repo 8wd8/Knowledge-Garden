@@ -118,6 +118,9 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://genomic.social/@weiyanshum
       name: Mastodon
+  analytics:
+    provider: custom
+    property: foobar
 
 extra_css:
   - css/extra.css
