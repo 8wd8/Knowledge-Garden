@@ -27,9 +27,7 @@ show_channels_urls: true
 - <https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda> 是一个专门用于生物信息软件的 channel。
 
 !!! tip "清华大学开源软件镜像站"
-    从 2019.04 起清华大学和中科大宣布停止 Anaconda 镜像服务，但是出于教育科研机构使用的前提，在 2019-05-15 清华大学又宣布重新恢复了 Anaconda 镜像！    
-    - [关于停止Anaconda镜像服务的通知](https://mirrors.tuna.tsinghua.edu.cn/news/close-anaconda-service/)
-    - [Anaconda 镜像即将恢复](https://mirrors.tuna.tsinghua.edu.cn/news/restore-anaconda/)
+    从 [2019.04](https://mirrors.tuna.tsinghua.edu.cn/news/close-anaconda-service/) 起清华大学和中科大宣布停止 Anaconda 镜像服务，但是出于教育科研机构使用的前提，在 [2019-05-15](https://mirrors.tuna.tsinghua.edu.cn/news/restore-anaconda/) 清华大学又宣布重新恢复了 Anaconda 镜像！    
 
 因此原来使用国内镜像的 conda 可以根据自身需求决定是否需要变更新的 channels：
 
