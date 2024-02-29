@@ -25,11 +25,21 @@
 - 博客地址：https://xxx.com
 - 博客介绍：xxxxxx
 
-## 友情链接
+## 友情站点
 
 以下站点按照添加的时间顺序排列。
 
+<div class="grid cards" markdown>
 
+-   __[UncleCAT4](https://yuanj.top/)__
+
+    思绪来得快去得也快，偶尔会在这里停留。
+
+-   __[1874’s Blog](https://blog.1874.cool)__
+
+    有粤语歌就不会有世界末日。
+
+</div>
 
 
 <script src="https://giscus.app/client.js"
