@@ -88,7 +88,8 @@ sudo dnf install htop
 
 ## Docker 安装与使用
 
-主要参考《[How To Install and Use Docker on Rocky Linux 9](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-rocky-linux-9)》，具体步骤如下：
+主要参考《[How To Install and Use Docker on Rocky Linux 9](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-rocky-linux-9)》，具体步骤如下：     
+
 - add the official Docker repository
   ```bash
   sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
