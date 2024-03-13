@@ -14,6 +14,8 @@ labels: ['1.3.17-服务器配置使用']
 
 <!-- more -->
 
+![aliyun-99-plan](https://shub.weiyan.tech/kgarden/2024/03/aliyun-99-plan.png)
+
 ## Hostname
 ```
 [root@r0sasd1bQi ~]# hostnamectl   # 查看一下当前主机名的情况
