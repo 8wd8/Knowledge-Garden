@@ -10,7 +10,7 @@ categories:
 labels: ['公众号']
 ---
 
-从2023年7月起我所有可公开的文档都保存在了 GitHub Discussions 上，作为博客、IED 编辑器，以及评论使用，GitHub Discussions 是完全没问题的。
+从2023年7月起我所有可公开的文档都保存在了 [GitHub Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions) 上，作为博客、IED 编辑器，以及评论使用，GitHub Discussions 是完全没问题的。
 
 <!-- more -->
 
@@ -24,7 +24,7 @@ labels: ['公众号']
 
 由于 GitHub 是直接 markdown 源码进行书写，正常的导出基本不会有格式错乱的问题，这一点非常好。不像有一些富文本的编辑器，动不动就给你增加几个换行或者空格什么的额外字符。
 
-借助 GitHub GraphQL API + Python + GitHub Actions 进行每天定时导出非常顺滑，导出来的文档可以随意折腾，可玩性非常大。
+借助 GitHub GraphQL API + Python + GitHub Actions 进行每天定时导出非常顺滑，导出来的文档可以随意折腾，自由度非常大。
 
 ## 专业书籍文档
 
@@ -138,6 +138,10 @@ GitHub Discussions 的 API 操作主要依赖 [GitHub GraphQL API](https://docs.
 ### 其他的一些问题
 
 目前，通过 GitHub GraphQL API 暂时无法获取 Sections 的信息。
+
+## 简单的总结
+
+拥抱 GitHub Discussions 的一个前提是你可以随时登录 GitHub，如果你已经解决了这个问题，也想着像我一样 Using Github discussions as your blog engine，那么你可以参考一下我的 [shenweiyan/Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden/) 仓库。
 
 <script src="https://giscus.app/client.js"
 	data-repo="shenweiyan/Knowledge-Garden"
