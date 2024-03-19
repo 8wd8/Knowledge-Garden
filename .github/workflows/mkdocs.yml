@@ -45,7 +45,7 @@ jobs:
           current="`TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S'`"
           message="Add Changes By GitHub Actions: $current (CST/UTC-8)"
           echo "$message" > update.log          
-          git add .
+          git add --all
           git commit -a -m "$message" 
 
       - name: Push Changes
