@@ -19,11 +19,11 @@ Mamba 可以使用 Mambaforge 方法和已有 Mini/conda 的方式安装，官�
 ### 全新安装
 关于 mamba 的安装，官方推荐 [Fresh install](https://mamba.readthedocs.io/en/latest/mamba-installation.html)，即全新安装。
 
-> We recommend that you start with the [Mambaforge distribution](https://github.com/conda-forge/miniforge#mambaforge). Mambaforge comes with the popular conda-forge channel preconfigured, but you can modify the configuration to use any channel you like. Note that Anaconda channels are generally incompatible with conda-forge, so you should not mix them.
+> We recommend that you start with the [Mambaforge distribution](https://github.com/conda-forge/miniforge#mambaforge). Mambaforge comes with the popular conda-forge channel preconfigured, but you can modify the configuration to use any channel you like. Note that Anaconda channels are generally incompatible with conda-forge, so you should not mix them.        
 > 我们建议您从 Mambaforge 发行版开始。 Mambaforge 预配置了流行的 conda-forge 通道，但您可以修改配置以使用您喜欢的任何通道。请注意，Anaconda 通道通常与 conda-forge 不兼容，因此您不应混合使用它们。
 
-其实就是：
-1. 先去 [Mambaforge distribution](https://github.com/conda-forge/miniforge#mambaforge) 下载 Mambaforge-Linux-x86_64.sh。
+其实就是：          
+1. 先去 [Mambaforge distribution](https://github.com/conda-forge/miniforge#mambaforge) 下载 Mambaforge-Linux-x86_64.sh。          
 2. 执行 `sh Mambaforge-Linux-x86_64.sh` 安装命令。
 
 ### 在已有的 conda 中安装
@@ -43,13 +43,13 @@ sh Miniconda3-latest-Linux-x86_64.sh
 ~/miniconda3/bin/conda install -c conda-forge mamba
 ```
 
-> For both `mamba` and `conda`, the `base` environment is meant to hold their dependencies. It is strongly discouraged to install anything else in the base envionment. Doing so may break `mamba` and `conda` installation.
+> For both `mamba` and `conda`, the `base` environment is meant to hold their dependencies. It is strongly discouraged to install anything else in the base envionment. Doing so may break `mamba` and `conda` installation.      
 > 对于 `mamba` 和 `conda` ， `base` 环境旨在保存它们的依赖关系。强烈建议不要在基础环境中安装任何其他东西。这样做可能会破坏 `mamba` 和 `conda` 安装。
 
 ## Micromamba 安装
 参考 <https://mamba.readthedocs.io/en/latest/micromamba-installation.html>。
 
-> `micromamba` is a fully statically-linked, self-contained, executable. This means that the `base` environment is completely empty. The configuration for `micromamba` is slighly different, namely all environments and cache will be created by default under the `MAMBA_ROOT_PREFIX` environment variable. There is also no pre-configured `.condarc`/`.mambarc` shipped with micromamba (they are however still read if present).
+> `micromamba` is a fully statically-linked, self-contained, executable. This means that the `base` environment is completely empty. The configuration for `micromamba` is slighly different, namely all environments and cache will be created by default under the `MAMBA_ROOT_PREFIX` environment variable. There is also no pre-configured `.condarc`/`.mambarc` shipped with micromamba (they are however still read if present).                         
 > `micromamba` 是一个完全静态链接的、独立的可执行文件。这意味着 `base` 环境完全是空的。`micromamba` 的配置略有不同，即默认情况下将在 `MAMBA_ROOT_PREFIX` 环境变量下创建所有环境和缓存。`micromamba` 也没有预配置的 `.condarc` / `.mambarc`（但是，如果存在，它们仍然会被读取）。
 
 ### 脚本安装
