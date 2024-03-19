@@ -42,7 +42,8 @@ jobs:
           dst: gitee/shenweiyan
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
-          static_list: "shenweiyan"
+          static_list: "Knowledge-Garden"
+          mappings: "Knowledge-Garden=>shenweiyan"
           force_update: true
           timeout: '0.5h'
 
