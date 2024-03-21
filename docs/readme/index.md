@@ -1,77 +1,40 @@
 ---
-title: 关于
-template: home.html
+title: 作者与站点
+author: 沈维燕
+date: 2023-07-24
+updated: 2024-03-21
+
 ---
 
-<center><font  color= #518FC1 size=6 class="ml3">循此苦旅，以达星辰</font></center>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+聊一聊关于作者和这个站点的一些事情。
 
+## 缘起
 
-本知识库基于 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署，有一部分文章来源于个人的 **[语雀知识库](https://www.yuque.com/shenweiyan)**，是作者关于生物信息学、互联网 IT、运维开发、软件测评使用等相关文章汇总。
+程序员都有一个博客梦，对我来说，写写字也可以成为我调解压力的一个很好方式。
 
-<div id="rcorners">
-    <body>
-      <font color="#4351AF">
-        <p class="p1"></p>
-<script defer>
-    //格式：2020年04月12日 10:20:00 星期二
-    function format(newDate) {
-        var day = newDate.getDay();
-        var y = newDate.getFullYear();
-        var m =
-            newDate.getMonth() + 1 < 10
-                ? "0" + (newDate.getMonth() + 1)
-                : newDate.getMonth() + 1;
-        var d =
-            newDate.getDate() < 10 ? "0" + newDate.getDate() : newDate.getDate();
-        var h =
-            newDate.getHours() < 10 ? "0" + newDate.getHours() : newDate.getHours();
-        var min =
-            newDate.getMinutes() < 10
-                ? "0" + newDate.getMinutes()
-                : newDate.getMinutes();
-        var s =
-            newDate.getSeconds() < 10
-                ? "0" + newDate.getSeconds()
-                : newDate.getSeconds();
-        var dict = {
-            1: "一",
-            2: "二",
-            3: "三",
-            4: "四",
-            5: "五",
-            6: "六",
-            0: "天",
-        };
-        //var week=["日","一","二","三","四","五","六"]
-        return (
-            y +
-            "年" +
-            m +
-            "月" +
-            d +
-            "日" +
-            " " +
-            h +
-            ":" +
-            min +
-            ":" +
-            s +
-            " 星期" +
-            dict[day]
-        );
-    }
-    var timerId = setInterval(function () {
-        var newDate = new Date();
-        var p1 = document.querySelector(".p1");
-        if (p1) {
-            p1.textContent = format(newDate);
-        }
-    }, 1000);
-</script>
-      </font>
-    </body>
-  </div>
+在独立博客或者说独立站点前，一直有一种背靠大树好乘凉的心理把自己的文档建立的大平台的服务上，从开源中国、蚂蚁笔记、博客园、简书、CSDN、语雀上踩过不少坑后终于认识到数据可控和 DIY 的好处，于是有了独立博客站点的想法。
+
+静态博客站点一直是个人最情有独钟的选择，省去了服务器折腾续费运维的种种麻烦，可以更加专注于文字本身的写作。也曾经纠结过 Jekyll、Hexo、Hugo 的选型，但最终被 Hugo 极快的页面编译生成速度所折服，并深受[谢益辉](https://github.com/yihui)前期的 [ivy-hugo-theme](https://github.com/shenweiyan/ivy-hugo-theme) 博客风格影响，自己倒腾了一个 [ICS-Hugo-Theme](https://github.com/shenweiyan/ICS-Hugo-Theme) 用了好几年。
+
+## 语雀
+
+在独立博客站点前不得不把语雀单独拎出来说一下。
+
+从 2018 到 2023 年，语雀一直都是我重度使用的主力平台，没有之一。我也一度以为语雀会成为了未来 5-10 年的主力平台（由于[语雀天使](https://weiyan.cc/note/2021-10-14-yuque-vip/)的福利，我的语雀会员也延长到了 2037 年），[All in Yuque](https://www.yuque.com/shenweiyan/notebook/all-in-yuque) 也成为了我那一段时间的坚持。不幸的是，语雀在 2023 年发生了非常严重的[宕机事件](https://www.zhihu.com/question/627448953)，加上前一年沸沸扬扬的[收费事件](https://www.zhihu.com/question/562238887)，以及语雀固有的一些问题，对于语雀的信任开始动摇。
+
+直至 2023 年由于工作地点的变更，加上某些不可描述的原因语雀在办公网络无法直接访问，终于把继续使用语雀的最后一根稻草压垮，逐步开始拥抱 GitHub，并在这个全球最大的开源平台上深入摸索。
+
+## 当下
+
+正如个人在[语雀花园](https://www.yuque.com/shenweiyan)所说，2023年7月起个人大部分文章已经转移至 [GitHub](https://github.com/shenweiyan)，并同步至 [Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden/) (后期主要在 [Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions) 和 [知识花园](https://weiyan.cc/) 进行写作与更新)，语雀会保持不定期更新！
+
+现在的这个站点是基于 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署，并整合了个人 **[语雀知识库](https://www.yuque.com/shenweiyan)** 几个主要知识库文章后形成的独立站点。
+
+## 未来
+
+我希望 [WeiYan.CC](https://weiyan.cc/) 能成为我知识管理的最后一站，可能未来展现的形式或者选择用于部署的技术可能有所改变，但至少域名是不变的，通过这个域名你至少还能找到曾经我写下的那些字。
+
+不忘初心，方得始终，希望下一个十年，还能在这里遇到一个曾经的我，看到曾经的文字。
 
 ## 作者
 
