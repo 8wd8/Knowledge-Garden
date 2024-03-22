@@ -40,6 +40,9 @@ jobs:
       - name: Generate mkdocs posts
         run: python3 script/discussions2mkdocs.py -i docs/Discussions.txt -c nav.yml 
 
+      - name: Generate mkdocs special pages
+        run: python3 script/discussions4pages.py -i docs/Discussions.txt
+
       - name: Commit files
         run: |
           current="`TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S'`"
