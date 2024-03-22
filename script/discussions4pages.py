@@ -70,7 +70,10 @@ def __main__():
 
             if int(discussion_number) == 5:
                 #友情链接
-                flinks_md = Path(outputDir).joinpath('flinks/index.md')
+                flinks_md  = Path(outputDir).joinpath('flinks/index.md')
+                flinks_dir = flinks_md.parent
+                if not flinks_dir.exists():
+                    flinks_dir.mkdir(parents=True, exist_ok=True)
                 f_metadata = ( f'---\n'
                                f'title: 友情链接\n'
                                f'author: 沈维燕\n'
@@ -84,7 +87,10 @@ def __main__():
 
             elif int(discussion_number) == 16:
                 #留言
-                message_md = Path(outputDir).joinpath('message/index.md')
+                message_md  = Path(outputDir).joinpath('message/index.md')
+                message_dir = message_md.parent
+                if not message_dir.exists():
+                    message_dir.mkdir(parents=True, exist_ok=True)
                 m_metadata = ( f'---\n'
                                f'title: 给作者留言\n'
                                f'author: 沈维燕\n'
@@ -98,7 +104,10 @@ def __main__():
             
             elif int(discussion_number) == 4:
                 #关于
-                readme_md = Path(outputDir).joinpath('readme/index.md')
+                readme_md  = Path(outputDir).joinpath('readme/index.md')
+                readme_dir = readme_md.parent
+                if not readme_dir.exists():
+                    readme_dir.mkdir(parents=True, exist_ok=True)
                 r_metadata = ( f'---\n'
                                f'title: 作者与站点\n'
                                f'author: 沈维燕\n'
