@@ -7,7 +7,7 @@ nav:
     - 博客: blog
     - 语雀: yuque
     - 随笔: note
-    - 留言: message.md
+    - 留言: message
     - 关于: readme
-    - 友链: flinks.md
+    - 友链: flinks
     - RSS: https://shenweiyan.github.io/Knowledge-Garden/feed_rss_created.xml
