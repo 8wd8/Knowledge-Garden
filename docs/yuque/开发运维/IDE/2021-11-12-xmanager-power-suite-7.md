@@ -24,39 +24,39 @@ Xmanager 7 全称叫做 Xmanager Power Suite 7，是专门为网络管理人员�
 另外呢，在这个套件中还含的所有程序都共享一个通用的 SSH 安全模块，有了它就可以更好的方便彼此进行高效地互操作了，从而能够大大地提高了管理人员的效率，节省了对应的时间。
 
 本次小编为用户们带来的是 Xmanager power suite 7 破解版，附带了相对应的注册机可完美的帮助用户解锁软件的全部功能，以及使用天数限制，亲测有效，并且软件还支持简体中文语言系统，十分适合国人的使用，欢迎有兴趣的用户们免费下载体验。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp05aRJVZBSfMLkvKB1-yee6qDiq.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp05aRJVZBSfMLkvKB1-yee6qDiq.png)
 
 # 破解版安装教程
 
 1.  下载解压到，得到 Xmanager power suite 7 安装包和注册机；
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp_8lWfThHq0sSz_js-Fki8vb3O8.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp_8lWfThHq0sSz_js-Fki8vb3O8.png)
 
 2.  运行 XmanagerPowerSuite-7.0.0004r.exe 开始安装软件，点击接受许可条款；
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Ftq8acNsTMhtp0d_sglYMKfhT9vr.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Ftq8acNsTMhtp0d_sglYMKfhT9vr.png)
 
 3.  设置软件安装路径，默认即可；
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj_A9KB6m-HWXgAObwqH3jkjEMmd.png)
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj6aEY4DjjGbCNF7C6r7GUUBX7fl.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fj_A9KB6m-HWXgAObwqH3jkjEMmd.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fj6aEY4DjjGbCNF7C6r7GUUBX7fl.png)
 
 4.  等待软件安装完成，退出安装引导；
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv5MOAK9QaSNGSXgw-oz-jsIu1L3.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fv5MOAK9QaSNGSXgw-oz-jsIu1L3.png)
 
 5.  安装完成后，Xmanager Power Suite 7 包含了 Xhsell7、Xmanager7、Xftp7、Xlpd7 等工具；
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fs_CT8CVlQ58L3b8Rq6Wptwqz8Oo.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fs_CT8CVlQ58L3b8Rq6Wptwqz8Oo.png)
 
 6.  打开注册机 **netsarang_retail_v7.0.0004_patch_v1.1_by_crd_dfox.exe**，点击 **patch** 开始破解；
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuMjSc8VyyGjd78b9N4a_GTicIPy.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FuMjSc8VyyGjd78b9N4a_GTicIPy.png)
 
 7.  随意打开一个 Xshell7 进入，即可发现已经授权，至此 xmanager power suite 7 破解版安装完成。
 
-![激活状态下的 Xshell 7](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpPLbQkCgjxSgxq-ZXeKNOcIaClF.png "激活状态下的 Xshell 7")
-![未激活状态下的 Xshell 7](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsZsZDr6QAiaNJIXBO6XHlb2MfiD.jpeg "未激活状态下的 Xshell 7")
+![激活状态下的 Xshell 7](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpPLbQkCgjxSgxq-ZXeKNOcIaClF.png "激活状态下的 Xshell 7")
+![未激活状态下的 Xshell 7](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsZsZDr6QAiaNJIXBO6XHlb2MfiD.jpeg "未激活状态下的 Xshell 7")
 
 # 下载链接
 
@@ -75,4 +75,4 @@ Xmanager 7 全称叫做 Xmanager Power Suite 7，是专门为网络管理人员�
 - 可以看到默认的 **Buffer Size** 是 1024 行，把这个数字改大即可。
 - 记得勾选 **Push erased screen into Scroll Buffer**，这样超过一屏的 log 就会写入到 Scroll Buffer 里，否则只能显示一屏的 log。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkNdSAa0n9BvmgF_aZIjcApMzUGy.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkNdSAa0n9BvmgF_aZIjcApMzUGy.png)

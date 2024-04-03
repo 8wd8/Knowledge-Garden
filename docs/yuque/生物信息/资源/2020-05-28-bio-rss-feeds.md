@@ -10,7 +10,7 @@ updated: "2021-06-25 10:34:33"
 
 今天主要来给大家推荐一些常用的生物信息学的 RSS  订阅源，通过这些订阅源你可以及时掌握和了解到一些比较前沿的生物信息学研究资讯。
 
-![inoreader.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoxwAl1VepxM5qehdtUxP3hLOKZF.png)
+![inoreader.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoxwAl1VepxM5qehdtUxP3hLOKZF.png)
 
 ## 1. [Bio-IT World RSS Feed](https://www.feedspot.com/infiniterss.php?_src=feed_title&followfeedid=1765882&q=site:http%3A%2F%2Fwww.bio-itworld.com%2FRSS%2FBioIT_WorldNews_RSS.aspx)
 

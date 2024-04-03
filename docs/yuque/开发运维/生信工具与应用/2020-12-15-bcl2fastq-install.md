@@ -47,7 +47,7 @@ libxslt libxslt-devel libxml2 libxml2-devel bzip2 bzip2-devel bzip2-devel-zlib z
 ## 安装过程异常解决
 
 安装过程中出现的异常：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiQYnYkHfXBaGGN90hjP30zICxk_.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FiQYnYkHfXBaGGN90hjP30zICxk_.png)
 
 ### ImageMagick 的坑
 
@@ -102,13 +102,13 @@ yum install -y qt qt-devel qt5-qtbase qt5-qtbase-devel qt5-qtsvg qt5-qtsvg-devel
 
 ## 安装成功
 
-![install-bcl2fastq.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmC-y6Fl8u_twEHPo8Kkryiz9v4i.png)
+![install-bcl2fastq.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmC-y6Fl8u_twEHPo8Kkryiz9v4i.png)
 
 ## 后话
 
 RTA（Real Time Analysis），是指 Illumina 测序在边合成边测序化学过程中，仪器上的实时分析（RTA）软件对每个簇的每个循环进行碱基检出和存储。RTA 以单个读取碱基（base call，或称 BCL）文件的形式存储碱基检出数据。测序完成后，必须将 BCL 文件中的测定的碱基转换为序列数据。 此过程称为 BCL 到 FASTQ 的转换。
-![seq-1.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frx1EUlw3zRBY6aY-k_Q7HEJp4db.png)
-![seq-2.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr8gllX_Vof1EuVgnZtjUn-2u2Rg.png)
+![seq-1.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Frx1EUlw3zRBY6aY-k_Q7HEJp4db.png)
+![seq-2.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fr8gllX_Vof1EuVgnZtjUn-2u2Rg.png)
 
 > **The bcl2fastq2 Conversion Software v2.18 can be used to convert BCL files from MiniSeq, MiSeq, NextSeq, and HiSeq sequening systems. For conversion of data generated on Illumina sequencing systems using versions of RTA earlier than RTA 1.18.54, use bcl2fastq v1.8.4.**
 

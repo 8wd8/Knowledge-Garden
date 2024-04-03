@@ -322,7 +322,7 @@ from dateutil.relativedelta import *
 #### 8.1 如何计算两个日期之间的月数
 
 一种方法是计算天数，然后除以 30 得到月数。但它并不总是正确的，因为有些月份有 31 天。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrEdr7l2wr5CfFc3K9LEOAJzKn1y.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrEdr7l2wr5CfFc3K9LEOAJzKn1y.png)
 
 **它是怎么起作用的呢？**
 

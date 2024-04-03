@@ -7,11 +7,11 @@ updated: "2022-03-03 16:32:32"
 ---
 
 我是在逛 V2EX 的时候（[xshell 和 xftp 终于支持跨平台了 - V2EX](https://www.v2ex.com/t/837538)）发现的这个终端应用，出于好奇去安装使用了一下。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvSDVHBQg1aLY_eKvYk-r1iqZU6t.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvSDVHBQg1aLY_eKvYk-r1iqZU6t.png)
 
 PortX 官网：[https://portx.online/](https://portx.online/zh/)。官网比较简洁，连具体的一些使用文档都没发现，全靠自己摸索。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj97lR5WQ4uQ892FujRDaCkmHpu4.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fj97lR5WQ4uQ892FujRDaCkmHpu4.png)
 优点：
 
 - 颜值不错，而且是跨平台。

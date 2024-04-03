@@ -7,7 +7,7 @@ updated: "2023-07-07 10:55:47"
 ---
 
 调查统计机构 NetMarketShare 发布最新的 7 月份报告，在全球浏览器市场，谷歌浏览器以 61.64% 的市场占有率继续成为世界上排名第一的桌面浏览器，IE 以 12.06% 紧随其后，Firefox 则以 11.15% 排在第三位。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FldSo_YO8qieHJKyhjmIUw_YONJC.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FldSo_YO8qieHJKyhjmIUw_YONJC.png)
 
 作为一个有追求的生信人，秉着对科研执着严谨的态度，一款专业而强大的浏览器我们怎么能错过呢！今天我们把从卡饭论坛 Chrome 浏览器专区搜集的一些 Google Chrome 使用教程分享给大家，希望能对喜欢 Chrome 的童鞋有帮助。
 

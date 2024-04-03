@@ -60,7 +60,7 @@ PROMPT_COMMAND="history -a"
 ## 参数解析
 
 贴上一些 history 的参数解析。
-![linux-history.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsHkJsSu2sLuB8lqAkDbw2wP8IF2.png)
+![linux-history.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsHkJsSu2sLuB8lqAkDbw2wP8IF2.png)
 
 ```
 history [n]

@@ -83,8 +83,8 @@ dst: gitee/<这里改成自己的Gitee名字>
 - **CODING_USERNAME** 存放 **Coding 的账号**；
 - **CODING_PASSWORD** 存放 **Coding** **帐号的密码**；
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsW8HjkaxCtwI0YVC4DHrFPceXmD.png)
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrllDsG6dnVD9N553JIP4a1GVOZA.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsW8HjkaxCtwI0YVC4DHrFPceXmD.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrllDsG6dnVD9N553JIP4a1GVOZA.png)
 
 ### 创建 workflow
 
@@ -149,13 +149,13 @@ jobs:
 ### 执行同步
 
 最后，修改代码（如修改 README），提交，成功触发同步！
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnPI_f183sRTBRgB6Gh5bVbzJE7b.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FnPI_f183sRTBRgB6Gh5bVbzJE7b.png)
 
-![同步 workflows 执行成功！](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn7B-rFuN_RYsSuuraS0H7YpBx-f.png "同步 workflows 执行成功！")
+![同步 workflows 执行成功！](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fn7B-rFuN_RYsSuuraS0H7YpBx-f.png "同步 workflows 执行成功！")
 
-![GitHub 代码同步 Coding 成功！](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqGnfZCiqR_Jd1EiWghqmztpcfe2.png "GitHub 代码同步 Coding 成功！")
+![GitHub 代码同步 Coding 成功！](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqGnfZCiqR_Jd1EiWghqmztpcfe2.png "GitHub 代码同步 Coding 成功！")
 
-![GitHub 代码同步 Gitee 成功！](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlfUfgGFbwojp08rLox4EwsFVP4d.png "GitHub 代码同步 Gitee 成功！")
+![GitHub 代码同步 Gitee 成功！](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlfUfgGFbwojp08rLox4EwsFVP4d.png "GitHub 代码同步 Gitee 成功！")
 
 ## 总结
 

@@ -20,7 +20,7 @@ p <- p + theme_solarized(light=FALSE) + scale_colour_solarized('blue')
 ggsave("test0.png", units="in", dpi=300, width=4, height=4, device="png")
 ```
 
-![test0.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsVQvwY2GAZJJU8-Uc8wHbB001in.png)
+![test0.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsVQvwY2GAZJJU8-Uc8wHbB001in.png)
 
 ## 2. 第一次调整边界参数
 
@@ -33,7 +33,7 @@ p <- p + theme(plot.margin=unit(rep(1,4),'lines'))
 ggsave("test1.png", units="in", dpi=300, width=4, height=4, device="png")
 ```
 
-![test1.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlT7xm5tQQjc489eE0zd9BaCBR2v.png)
+![test1.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlT7xm5tQQjc489eE0zd9BaCBR2v.png)
 
 ## 3. 第二次调整边界参数
 
@@ -46,7 +46,7 @@ p <- p + theme(plot.margin=unit(rep(3,4),'lines'))
 ggsave("test2.png", units="in", dpi=300, width=4, height=4, device="png")
 ```
 
-![test3.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlHN-gS_YGQorvGsJYBcIPSteTs2.png)
+![test3.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlHN-gS_YGQorvGsJYBcIPSteTs2.png)
 
 比较上述 3 幅图片，可明显发现，随着边界参数值增大，绘图区与边界的距离不断增大，从而在图片上留出更多空白区域。
 

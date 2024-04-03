@@ -8,7 +8,7 @@ updated: "2021-07-07 15:08:20"
 
 参考：[更换系统盘（公共镜像）](https://help.aliyun.com/document_detail/50134.html?spm=a2c4g.11186623.2.8.6a6447a0NgnzZM#concept-n4k-x3j-ydb)
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqY9-nAGGTmZy7Mems-OBw2BpYAc.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqY9-nAGGTmZy7Mems-OBw2BpYAc.png)
 
 ## 操作步骤
 

@@ -19,7 +19,7 @@ Python 曾经是一种你可以在几天内学会的语言，但 "曾经是" 是
 > One of the biggest changes has been the addition of type annotations, which allow developers to say that a function returns `Dict[List[Set[FrozenSet[int]]], str]` (i.e., a dictionary that maps lists of sets of frozensets of integers onto strings). \[[RakAmnouykit2020](https://neverworkintheory.org/bib/#RakAmnouykit2020)] takes an empirical look at how programmers use these annotations, and turns up some surprising results. For one, the most common kind of type annotation is a user-defined type:
 
 最大的变化之一是添加了类型注释，它允许开发人员通过一个函数返回 `Dict[List[Set[FrozenSet[int]]], str]`（即，一个映射一组整数的不可变集合列表到字符串的字典）。\[[RakAmnouykit2020](https://neverworkintheory.org/bib/#RakAmnouykit2020)] 对程序员如何使用这些注释进行了实证研究，并得出了一些令人惊讶的结果。一方面，最常见的类型注释是用户定义的类型。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtZT3mwYmnkeFlO-MzJvRhFPgkLC.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtZT3mwYmnkeFlO-MzJvRhFPgkLC.png)
 
 > What's more interesting is that when the authors stripped annotations out of files and asked [PyType](https://google.github.io/pytype/) to infer them, it failed to do so in 77% of cases, which means that the user-written annotations were capturing information that automatic tools couldn't. On the other hand, [MyPy](http://mypy-lang.org/) found that only 15% of the 2,678 repositories examined were type-correct; this may be a result of MyPy being very conservative and producing false positives. More troubling are the disagreements between these different tools, but studies like these are exactly what we need to make those tools more consistent and more helpful.
 

@@ -32,7 +32,7 @@ useradd nginx -g nginx -s /sbin/nologin -M
 ### 2.2 下载解压
 
 Nginx 的下载地址在：<http://nginx.org/en/download.html>，我们推荐下载  Stable 的稳定版本。
-![nginx-download.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk-UCu4rvnkkZA3nRizwZ-CJiSfX.png)
+![nginx-download.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fk-UCu4rvnkkZA3nRizwZ-CJiSfX.png)
 
 ```bash
 $ wget http://nginx.org/download/nginx-1.18.0.tar.gz
@@ -169,12 +169,12 @@ $ ./sbin/nginx
 $ curl localhost
 ```
 
-![nginx-curl-localhost.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlzwvP17jTxavBAndazgmWoFGYQE.png)
+![nginx-curl-localhost.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlzwvP17jTxavBAndazgmWoFGYQE.png)
 
 若返回类似如上的结果，证明已成功启动。其实，上面返回的是目录`/Nginx/html/`下的`index.html`文件，可以使用`cat /Nginx/html/index.html`命令进行验证。
 
 若是有图形界面，在浏览器访问 [localhost](https://links.jianshu.com/go?to=localhost) 或者你本机的公网 ip，可以看到类似下图的页面：
-![welcome-to-nginx.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg8DlX9CsT8zQEpdzOBtLnS8lMaM.png)
+![welcome-to-nginx.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fg8DlX9CsT8zQEpdzOBtLnS8lMaM.png)
 
 ## 四、常用命令
 

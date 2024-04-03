@@ -8,7 +8,7 @@ updated: "2021-06-25 11:04:14"
 
 这里对 Redhat/CentOS/Fedora 之间以及与其他 Linux 发行版关系做一个基本的介绍。给新手选择一个 Linux 发行版提供指导和帮助。
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu2Zm1XYDoC03zWbT9yI_r1MEDm2.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fu2Zm1XYDoC03zWbT9yI_r1MEDm2.png)
 **Fedora**
 Fedora 是基于 Linux 的集最新自由开源软件于一体的操作系统。Fedora **始终允许任何人自由使用，修改和发布。**它由来自世界各地的人们在 Fedora 项目社区下共同合作而成。Fedora 项目对外开放，欢迎任何人加入。Fedora 项目就在您眼前，它**引领着自由、开源软件以及内容的前进。**  特点是常常引入创新性的技术，被视为"新技术的试验场"。版本升级很快（约 6 个月），每个版本的支持较短，约为 13 个月。Red Hat 公司为 Fedora Project 提供赞助。
 最新正式版本为 2013-12-17 发布的 Fedora 20，代号是 Heisenbug。

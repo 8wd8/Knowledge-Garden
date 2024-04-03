@@ -26,9 +26,9 @@ SCL 项目主页：[https://www.softwarecollections.org](https://www.softwarecol
 
 > Developer Toolset is designed for developers working on CentOS or Red Hat Enterprise Linux platform. It provides current versions of the GNU Compiler Collection, GNU Debugger, and other development, debugging, and performance monitoring tools.
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fqk1Hsa24eTzvUESvThxmNvHCnUJ.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fqk1Hsa24eTzvUESvThxmNvHCnUJ.png)
 当然，除了 devtoolset 这些专门用于编译开发的工具集，SCL 上还有其他的很多工具集，如 [Ruby](https://www.softwarecollections.org/en/scls/rhscl/rh-ruby26/)，[Redis](https://www.softwarecollections.org/en/scls/rhscl/rh-redis5/)，[nginx](https://www.softwarecollections.org/en/scls/rhscl/rh-nginx114/) 等等。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvAWwL60Wum2uXQtQxggO4CKtCeP.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvAWwL60Wum2uXQtQxggO4CKtCeP.png)
 
 # 2. 安装
 
@@ -44,7 +44,7 @@ CentOS 7 最晚在 2024 年 6 月 30 后停止更新维护，在此之前在 Cen
 yum install centos-release-scl centos-release-scl-rh
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fso4zYBja1F9aezOQHOOt8-k8BDd.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fso4zYBja1F9aezOQHOOt8-k8BDd.png)
 安装完成后，会默认在 **/etc/yum.repos.d** 下生成 2 个 repo 源文件：
 
 - **CentOS-SCLo-scl.repo**
@@ -171,9 +171,9 @@ Error: Cannot retrieve repository metadata (repomd.xml) for repository: centos-s
 ```
 
 主要原因可能在于：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn5oaKELIUKI21mN4tRN_P5bydtI.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fn5oaKELIUKI21mN4tRN_P5bydtI.png)
 由于 CentOS 6 已经停止了维护，但 CentOS 6 对应的 centos-release-scl repo 中 baseurl 指向的链接可能已经弃用失效（**deprecated**），尤其是 baseur 指向 <http://mirror.centos.org/centos/6/> 的链接。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhYYKt5E7Ez_bzqlhVBYUtPS8486.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhYYKt5E7Ez_bzqlhVBYUtPS8486.png)
 针对以上的情况，可以按照以下步骤，手动进行处理（本文章中使用的阿里云的 YUM 源）。
 
 > **提示：**
@@ -291,7 +291,7 @@ yum install scl-utils
 ```
 
 个人在 CentOS 6.5 中安装 devtoolset-4 就遇到 scl-utils 版本太低，要求 scl-utils >= 20120927-11 的报错。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj4OcOV-ueddVNr9vGGpxWGcDOA6.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fj4OcOV-ueddVNr9vGGpxWGcDOA6.png)
 解决方法如下：
 
 ```bash
@@ -299,7 +299,7 @@ yum install scl-utils
 yum install scl-utils --enablerepo=centos-scl
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fok5q0BGjSkmvxSFFcTuxaXBoVnI.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fok5q0BGjSkmvxSFFcTuxaXBoVnI.png)
 
 ## 安装 Devtoolset
 
@@ -312,7 +312,7 @@ yum install scl-utils --enablerepo=centos-scl
 - [devtoolset-6](https://access.redhat.com/documentation/en-us/red_hat_developer_toolset/6) 是 gcc 6.2/6.3
 - [devtoolset-7](https://access.redhat.com/documentation/en-us/red_hat_developer_toolset/7) 是 gcc 7.2/7.3
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqndSUnRCVy4b_UtbBOiUeFAeVM9.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqndSUnRCVy4b_UtbBOiUeFAeVM9.png)
 CentOS 7 的 centos-sclo-rh/centos-sclo 默认支持 devtoolset-7 及以上，如果想要使用 devtoolset-3 到 7 之间的版本，可以参考下面的做法：
 
 1.  创建一个 /etc/yum.repos.d/centos-scl.repo 文件，内容如下：
@@ -376,7 +376,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgsRX8bDdqMjLPQDL7U3YIIMZQV3.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FgsRX8bDdqMjLPQDL7U3YIIMZQV3.png)
 
 ## 卸载
 

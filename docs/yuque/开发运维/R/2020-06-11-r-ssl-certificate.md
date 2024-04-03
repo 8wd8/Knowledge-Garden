@@ -6,7 +6,7 @@ date: 2020-06-11
 updated: "2023-07-10 16:32:03"
 ---
 
-![ssl.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fud21xdJYwOyX5x2rMd29G6uNZYl.jpeg)
+![ssl.jpg](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fud21xdJYwOyX5x2rMd29G6uNZYl.jpeg)
 
 ## 一、关于 TCGAbiolinks
 
@@ -24,7 +24,7 @@ query <- GDCquery(project = "TARGET-OS",
                   workflow.type = "HTSeq - Counts")
 ```
 
-![gdc-server-down.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp1rdqfkUkqDET2HNBAeyAsaIFIp.png)
+![gdc-server-down.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp1rdqfkUkqDET2HNBAeyAsaIFIp.png)
 拿着这个 error 去谷歌，看到的结果都是教你用 devtools 或者 TCGAbiolink 官网提供的方法从 github 重装一遍这个包：
 
 ```r
@@ -32,13 +32,13 @@ devtools::install_github("BioinformaticsFMRP/TCGAbiolinks")
 BiocManager::install("BioinformaticsFMRP/TCGAbiolinks")
 ```
 
-![google-gdc-error.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FotaPM7dMID-C-ktkZKEwJ85WoYy.png)
+![google-gdc-error.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FotaPM7dMID-C-ktkZKEwJ85WoYy.png)
 然而这些方法都未能解决我的问题，于是乎有了下面的一些探索。
 
 ## 三、源码分析
 
 首先，我去 TCGAbiolink 中的源码看这个异常是在哪里导致的，在 R/internal.R 中发现：
-![get-gdc-info.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtJNUd5A5Wc5zmqnd1Jf913oyu6q.png)
+![get-gdc-info.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtJNUd5A5Wc5zmqnd1Jf913oyu6q.png)
 
 ```r
 > library(jsonlite)
@@ -51,7 +51,7 @@ Error in open.connection(con, "rb") :
 
 > The curl package provides bindings to the [libcurl](https://curl.haxx.se/libcurl/) C library for R. The package supports retrieving data in-memory, downloading to disk, or streaming using the [R “connection” interface](https://stat.ethz.ch/R-manual/R-devel/library/base/html/connections.html). Some knowledge of curl is recommended to use this package. For a more user-friendly HTTP client, have a look at the [httr](https://cran.r-project.org/package=httr/vignettes/quickstart.html) package which builds on curl with HTTP specific tools and logic.
 
-![curl-fail.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjYgbIsfonnHL2KbOs-3psDhzZtM.png)
+![curl-fail.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjYgbIsfonnHL2KbOs-3psDhzZtM.png)
 curl 去访问 https 的站点报错
 
 看了一下 curl 和 curl 命令都是支持 ssl 的：
@@ -87,7 +87,7 @@ $ curl-config --ca
 http://curl.haxx.se/docs/sslcerts.html
 ```
 
-![ca.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoBx529dQMZYOUY3aEizYeedqHKI.png)
+![ca.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoBx529dQMZYOUY3aEizYeedqHKI.png)
 下载并绑定证书：
 
 ```bash

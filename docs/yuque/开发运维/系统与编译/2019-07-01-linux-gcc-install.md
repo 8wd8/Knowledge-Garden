@@ -81,7 +81,7 @@ $ ln -s lsl isl-0.14
 在此脚本里可以看到依赖包的版本号依次是 mpc-0.8.1，mpfr-2.4.2，gmp-4.3.2；另外我们下载 isl-0.14。
 
 在 GCC-7.3.0 中，所有的依赖包都可以通过 **`./contrib/download_prerequisites`** 一键完成下载。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm6vKB8MMGgGNgdn0wvGcoiSL5EF.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fm6vKB8MMGgGNgdn0wvGcoiSL5EF.png)
 
 ## 3. 编译安装
 

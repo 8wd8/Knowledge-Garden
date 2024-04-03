@@ -21,7 +21,7 @@ iPython Notebook 是一个基于浏览器的 python 数据分析工具，使用�
 
 > 这有点类似做应用题。而这是传统的 IDE (e.g. PyCharm) 没有办法做到的。假如全部都写脚本+输出，那么你 **每张图可能都要保存下来，然后再单独点进去看**，很麻烦。而 Notebook 做这个要更方便，结果直接产生在 Cell 下面。
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqtURTj4UvTyPmTTkMAS-SLDNTJc.jpeg)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqtURTj4UvTyPmTTkMAS-SLDNTJc.jpeg)
 
 反言之，如果你不需要这种频繁的计算-画图的话，那么 notebook 可能还真没什么大不了.
 
@@ -29,11 +29,11 @@ iPython Notebook 是一个基于浏览器的 python 数据分析工具，使用�
 
 和第一点对应，Notebook 的是计算+文档的混合体，而本身又是 web-based，因此非常好 hack, 比如我的 notebook 因为非常长，所以就加了个侧边栏目录：
 
-> ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flsdnj1w2kd21uCCBSTtsQwXPWcK.jpeg)
+> ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Flsdnj1w2kd21uCCBSTtsQwXPWcK.jpeg)
 
 再比如，在分析电影数据的时候，我觉得用 card 来展示更方便一点，所以可以这样显示数据：
 
-> ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk6z9MvQflcnWFXW8s4dNm76zU3m.jpeg)
+> ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fk6z9MvQflcnWFXW8s4dNm76zU3m.jpeg)
 
 # 安装
 
@@ -88,15 +88,15 @@ Known labextensions:
 ```
 
 这时候，jupyter 会自动生成一个用于登陆 jupyter Notebook 的 token，我们在浏览器打开这个 token 链接即可进入登陆后的 Jupyter Notebook：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjLdbfzpjjE-jrDy-xh-eEh1d74k.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjLdbfzpjjE-jrDy-xh-eEh1d74k.png)
 
 # 使用
 
 在 Jupyter Notebook web 页面，我们可以点击 "New" → "Python2" 创建 python2 笔记。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjLdbfzpjjE-jrDy-xh-eEh1d74k.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjLdbfzpjjE-jrDy-xh-eEh1d74k.png)
 
 我们可以在创建好的笔记中使用 markdown 语法进行编辑，也可以交互执行 python 代码。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FguaClDlBgOp0-om0nxmKehCWUJk.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FguaClDlBgOp0-om0nxmKehCWUJk.png)
 
 想要退出笔记，点击右上角 "Logout" 可退出；通过输入上面的 token 可重新登陆。或者我们可以通过 `jupyter notebook password` 命令设置密码进行登陆（如果忘记密码也可以通过该命令进行重置）。默认 jupyter notebook passwd 保存在 \~/.jupyter/jupyter_notebook_config.json。
 

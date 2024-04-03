@@ -90,7 +90,7 @@ labels: ['语雀', '1.3.25-静态网站']
 
 下载链接：[https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases)，在这里我们下载 [hugo_0.89.4_Windows-64bit.zip](https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Windows-64bit.zip)。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkm43Bi3mi71qf16MaRdUJKjBWWx.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fkm43Bi3mi71qf16MaRdUJKjBWWx.png)
 
 ### 第二，解压
 
@@ -98,7 +98,7 @@ labels: ['语雀', '1.3.25-静态网站']
 
 解压完成后，在该目录会多出 `hugo.exe`、`LICENSE`、`README.md` 三个文件：
 
-![unzip hugo_0.89.4_Windows-64bit](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqBKVo5JoTzgOY1QsAczSYRmgv0k.png)
+![unzip hugo_0.89.4_Windows-64bit](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqBKVo5JoTzgOY1QsAczSYRmgv0k.png)
 
 ### 第三，检测 hugo 是否安装成功
 
@@ -111,40 +111,40 @@ labels: ['语雀', '1.3.25-静态网站']
 
 1. 在 Windows 中使用 **Win+R** 打开“**运行**”对话框，在对话框中输入“**cmd**”，点击确认。
 
-   ![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmIW4HA2hWImM7IrtsdCtWwWqcdi.png)
+   ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmIW4HA2hWImM7IrtsdCtWwWqcdi.png)
 
 2. 在 Windows 运行窗口，先切换盘符到 **F** 盘，然后进入 hugo 的解压缩目录（**F:\WebStack**），具体操作如下。
 
    - 在光标处输入**F:**，然后按回车；
 
-     ![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsp03gEdM-de5enU1ivNJInfUtHv.png)
+     ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fsp03gEdM-de5enU1ivNJInfUtHv.png)
 
    - 我们就将盘符切换为 F 盘；
 
-     ![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnwKctq7i0hX_iWQgymrJge8BeSX.png)
+     ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FnwKctq7i0hX_iWQgymrJge8BeSX.png)
 
    - 接着输入 **cd WebStack**，回车，就进入了 **F:\WebStack** 目录；使用 **ls** 可以看到当前目录下的文件。
 
-     ![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqzY-gqYycHnCN43FlNkfWHYOvmc.png)
+     ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqzY-gqYycHnCN43FlNkfWHYOvmc.png)
 
    - 最后，输入 **hugo.exe version**，回车，如图所示，则代表安装成功。
 
-     ![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvT_Dc50_SaiA8SmT6Y62ENOhE0A.png)
+     ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvT_Dc50_SaiA8SmT6Y62ENOhE0A.png)
 
 ### 第四，下载 WebStack-Hugo
 
 浏览器打开 [https://github.com/shenweiyan/WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo)，点击 Code 下的 **"Download ZIP"**，把 **WebStack-hugo-main.zip** 下载到刚才 hugo 解压缩的目录（**F:\WebStack**）。
 
-![2022.09.26-11.47.12.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgBB_DzuGlOUFs1Nt4iseGF6yhN0.png)
+![2022.09.26-11.47.12.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FgBB_DzuGlOUFs1Nt4iseGF6yhN0.png)
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fqyg5wJJpttIrC7LVXg9bnCf6Wgv.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fqyg5wJJpttIrC7LVXg9bnCf6Wgv.png)
 
 ### 第五，解压和重命名
 
 把 **WebStack-Hugo-main.zip** 解压到当前目录。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpWA394pXnu7TxElb-XP4StAHp3T.png)
-![webstack.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtlBhjh4sOB7bHiz0eZU6zNVtfmX.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpWA394pXnu7TxElb-XP4StAHp3T.png)
+![webstack.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtlBhjh4sOB7bHiz0eZU6zNVtfmX.png)
 
 ### 第六，安装主题
 
@@ -152,15 +152,15 @@ labels: ['语雀', '1.3.25-静态网站']
 
 然后，创建一个 **themes** 的文件夹；
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fo3KJHf8MPeoCWDadu_eJcLWa6Er.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fo3KJHf8MPeoCWDadu_eJcLWa6Er.png)
 
 接着，把解压后的 WebStack-Hugo 整个文件夹移动到 themes 中。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvzuDBR38TFwp7O094GSMOm1BPGs.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvzuDBR38TFwp7O094GSMOm1BPGs.png)
 
 第四，将 themes/WebStack-Hugo/exampleSite 目录下的所有文件复制到 hugo 站点根目录（即 F:\WebStack）。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpgjrR-xAq7fT8DRgT2iMyqGrPyZ.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpgjrR-xAq7fT8DRgT2iMyqGrPyZ.png)
 
 ### 第七，启动预览
 
@@ -170,11 +170,11 @@ labels: ['语雀', '1.3.25-静态网站']
 hugo.exe server
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjE4vkK_X_EIF9Via0K8rbuhHBFr.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjE4vkK_X_EIF9Via0K8rbuhHBFr.png)
 
 最后，在浏览器中打开 [**http://127.0.0.1:1313/**](http://127.0.0.1:1313/)，即可看到生成的站点。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FisfN1Ak2zU2xiyjXkjE-qkyHri3.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FisfN1Ak2zU2xiyjXkjE-qkyHri3.png)
 
 ## Linux 下安装部署
 
@@ -267,7 +267,7 @@ hugo -D 或者 hugo --minify
 
 🔗 [https://fontawesome.com/v5/search?o=r&m=free](https://fontawesome.com/v5/search?o=r&m=free)
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoHd7w72AykJGSrbzttHgGi4VqlY.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoHd7w72AykJGSrbzttHgGi4VqlY.png)
 
 ### 调整头部搜索栏
 
@@ -276,8 +276,8 @@ hugo -D 或者 hugo --minify
 1. 直接修改 **layouts/partials/content_search.html**，调整对应部分的位置。
 2. 调整默认的搜索（即点击"常用/搜索/工具 ...." 时下指箭头的指向），把对应的 id 添加到对应的 label 里面。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoPMASsgrgPyFSsJy8HvPrgq8ELN.png)
-![2022.09.21-10.48.55.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp0fJmbfJVdg_hVP1ULdh_MmjCcX.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoPMASsgrgPyFSsJy8HvPrgq8ELN.png)
+![2022.09.21-10.48.55.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp0fJmbfJVdg_hVP1ULdh_MmjCcX.png)
 
 ### 自定义头部导航
 
@@ -337,7 +337,7 @@ https://api.iowen.cn/favicon/www.iowen.cn.png?refresh=true
 
 感谢 [WebStack](https://github.com/WebStackPage/WebStackPage.github.io) 的作者 [Viggo](https://twitter.com/decohack) 的肯定和[推广宣传](https://twitter.com/decohack/status/1569188705478516738)。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuJQKMnwajVc-di8fIJO6Mu9w6a7.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FuJQKMnwajVc-di8fIJO6Mu9w6a7.png)
 
 感谢以下所有朋友对本主题所做出的贡献。
 **[@yanbeiyinhanghang](https://github.com/yinhanghang)**
@@ -346,7 +346,7 @@ https://api.iowen.cn/favicon/www.iowen.cn.png?refresh=true
 ## 赞赏
 
 如果你觉得本项目对你有所帮助，欢迎请作者喝杯热咖啡 >.<
-![donate-wecaht-aliapy.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh453wf6DbZoquA_G6wBMWS3uYGC.jpeg)
+![donate-wecaht-aliapy.jpg](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fh453wf6DbZoquA_G6wBMWS3uYGC.jpeg)
 
 ## 反馈与交流
 

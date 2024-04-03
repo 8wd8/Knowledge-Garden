@@ -61,12 +61,12 @@ ImageMagick 的使用网络上教程非常非常多，这里就不一一再重�
 
 1.  从 ImageMagick 7 起，magick 命令替换了原来的 convert 命令，但 convert 命令依然可以使用。
 
-![imagemagick-7.0.10-23.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjVqFwYsqGwrbxwL3YgEK2z9C5wu.png)
+![imagemagick-7.0.10-23.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjVqFwYsqGwrbxwL3YgEK2z9C5wu.png)
 
 2.  ImageMagick 6.7.8-9 版本的 convert 命令存在一些 bug，例如本人在执行 PDF→TIFF 的转换过程经常会出现一些莫名其妙的报错；升级成 7.0.10-23 的 magick 后，恢复正常！
 3.  ImageMagick 中的 convert/magick 一个命令就包含了超过 200 多个子命令（参数），功能非常强悍，也让人眼花缭乱。
 4.  convert/magick 不同的参数排列顺序，有时候会得到截然不同的处理性能和效果，这是让人非常头疼的一个问题，有时候你都不知道这个参数到底是放在输入文件前，还是放在输入文件后！
-5.  正常来说，一个图片当总像素大小保持不变，提高 dpi 会导致图片的物理尺寸变小。在 ImageMagick 中以 dpi 为变量，如何保证总像素大小不变前提下，自动转换图片格式，目前没找到更好的解决方法。![像素-dpi.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkQpB1Ot1G8fM73zjHqNXB5uCUet.png)
+5.  正常来说，一个图片当总像素大小保持不变，提高 dpi 会导致图片的物理尺寸变小。在 ImageMagick 中以 dpi 为变量，如何保证总像素大小不变前提下，自动转换图片格式，目前没找到更好的解决方法。![像素-dpi.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkQpB1Ot1G8fM73zjHqNXB5uCUet.png)
 
 ## 3. 题外话
 

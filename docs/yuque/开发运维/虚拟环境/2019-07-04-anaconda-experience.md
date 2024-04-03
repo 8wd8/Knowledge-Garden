@@ -233,11 +233,11 @@ install_github("jokergoo/ComplexHeatmap")
 ## 7. 什么时候使用 Anaconda
 
 对于 Anaconda(conda) 软件安装以及依赖解决的原理，我对这个黑盒子表示一头雾水。真实的情况是，如果在一个环境中安装了几百个软件(包)，再去新装软件，这时候 Anaconda 常常会卡在 Collecting package metadata 和  Solving environment 过程中，甚至一个晚上都没法解决环境的依赖。     
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmexuMleqUEMIkuex7HpLeY1BQKX.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmexuMleqUEMIkuex7HpLeY1BQKX.png)
 
 conda 官方说他们在 conda-4.7 中花了很多的精力去提升了 conda 的速度（参考官方文章：《[How We Made Conda Faster in 4.7](https://www.anaconda.com/how-we-made-conda-faster-4-7/)》），但从 4.6 升级到 4.7 过程很容易导致环境崩溃，修复起来极其麻烦（反正我折腾了一个晚上都没能把我的 base 给恢复回来，吐血的经历）！     
-![image3-768x475.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fvr3y3t7EZRS6wKUTUAyOo6oKytn.png)     
-![i2-768x475.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvW1SipMySNdbltM6G2W6xcWBcD2.png)
+![image3-768x475.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fvr3y3t7EZRS6wKUTUAyOo6oKytn.png)     
+![i2-768x475.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvW1SipMySNdbltM6G2W6xcWBcD2.png)
 
 对于新手而言，Anaconda 的确是非常简单易用，如果对于多用户的服务器端，或者是提供公共使用的软件库是否需要采用 Anaconda，个人觉得的确需要慎重考虑一下，最起码需要考虑：
 

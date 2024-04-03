@@ -7,10 +7,10 @@ updated: "2022-10-28 11:02:00"
 ---
 
 前不久在 [@王诗翔(shixiangwang)](https://github.com/shixiangwang) GitHub 的讨论组上看到了类似的这个讨论 ["将重点资源整理成一个生信导航网页"](https://github.com/ShixiangWang/self-study/issues/65)，加上 [@郑宝童(btzheng)](https://github.com/btzheng) 曾经也做了一个[生信极客部落网址导航](https://zhengbaotong.gitee.io/biogeekgps/)（旨在搭建一个生信专属网址导航），好像也有一段时间没更新过了。
-![@王诗翔 Bioinformatics Guide Site](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuIFnzVdyzCMNdx5Zqhg9YasujHi.png "@王诗翔 Bioinformatics Guide Site")
-![@郑宝童 生信极客部落网址导航](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnACpSdO1EtsMWUKT86C7GYqFpTa.png "@郑宝童 生信极客部落网址导航")
+![@王诗翔 Bioinformatics Guide Site](https://shub.weiyan.tech/yuque/elog-cookbook-img/FuIFnzVdyzCMNdx5Zqhg9YasujHi.png "@王诗翔 Bioinformatics Guide Site")
+![@郑宝童 生信极客部落网址导航](https://shub.weiyan.tech/yuque/elog-cookbook-img/FnACpSdO1EtsMWUKT86C7GYqFpTa.png "@郑宝童 生信极客部落网址导航")
 于是有了 **生信重点资源+WebStack-Hugo=生信导航** 的初步的想法。[WebStackPage](https://github.com/WebStackPage) 本身是一个由 [viggo](https://www.viggoz.com/) 开发的一个网址导航开源项目，有许多的魔改版本，而 [WebStack-Hugo](https://github.com/shenweiyan/webstack-hugo) 则是本人基于 Hugo 进行修改调整的其中一个主题。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmrOp_BZ5HFjluUmdtF4WtbcWlK8.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmrOp_BZ5HFjluUmdtF4WtbcWlK8.png)
 有了现成的主题，又有了前人的一些资源整理（轮子都已经有了，就缺组装），于是在 GitHub 上开始了 [BioWebStack](https://github.com/bioitee/BioWebStack) 这一个将重点资源整理成一个生信导航网页的仓库（目前已初步把站点搭建了起来，资源内容还在更新中）。
 
 :::success
@@ -20,9 +20,9 @@ updated: "2022-10-28 11:02:00"
 
 :::
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiA1dbQM1-wPqbJOxVR6pg_0EQTU.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FiA1dbQM1-wPqbJOxVR6pg_0EQTU.png)
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoP6x13jwOrNri7NiKhwP-1rO1O3.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoP6x13jwOrNri7NiKhwP-1rO1O3.png)
 
 **关于 BioWebStack 的一些特点和说明：**
 

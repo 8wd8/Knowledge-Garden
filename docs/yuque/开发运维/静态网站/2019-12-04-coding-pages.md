@@ -10,7 +10,7 @@ updated: "2021-08-14 10:48:58"
 
 ## 1. 创建项目，进入代码浏览
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhBe5Ia8ejpeJbvurVlTS9RwRr3Z.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhBe5Ia8ejpeJbvurVlTS9RwRr3Z.png)
 
 ## 2. 在服务器中生成网站，并推送
 
@@ -56,32 +56,32 @@ $ git push origin master        # 完成 public 目录的所有文件推送
 ## 3. 开始构建静态网站
 
 在导航栏的 “**构建与部署**” 中选择 “**静态网站**”，点击“**直接发布静态网站**”。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fmbcgo5jdhd6hO6YtMg8xVNRdKbj.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fmbcgo5jdhd6hO6YtMg8xVNRdKbj.png)
 
 填写网站名称，然后 "**保存**"。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fql3_vK9lCUgKCjHRTGg_rxlwdTF.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fql3_vK9lCUgKCjHRTGg_rxlwdTF.png)
 
 "**保存**" 后，在部署页面点击 "**立即部署**"。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fn4Nm-LecNF7IcOuDuh97O4_vDqm.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fn4Nm-LecNF7IcOuDuh97O4_vDqm.png)
 
 部署成功后，通过访问地址可以打开静态的网站。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiMkVKhkOCY1U01IjFaiuVphF4Zu.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FiMkVKhkOCY1U01IjFaiuVphF4Zu.png)
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqkGIf-oBOD5W9ThS55qh93Rw3K4.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqkGIf-oBOD5W9ThS55qh93Rw3K4.png)
 
 ## 4. 绑定域名
 
 在项目导航栏 "构建与部署" → "静态网站" 页面，点击右上角的 "设置" 按钮。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fq21jVp5Snhf7l5OCvLMEe6kOwDU.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fq21jVp5Snhf7l5OCvLMEe6kOwDU.png)
 
 在 "设置" 页面，填写需要绑定的域名，并选择强制 https 访问。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlnPUJV1HANAUcFbfNOR1A2QT8_R.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlnPUJV1HANAUcFbfNOR1A2QT8_R.png)
 
 在域名解析中添加一条 CNAME 记录。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtnyQ-iVV1l-Z77xyeyJVUXWkl86.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtnyQ-iVV1l-Z77xyeyJVUXWkl86.png)
 
 域名解析 CNAME 添加后，等待几分钟，直至证书状态为“正常”。如果证书状态失败，检查你的 CNAME 记录，并再尝试多重新申请几次。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv8SS-gwX48ZRRf8f8w-JKdkDP1v.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fv8SS-gwX48ZRRf8f8w-JKdkDP1v.png)
 
 最后，通过域名访问，一切正常。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlgcTNCIMD5y4GUw7sOT_C8Ea9Dt.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlgcTNCIMD5y4GUw7sOT_C8Ea9Dt.png)

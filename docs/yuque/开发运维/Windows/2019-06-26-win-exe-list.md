@@ -19,7 +19,7 @@ updated: "2023-05-15 17:06:42"
 用于 Windows/Office 激活，KMSpico 会以服务的形式运行在系统中，它会时刻保持激活状态，保持永久激活。
 
 压缩包解压后，双击 **KMSpico_setup.exe** 进行安装，安装完成即表示 Windows/Office 已经成功激活！
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrBeS_h9hl6hVdMcovoe8w-9lPWQ.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrBeS_h9hl6hVdMcovoe8w-9lPWQ.png)
 
 # 浏览器
 

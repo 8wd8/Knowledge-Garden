@@ -6,7 +6,7 @@ date: 2019-05-29
 updated: "2021-06-30 09:48:15"
 ---
 
-![writing.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-notebook-img/FoaYr5hpOeGxPm7InT96rl4yeWF0.png)
+![writing.png](https://shub.weiyan.tech/yuque/elog-notebook-img/FoaYr5hpOeGxPm7InT96rl4yeWF0.png)
 
 搜集的一些简洁、大气优秀的博客客户端、模板，以及相关服务。
 

@@ -42,7 +42,7 @@ plot(v)
 
 早在 18 年 6 月的时候，我公众号上写过一篇关于 `UpSetR`  的学习笔记《[UpSetR：多数据集绘图可视化处理利器](https://mp.weixin.qq.com/s/SOOcQxQrj23GqYaO-lTCig)》，提到过一下 `venneuler` ，当时也没怎么留意，直到前不久有个读者在使用 `UpSetR`  的时候给我了一个截图。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpnAmeZVOJhekLD4ZVlh4Wb1-6tR.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpnAmeZVOJhekLD4ZVlh4Wb1-6tR.png)
 
 - 其实，这个截图中的 `fromExpression`  拼写错了，如果 `UpSetR`  安装好，又把 `fromExpression`  拼对，就可以解决导入集合交集向量数据的问题。
 - `rJava` 、 `venneuler`  包的安装并没有想象中的那么好安装，尤其是 `venneuler` 。
@@ -194,4 +194,4 @@ Done.
 2.  [UpSetR - Basic ](https://cran.r-project.org/web/packages/UpSetR/vignettes/basic.usage.html)
 3.  [UpSetR：多数据集绘图可视化处理利器](https://mp.weixin.qq.com/s/SOOcQxQrj23GqYaO-lTCig)
 
-![comment.gif](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlMO8jnjfaW7QalT7nyPkxQ4d37w.gif)
+![comment.gif](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlMO8jnjfaW7QalT7nyPkxQ4d37w.gif)

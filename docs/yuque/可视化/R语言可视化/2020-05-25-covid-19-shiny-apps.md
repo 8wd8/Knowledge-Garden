@@ -80,10 +80,10 @@ server <- function(input, output) {
 ## 运行应用程序
 
 这个示例应用程序在线可以通过下面的地址预览：<https://bioitee.shinyapps.io/covid-19-shiny-apps/>
-![covid-19-shiny-apps-online.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhKfJ06meFO_ow8c6RBhSJ84jrez.png)
+![covid-19-shiny-apps-online.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhKfJ06meFO_ow8c6RBhSJ84jrez.png)
 
 在本地 RStudio 运行后的截图如下：
-![covid-19-shiny-apps.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhDPLiq12n1xxdsIEk8TupAYoUPe.png)
+![covid-19-shiny-apps.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhDPLiq12n1xxdsIEk8TupAYoUPe.png)
 
 ## 简单总结
 

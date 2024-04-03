@@ -27,10 +27,10 @@ hi Comment ctermfg = blue  //更改vi中注释内容字体颜色，可修改为�
 ```
 
 修改前：
-![ubuntu_vim_1.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj1HL8vk95C0qdSKZn7zuAe1qjl6.png)
+![ubuntu_vim_1.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fj1HL8vk95C0qdSKZn7zuAe1qjl6.png)
 
 修改后：
-![ubuntu_vim_2.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvVDq6tpUUD6gjENp_Rxv9SAZv_P.png)
+![ubuntu_vim_2.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvVDq6tpUUD6gjENp_Rxv9SAZv_P.png)
 
 ## 撤消 vim 中的更改
 

@@ -53,7 +53,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_251-b08)
 Java HotSpot(TM) 64-Bit Server VM (build 25.251-b08, mixed mode)
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjwONGM3a7lpYeCuLlFZL3vVyn7b.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjwONGM3a7lpYeCuLlFZL3vVyn7b.png)
 
 ### 1.2 PostgreSQL
 
@@ -93,10 +93,10 @@ $ wget https://product-downloads.atlassian.com/software/confluence/downloads/atl
 ### 2.2 安装
 
 给 atlassian-confluence-7.2.1-x64.bin 添加可执行权限后进行安装。
-![mkdir-atlassian-dir.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj5c6ROzhtwANVRThs3shInSS1la.png)
+![mkdir-atlassian-dir.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fj5c6ROzhtwANVRThs3shInSS1la.png)
 
 然后，执行 ./atlassian-confluence-7.2.1-x64.bin 安装，注意安装完成后先不要急着启动！！！
-![atlassian-confluence-install.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpkP20zD5fnEtYmakle0O1eyUj5W.jpeg)
+![atlassian-confluence-install.jpg](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpkP20zD5fnEtYmakle0O1eyUj5W.jpeg)
 
 ### 2.3 破解
 
@@ -122,24 +122,24 @@ tar zvxf atlassian-agent-v1.2.3.tar.gz -C /data/apps/atlassian
 CATALINA_OPTS="-javaagent:/data/apps/atlassian/atlassian-agent-v1.2.3/atlassian-agent.jar ${JAVA_OPTS}"
 ```
 
-![cinfluence-setenv.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhczP92LnsJhUTq9TRHjeAYkKYmd.png)
+![cinfluence-setenv.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhczP92LnsJhUTq9TRHjeAYkKYmd.png)
 
 3.  准备就绪后，我们就要开启 Configuration 了，找到启动脚本并启动 start-confluence.sh，启动完成后我们可以通过浏览器进行访问。
 
-![start_confluence.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrtpIUcif5V1K8gXtSpHXUgGcox3.png)
+![start_confluence.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrtpIUcif5V1K8gXtSpHXUgGcox3.png)
 
 ### 2.4 配置
 
 在浏览器中打开 **<http://localhost:8090>** 或者 \*\*http\://<你服务器的公网 IP>:8090 \*\*，打开 Confluence 的配置页面。
 
 选择中文，产品安装。
-![01-产品安装.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoM2tysNankGbPYt-UXdDofwoWzM.png)
+![01-产品安装.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoM2tysNankGbPYt-UXdDofwoWzM.png)
 
 获取应用。
-![02-获取应用.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnD_VyxXgzhtQyPO4r1hN5zeWF9k.png)
+![02-获取应用.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FnD_VyxXgzhtQyPO4r1hN5zeWF9k.png)
 
 获得服务器 ID 及授权码提示。
-![03-授权码.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvuroXP_Z_y0p-g1ogMihijfFIvO.png)
+![03-授权码.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvuroXP_Z_y0p-g1ogMihijfFIvO.png)
 
 ### **2.5 授权码**
 
@@ -167,17 +167,17 @@ java -jar atlassian-agent.jar -p question -m ishenweiyan@foxmail.com -n shenweiy
 ```
 
 将生成的授权码粘贴，下一步。
-![04-授权码.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fknwnui-bJqhlI1_p0_AIJrKQ0dn.png)
+![04-授权码.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fknwnui-bJqhlI1_p0_AIJrKQ0dn.png)
 
 设置数据库，生产环境建议独立的数据。
-![05-设置数据库.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtFvK_Y2DnZYLOrwqRIKNbu2ZqWN.png)
+![05-设置数据库.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtFvK_Y2DnZYLOrwqRIKNbu2ZqWN.png)
 
 选择 PostgreSQL 数据库，填写数据库信息，测试数据库连通性。
-![06-设置-测试数据库.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpHJirbRRQJ8of-Ux0FMQhnFJJv-.png)
+![06-设置-测试数据库.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpHJirbRRQJ8of-Ux0FMQhnFJJv-.png)
 
 过一会你就可以看到这个页面了，安装成功了。
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrcZbpu_e3ocfXaYWWrhWM3Hdkbb.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrcZbpu_e3ocfXaYWWrhWM3Hdkbb.png)
 
 ## 3. 使用与管理
 
@@ -186,40 +186,40 @@ java -jar atlassian-agent.jar -p question -m ishenweiyan@foxmail.com -n shenweiy
 #### 1. 选择站点
 
 如果是全新的站点，那就选择空白站点，如果只是升级或者备份恢复，那就选择从备份还原站点。这里我们选择"示范站点"。
-![07-示范站点.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj8hcocs17OiXr15ezpiQF3iz7k6.png)
+![07-示范站点.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fj8hcocs17OiXr15ezpiQF3iz7k6.png)
 
 #### 2. 配置用户管理
 
 配置用户，如果有 Jira 环境的话 ，可以集成 Jira 的用户管理，也可以使用 confluence 自己的用户，那就选择“在 confluence 中管理用户和组”。
-![08-配置用户管理.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrchRIEbAooYjOV1ivdssHCvwWZc.png)
-![09-设置系统管理员.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fmo9iwK9BBYjXpybhYjfDk55QE-n.png)
-![10-设置成功.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjBV9AbjCPH11B78hK4rzpvADQd4.png)
+![08-配置用户管理.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrchRIEbAooYjOV1ivdssHCvwWZc.png)
+![09-设置系统管理员.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fmo9iwK9BBYjXpybhYjfDk55QE-n.png)
+![10-设置成功.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjBV9AbjCPH11B78hK4rzpvADQd4.png)
 
 #### 3. 创建空间
 
-![创建空间.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl0U4NJLPFs63Q6_ChC2pIelmMiJ.png)
+![创建空间.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fl0U4NJLPFs63Q6_ChC2pIelmMiJ.png)
 空间创建完成后，就会自动进入已经创建好的空间，接下来，enjoy！
-![进入空间.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmIY9RLRaNgWYpGJZERUSDKxdz6c.png)
+![进入空间.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmIY9RLRaNgWYpGJZERUSDKxdz6c.png)
 
 ### 3.2 站点管理
 
 点击右上角，可以进行站点管理，常用的如 **"一般配置"**：
-![一般配置.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fq8BjZIlWxpR-t3yBveaLSnaNRu6.png)
+![一般配置.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fq8BjZIlWxpR-t3yBveaLSnaNRu6.png)
 点击一般配置，授权管理，可以查看到授权情况：
-![授权信息.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FixsCBHkKdY68UCDhcgK_LLMAqGB.png)
+![授权信息.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FixsCBHkKdY68UCDhcgK_LLMAqGB.png)
 当然本文介绍的方式仅用于学习体验，有能力的还是建议支持正版！！！
 
 ## 4. 备份恢复
 
 Confluence 本身会有每日的备份管理，就是定时备份任务（“一般配置”→“每日备份管理”）。
-![每日备份管理.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqaJjQUmnAajkkEC2rwEepNKoloa.png)
+![每日备份管理.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqaJjQUmnAajkkEC2rwEepNKoloa.png)
 由于一些其他原因需要新建一个 Confluence 环境，然后还原的，可以点下面的\*\*“备份与还原”\*\*。
 
 - 如果您的导出文件很小(小于 25 MB)，请直接在浏览器“备份与还原”页面直接进行上传。
 - 而较大的文件需要从主目录导入。需要提前将备份的文件放到 **/path/to/application-data/confluence/restore** 下。
 
 具体备份与还原，可以参考 **“一般配置”** → \*\*“备份与还原” \*\*页面的详细介绍。
-![备份与还原-Confluence.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk-UdPQjXEgm7xLDdE-6Qh9rRb53.png)
+![备份与还原-Confluence.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fk-UdPQjXEgm7xLDdE-6Qh9rRb53.png)
 
 ## 5. 参考资料
 

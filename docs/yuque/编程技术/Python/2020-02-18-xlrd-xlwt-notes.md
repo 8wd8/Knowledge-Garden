@@ -43,7 +43,7 @@ xlrd                           2.0.1    pyhd8ed1ab_3  conda-forge
 ```
 
 上面的问题将导致您在使用 pandas 调用 xlsx excel 上的 read_excel 函数时收到一个错误，即不再支持 xlsx filetype。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg6HK5M3KsF5KE0SMNROvn1g9PHc.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fg6HK5M3KsF5KE0SMNROvn1g9PHc.png)
 为了解决这个问题，你可以：
 
 1.  安装 [openpyxl](https://openpyxl.readthedocs.io/en/stable/) 模块：这是另一个仍然支持 xlsx 格式的 excel 处理包。

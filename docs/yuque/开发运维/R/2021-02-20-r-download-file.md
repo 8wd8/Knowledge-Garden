@@ -57,7 +57,7 @@ options(old_opt)
 getOption("download.file.method")
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpMVz5NAdqvK7DdK8zMMIkKZIbhd.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpMVz5NAdqvK7DdK8zMMIkKZIbhd.png)
 
 - 使用 curl 方法时，通常需要加上 -L 参数。这时候 R 会自动调用系统的 curl 命令在后台执行对应包的下载。
 
@@ -66,4 +66,4 @@ getOption("download.file.method")
 options(download.file.method = "curl", extra = "-L")
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuApwtzylYe69akxEZhm0C1phg5h.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FuApwtzylYe69akxEZhm0C1phg5h.png)

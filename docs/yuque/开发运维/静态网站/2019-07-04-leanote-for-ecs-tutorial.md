@@ -226,7 +226,7 @@ Mongodb 安装完成后，我们通常通过 `mongod --dbpath /usr/local/mongo/d
 $ mongod --fork --dbpath=/data/LeaNote/mongodb/data --logpath=/data/LeaNote/mongodb/logs/mongodb.log --logappend
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoimxB-mRKTlFQHliLg3z3reWVyL.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoimxB-mRKTlFQHliLg3z3reWVyL.png)
 
 ### 7.3 Mongodb 设置开机启动
 

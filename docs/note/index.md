@@ -27,6 +27,6 @@ updated: "2024-03-18"
 这部分的内容来源自托管在语雀的 "[随笔与乱弹](https://www.yuque.com/shenweiyan/notebook)" 知识库，由于语雀不再更新，因此同步到本站点。
 
 <p align="center">
-    <img src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/mkdocs/yq-notebook-cover.jpg" alt='Welcome To My Notebook'><br>
+    <img src="https://shub.weiyan.tech/mkdocs/yq-notebook-cover.jpg" alt='Welcome To My Notebook'><br>
     <em></em>
 </p>

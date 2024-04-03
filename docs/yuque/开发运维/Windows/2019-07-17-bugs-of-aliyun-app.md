@@ -17,7 +17,7 @@ Android 只会在每次启动的时候扫描系统相册，并将扫描到的信
 为了验证问题，我在手机的文件管理中找到了这张图片所在的目录，进去重新刷新该文件夹，然后打开系统相册，果然就可以看到这张下载的图片了。
 
 后来，向阿里云反馈也的确证实了该问题：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnfRQ6bjCk6drR_BULl4yyzFX0fK.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FnfRQ6bjCk6drR_BULl4yyzFX0fK.png)
 
 虽然本人对 Android 开发完全不懂， 但也想了解一下，在 Android 手机中下载图片怎么样才能实时刷新系统相册呢？
 

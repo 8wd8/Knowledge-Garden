@@ -11,7 +11,7 @@ updated: "2021-06-25 10:53:12"
 ## 1. fancybox 简单介绍
 
 关于 fancybox，其官网的介绍是：JavaScript lightbox library for presenting various types of media. Responsive, touch-enabled and customizable. 翻译过来就是，Fancybox 是一个 JavaScript 库，用于以优雅的方式呈现图像，视频和任何 HTML 内容。它具有您期望的所有功能——触摸启用，响应和完全可定制。我们来看一下 fancybox 官网提供的 demo 效果。
-![fancybox-demo-86.gif](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/lm6qacxnx4eYVOB5vgQoa3nl-ImJ.gif)
+![fancybox-demo-86.gif](https://shub.weiyan.tech/yuque/elog-cookbook-img/lm6qacxnx4eYVOB5vgQoa3nl-ImJ.gif)
 
 ## 2. fancybox 的安装使用
 
@@ -60,7 +60,7 @@ fancybox 是基于  GPLv3 进行源码开放的，它的源吗托管在 github 
 
 Gulp 在官网的 title 是：用自动化构建工具增强你的工作流程，即一款基于流的前端自动化构建工具\*\*。\*\*作为前端的菜鸟，第一次听到这样的描述，是不是跟小编一样满头雾水？那么，下面摘录  segmentfault 前端分享专栏中《[gulp 前端构建工具白话讲解，也包含自己使用的一些心得体](https://segmentfault.com/a/1190000007137199)》的一些回答，让大家直观了解一下。
 
-> ![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlGCZhuxcY6aND9Z8-2iFe2EsYDq.png)
+> ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlGCZhuxcY6aND9Z8-2iFe2EsYDq.png)
 >
 > 大家现在看到的这个图片是我使用 gulp 的一个基本的项目结构，而这边的 src 文件就是我们的源文件，dist 是通过 gulp 编译过后的文件（稍后会详细说明每一个文件的作用）。
 >
@@ -137,7 +137,7 @@ $ ./node_modules/gulp/bin/gulp.js
 [11:14:34] Finished 'default' after 23 μs
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsXa7tQEFSYvduI-37gPCncD900S.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsXa7tQEFSYvduI-37gPCncD900S.png)
 
 最后，把编译后的 `dist/jquery.fancybox.min.js`  文件应用到博客或者其他网站页面，完成最后设置。
 

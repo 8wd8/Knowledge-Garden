@@ -9,7 +9,7 @@ updated: "2021-07-19 11:20:16"
 前两天拿到了云筏科技提供的一台 4 核 16G 内存，1TB 硬盘，300M 带宽的服务器（看了一下 IP，应该是位于加拿大的服务器）！虽然是国外的服务器，但从国内 ssh 上去后的各种操作还是非常流畅的，而且前期白菜般的体验价格和飞一般的带宽的确也很有吸引力，像我用来做 Galaxy 和一些 web 开发测试完全是没问题。另外该服务器还自带了一个开箱即用的 RStudio-Server，对生信入门者来说也算是比较友好了，最起码节省了不少部署设置的功夫。
 
 作为体验性服务器，这里简单介绍一下拿到服务器后的一些基本设置。
-![cr-rstudio.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl7tAv0j29yaClshZLBsurEvzHKR.png)
+![cr-rstudio.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fl7tAv0j29yaClshZLBsurEvzHKR.png)
 
 ## 1. 查看配置信息
 
@@ -63,7 +63,7 @@ cat /proc/cpuinfo| grep "processor"| wc -l
 [root@r0sasd1bQi ~]# htop
 ```
 
-![htop.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqKKMNZ9J75Qb40n5iChJmY3cSIH.png)
+![htop.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqKKMNZ9J75Qb40n5iChJmY3cSIH.png)
 
 ## 2. 账号与用户名管理
 
@@ -150,7 +150,7 @@ passwd: all authentication tokens updated successfully.
 > 版权声明：本文为 CSDN 博主「点亮梦想那束光」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 > 原文链接：<https://blog.csdn.net/solaraceboy/java/article/details/78563537>
 
-![hostname.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fmcf0bFiRfvZF4V66GmwxJvEj8GG.png)
+![hostname.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fmcf0bFiRfvZF4V66GmwxJvEj8GG.png)
 
 ### 个性化命令行提示符
 
@@ -163,7 +163,7 @@ PS1='\033[35;1m\u@\h \[\e[m\]\t \[\033[36;1m\]$(pwd) \n$ \[\e[m\]'
 cd /data; clear;
 ```
 
-![bashrc.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvpFQwosMTxV8Ulwu342gWjOXSkg.png)
+![bashrc.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvpFQwosMTxV8Ulwu342gWjOXSkg.png)
 
 有关于 PS1 的格式介绍如下：
 

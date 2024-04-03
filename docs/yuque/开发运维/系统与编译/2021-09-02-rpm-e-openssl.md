@@ -11,7 +11,7 @@ updated: "2021-10-29 11:39:51"
 首先要说的是 **sparseMatrixStats**（<https://github.com/const-ae/sparseMatrixStats>），虽然这个包比较坑，但作者起码在 GitHub 上给出了说明和解决方法。
 
 最坑的应该是一个叫 **rhdf5filters**（<https://github.com/grimbough/rhdf5filters>）的 R 包，费劲了九牛二虎之力都搞不定，尤其是在 GCC-4.8.5 编译器下有人说 "assume it is just obsolete compiler"，让我感觉到我的 CentOS-6.5 +gcc-4.8.5 想要安装好它基本是没戏了！
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoOXwmZROQd1XwDFz-4mtZ1pi1pd.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoOXwmZROQd1XwDFz-4mtZ1pi1pd.png)
 
 几经折腾，虽然最终在 R-3.4 中倒腾成功了，但是对于 R>=3.5 总是耿耿于怀想再尝试一下（不见棺材不落泪 😭😭😭），结合到前几天看到的 **devtoolset**，于是想着去折腾一下。
 
@@ -21,12 +21,12 @@ updated: "2021-10-29 11:39:51"
 \*\*\*\* Found 1 pre-existing rpmdb problem(s), 'yum check' output follows:\*\*
 **openssl-1.0.1e-57.el6.x86_64 is a duplicate with openssl-1.0.1e-15.el6.x86_64**
 :::
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fnp6xcyM-ONQ59j7zXvNHfjROnQF.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fnp6xcyM-ONQ59j7zXvNHfjROnQF.png)
 初生牛犊不怕虎（其实当时应该先谷歌一下能不能卸载 😳😳😳），也没想太多于是就把重复的 openssl-1.0.1e-57.el6.x86_64 卸载了！！！
 :::warning
 $ **rpm -e openssl-1.0.1e-57.el6.x86_64**
 :::
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkiSscAxEaz0nSb3OSipjfFB3PVH.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkiSscAxEaz0nSb3OSipjfFB3PVH.png)
 接下来，惊魂的酸爽时刻来了：
 
 1.  **yum** 不能用了，开始提示 libssl.so.10 不存在！
@@ -172,7 +172,7 @@ make: *** [install_docs] Error 1
 ```
 
 其实，**make 这一步已经在当前目录（注意是当前执行编译的目录）生成我们想要的 libssl.so.1.0.0 和 libcrypto.so.1.0.0 了**！！！
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj77r67kKv8Saz7Y-KkWlJjoJPXH.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fj77r67kKv8Saz7Y-KkWlJjoJPXH.png)
 第五，把这两个文件 **ln -s** 到 **/usr/lib64**，神奇的发现 yum 居然恢复正常了，虽然 SSH 还是不能登录。
 
 ```shell
@@ -180,10 +180,10 @@ make: *** [install_docs] Error 1
 [root@log01 lib64]# ln -s /home/bioadmin/src/openssl-1.0.1e/libcrypto.so.1.0.0 /usr/lib64/libcrypto.so.10
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fls9aK8rtEOM2EMkiuKRWgcRN_aj.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fls9aK8rtEOM2EMkiuKRWgcRN_aj.png)
 
 最后，尝试着使用 **yum** 把 **openssl** 重新安装一下。这一次发现，一切都恢复正常了！
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlR7XtilMiDQqHBm5laTX7qrvGj9.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlR7XtilMiDQqHBm5laTX7qrvGj9.png)
 
 **参考资料：**
 

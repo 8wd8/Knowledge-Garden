@@ -49,7 +49,7 @@ Linux 下的库有两种：**静态库**和**动态库**（共享库）。
 # 环境变量文件加载顺序
 
 正常登录配置文件顺序加载过程，所谓正常登录指用户通过输入用户名和密码登录的状态。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FptKcws_nVYWLZzaExTtEwHh2ErM.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FptKcws_nVYWLZzaExTtEwHh2ErM.png)
 在 CentOS 7，我们测试一下：
 
 ```bash
@@ -77,11 +77,11 @@ echo "/etc/profile goes start"
 ```
 
 重新登录终端，可以看到各个环境变量文件的启动顺序：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjfxnRc511xnemv-cNNPqrgYnswQ.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjfxnRc511xnemv-cNNPqrgYnswQ.png)
 
 当我们不正常启动（su 命令切换用户），环境变量文件加载顺序如下：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrboYfll_7NrzHqTK7q0NHc1Ul0Q.png)
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr52DR5Y6x87q6dltzXuIzQQf09-.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrboYfll_7NrzHqTK7q0NHc1Ul0Q.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fr52DR5Y6x87q6dltzXuIzQQf09-.png)
 
 # 常用环境变量
 

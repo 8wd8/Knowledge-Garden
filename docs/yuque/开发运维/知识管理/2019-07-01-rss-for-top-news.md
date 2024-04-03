@@ -45,48 +45,48 @@ Google reader 是 RSS 订阅服务的鼻祖，但该业务在 2013 年被 Google
 ### 1. Inoreader 注册
 
 登陆 Inoreader 中文版官网，注册，现在可选注册有 facebook，tweeiter，或者其他邮箱。读者可自行选择在上面注册，注册成功后即可登陆网址。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp7oA1iRTarIuLCHfpUD9r4ZkMzg.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp7oA1iRTarIuLCHfpUD9r4ZkMzg.png)
 
 ### 2. Inoreader 登陆
 
 注册成功后即可登陆网址，显示首页。这里界面如下。如果是英文界面想要切换成中文：点击右上角齿轮图标 → Preferences → Interface → Language：简体中文 → 右下角点击 "Save"。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuuzwZmZUZ05xVEij427Hjz0L8qv.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FuuzwZmZUZ05xVEij427Hjz0L8qv.png)
 
 ### 3. Inoreader 添加订阅
 
 1.  常用订阅
 
 可以通过点击 "<https://www.inoreader.com/folder/8648252>" 中的 "订阅" 把网友分享的 "我的必读订阅源" 添加到自己的 Inoreader（订阅后的源可以自定义增删）：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FojYPZewaCzWERChr2qtJ7GLDoJx.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FojYPZewaCzWERChr2qtJ7GLDoJx.png)
 
 比如我们输入 "PLOS ONE" 关键词就可以看到该杂志的一系列订阅源，点击即可完成订阅。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fmi8KUPu6Ce55eaSkEgRIr_2Pe5M.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fmi8KUPu6Ce55eaSkEgRIr_2Pe5M.png)
 
 这是一种比较详细的订阅方式，我们需要去各大数据库选择自己需要的，比如 pubmed，你打开之后，输入你想要的关键词，在搜索框下方有一个 "create RSS" 直接点击：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgGVlLvVLWNm9_DvUMkmJ2EkHo-R.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FgGVlLvVLWNm9_DvUMkmJ2EkHo-R.png)
 
 Inoreader 支持知乎专栏的 URL 搜索，比如我们要把知乎的 "R 语言中文社区" 专栏添加到 Inoreader，只需要把该专栏的 URL 粘贴到 Inoreader 搜索区，在找到的源中点击订阅即可。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoTZAKYBkQBf1l_VuIGgNt3z8VYZ.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoTZAKYBkQBf1l_VuIGgNt3z8VYZ.png)
 
 简书默认是没有提供 RSS 输出的。因此我们想要添加简书专题、文集或者作者的订阅，需要借助简书 RSS 生成器，这里推荐一个神器：JianshuRSS（链接：<http://jianshu.milkythinking.com/）。>
 
 首先，我们把简书的 "生物信息" 专题链接 "<https://www.jianshu.com/c/2e21055ceb0e>" 粘贴到 JianshuRSS：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj513Pf-Nt9OAqFQpe42Rshft9Ed.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fj513Pf-Nt9OAqFQpe42Rshft9Ed.png)
 
 关于 Inoreader 的 RSS 源就写到这里了。对于普通大众而言，RSS 的上手门槛高确实有点高，需要自己找链接，也缺少互动，但是在知识爆炸的今天却很实用。
 
 ### 4. Inoreader 使用设置
 
 当我们完成订阅后，许多订阅源你可以对它进行整理，在 Inoreader 中右键即可实现。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Ft4Mf4V_RXsLc3qOw3-wqyAeLeCp.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Ft4Mf4V_RXsLc3qOw3-wqyAeLeCp.png)
 
 为了提高阅读效率，我们也可以选择切换视图。就是右上角那个很像眼睛的图标，选择杂志视图，即可如下。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlZ14yPuIw4d1JN5m74FwacGLq63.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlZ14yPuIw4d1JN5m74FwacGLq63.png)
 
 当然 Inoreader 在左边下角提供其他的服务，如 Inoreader 下方还有统计数据，统计你一天看了多少，，快捷键大全，新手指导，联系客服，调整左栏项目等等。有兴趣的童鞋可以自行去体验一下。
 
 最后，提供几张 Inoreader 在安卓手机上使用的截图：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjzyUDFZ6rxhOEgbgCzNq791m26g.jpeg)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjzyUDFZ6rxhOEgbgCzNq791m26g.jpeg)
 
 # 四、参考资料
 

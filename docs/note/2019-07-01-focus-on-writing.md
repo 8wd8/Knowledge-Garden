@@ -8,7 +8,7 @@ updated: "2023-03-20 11:14:54"
 
 写博客、记录文字是一个好的习惯，相信很多人的初心都是很美好的。但是能真正坚持下来的，或许没有多少。
 
-![blog2.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-notebook-img/FjFei9AbrugbaF_b3MEnmlL7PvK4.png)
+![blog2.png](https://shub.weiyan.tech/yuque/elog-notebook-img/FjFei9AbrugbaF_b3MEnmlL7PvK4.png)
 
 记得最早接触博客和云笔记，还是在大学刚毕业后，真正意义上开始使用编程语言学习项目分析的那段时间。作为一个菜鸟，在接受团队技术分享、在培训过程中接触到了各种各样的知识，出于知识梳理、快速查找原始需求，开始接触使用有道云笔记和印象笔记。但是让人失望的是，那时候的有道云和印象笔记都不支持代码插入，而且 UI  界面很 low，这对一个经常与代码打交道的人来说体验时非常糟糕的。
 

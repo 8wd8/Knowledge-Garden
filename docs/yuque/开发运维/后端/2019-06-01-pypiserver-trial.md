@@ -61,7 +61,7 @@ PyPI (Python Package Index，<https://pypi.org/>) 是 Python 官方的第三方�
     EOF
 
 这里需要提到的是，有些是公司内部的项目，不方便放到外网上去，这个时候我们就要搭建自己的内网 PyPI 源服务器，需要安全并且拥有同样的舒适体验。关于 PyPI 私有源的实现，Python 官方的 [PyPiImplementations](http://wiki.python.org/moin/PyPiImplementations) 说明中列出了几个比较成熟的实现方案：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqG14MrzGCYLVk63aeJ1f_5Rhy7s.png)##
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqG14MrzGCYLVk63aeJ1f_5Rhy7s.png)##
 
 这里选择 pypiserver，除了 Galaxy 的原因外，最重要的是因为它最小而且使用简单。
 
@@ -116,7 +116,7 @@ PyPI (Python Package Index，<https://pypi.org/>) 是 Python 官方的第三方�
     # 从指定的本地镜像安装包
     pip install -i http://localhost:8080/simple/ mako
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjyycQ6LC4MbZHyK7OhH1iH-FLiS.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjyycQ6LC4MbZHyK7OhH1iH-FLiS.png)
 
 pypiserver 客户端推荐的个人配置：
 

@@ -10,7 +10,7 @@ updated: "2023-04-26 15:07:23"
 
 前两天在自己的 Jupyter 服务器上想要把 notebook(.ipynb) 导出为 pdf 时发现 xelatex 没有安装：
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp9hxWhI_H98Nn23qhXB_PF-t6FC.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp9hxWhI_H98Nn23qhXB_PF-t6FC.png)
 500 : Internal Server Error 如下：
 ```bash
 nbconvert failed: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
@@ -297,7 +297,7 @@ $ tlmgr install pkgname
 \end{document}
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrniQGthPg4PVIqBj2AHm_GWJUk_.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrniQGthPg4PVIqBj2AHm_GWJUk_.png)
 
 
 ## 七、参考资料

@@ -7,7 +7,7 @@ updated: "2021-06-30 09:36:57"
 ---
 
 周一的时候，有同事反馈说，HPC 的项目报告路径正在不断产生 \*.exe 和 \*.pif 文件，怀疑是不是被病毒感染！
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FruWFOZWN1SO32k60dIGJ0k2RW4C.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FruWFOZWN1SO32k60dIGJ0k2RW4C.png)
 收到信息，第一时间进去目录，的确发现该目录每个几秒钟就自动生成一个 \*.exe 和 \*.pif 二进制文件。
 
 于是：
@@ -23,7 +23,7 @@ updated: "2021-06-30 09:36:57"
 
 接下来，我们一个个去查看当天用于上传下载目标目录的移动硬盘的文件，终于发现一个名字为 autorun.inf 的可疑文件，同时也发现了这个程序里面的 tpkv.exe 程序：
 
-![autorun-inf.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkg9mQR4tnY1isIy18-Katshmgry.png)
+![autorun-inf.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fkg9mQR4tnY1isIy18-Katshmgry.png)
 
 针对 autorun.inf，谷歌了一下，发现：
 

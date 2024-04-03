@@ -133,7 +133,7 @@ Singularity 如果不适用 SetUID，那它通过普通用户安装运行是要�
 > 
 > 🔗 来源：<https://docs.sylabs.io/guides/3.8/admin-guide/user_namespace.html>
 
-![701e36aec39a4a3be99fe11548aa4da.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkpKd2AaoQ5kl1HM67TWhEeOrzoq.jpeg)
+![701e36aec39a4a3be99fe11548aa4da.jpg](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkpKd2AaoQ5kl1HM67TWhEeOrzoq.jpeg)
 
 > **📢 知识点 - User namespace**
 > 
@@ -172,7 +172,7 @@ FATAL:   While performing build: packer failed to pack: root filesystem extracti
 ```
 
 使用`yum install squashfs-tools`安装了`unsquashfs`并添加到 $PATH 中问题依然没法解决！！！
-![16f4cadef5c03cdafaae5847f3e0672.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkbnpUiB0x8v8X1EhUpD3Xm7dznd.png)
+![16f4cadef5c03cdafaae5847f3e0672.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkbnpUiB0x8v8X1EhUpD3Xm7dznd.png)
 
 ### 源码编译
 
@@ -202,4 +202,4 @@ $ make -C ./builddir install
 #### 使用测试
 
 初步测试 singularity build 也能正常使用了。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg7yJ8XqLya8z_7rI38Te4cVl3YG.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fg7yJ8XqLya8z_7rI38Te4cVl3YG.png)

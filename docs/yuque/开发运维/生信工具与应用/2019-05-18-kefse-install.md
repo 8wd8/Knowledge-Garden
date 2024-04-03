@@ -40,7 +40,7 @@ AttributeError: Unknown property axis_bgcolor
 
 出现报错主要原因是 matplotlib==2.2.0 起把部分功能函数移除了，我们需要回退 matplotlib 版本。
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsFXTJemjeJR4BJp87MySIjsQ4JN.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsFXTJemjeJR4BJp87MySIjsQ4JN.png)
 
     $ python
     Python 2.7.15 |Anaconda custom (64-bit)| (default, May  1 2018, 23:32:55)
@@ -67,6 +67,6 @@ $ pip install matplotlib==1.5  #注意不要用conda, 以免发生环境conflict
 
     $ plot_res.py hmp_aerobiosis_small.res hmp_aerobiosis_small.png
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqsG3Z4pUugvj6p3BDyw1vPL3G8T.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqsG3Z4pUugvj6p3BDyw1vPL3G8T.png)
 
 问题解决！

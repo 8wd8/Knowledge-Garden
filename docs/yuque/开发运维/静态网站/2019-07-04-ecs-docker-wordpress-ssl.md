@@ -124,7 +124,7 @@ WordPress 是一个非常著名的 PHP 编写的博客平台，发展到目前�
 ## 5.4 添加域名解析
 
 登入阿里域名解析：<https://netcn.console.aliyun.com/core/domain/list，点击相应域名的> "解析" 链接，根据提示添加域名的 A 记录，解析到你的服务器 ip 下。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm-MQeQpFEqp0LeZEAXEySUs16i_.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fm-MQeQpFEqp0LeZEAXEySUs16i_.png)
 
 ## 5.5 安装 wordpress
 
@@ -135,12 +135,12 @@ WordPress 是一个非常著名的 PHP 编写的博客平台，发展到目前�
 ## 6.1 单域名免费证书申请
 
 登入阿里域名解析：<https://netcn.console.aliyun.com/core/domain/list，点击相应域名的> "SSL 证书" 链接，设置单域名免费证书。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuBDrUkhJAGUHmJMSmoAv9A30FG3.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FuBDrUkhJAGUHmJMSmoAv9A30FG3.png)
 
 ## 6.2 SSL 证书下载
 
 单域名免费证书提交申请后，一般十分钟就会审批下来。这时候，我们登陆 "[CA 证书服务（数据安全）](https://yundun.console.aliyun.com/?spm=5176.2020520163.aliyun_sidebar.24.4eb62b7auFTPPK&p=cas#/cas/home)"，在 "我的订单" 中找到已经签发的域名证书，点击 "下载" 链接，通过 "下载证书 for Nginx" 下载证书。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkqqJGGi5jsGXc4BDQ9LN0NcOoth.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkqqJGGi5jsGXc4BDQ9LN0NcOoth.png)
 
 ## 6.3 SSL 证书安装
 
@@ -218,7 +218,7 @@ WordPress 是一个非常著名的 PHP 编写的博客平台，发展到目前�
 登录后台安装此插件。
 
 或者登陆 wordpress 后台，在"设置"→ "常规" 中设置 "WordPress 地址（URL）" 和 "站点地址（URL）"为 https 链接地址。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlaMAwW6wsKGgbgxOVbDyv8MafLl.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlaMAwW6wsKGgbgxOVbDyv8MafLl.png)
 
 至此，真正意义上解决 wordpress 全站开启 https 的 ssl 证书问题。
 

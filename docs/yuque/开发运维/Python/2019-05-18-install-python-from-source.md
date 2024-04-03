@@ -385,7 +385,7 @@ LibreSSL 2.6.4 and earlier do not provide the necessary APIs, https://github.com
 
 - `make` 过程如果出现 `ModuleNotFoundError: No module named '_ctypes'` 或者 `INFO: Could not locate ffi libs and/or headers` 参考：<https://groups.google.com/forum/#!topic/comp.lang.python/npv-wzmytzo>
 
-!![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmK7bCeEeGjfbl1UVdvHyw3Jg8Zj.png)
+!![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmK7bCeEeGjfbl1UVdvHyw3Jg8Zj.png)
 
 - 如果指定 `--with-openssl=DIR` 依然无法解决 ssl 模块的问题，可以参考修改 Modules/Setup.dist 文件（默认这块是注释的，放开注释即可。这块功能是开启 SSL 模块，不然会出现安装完毕后，提示找不到 ssl 模块的错误）再执行 configure，修改内容如下：
 
@@ -457,7 +457,7 @@ cp libbz2.so.1.0.6 /usr/local/software/bzip2-1.0.6/lib/
 - bzip2 的官网  <http://www.bzip.org/>  已经把 bzip2 的源码下载链接放到了  SourceForge，网络上一些从  <http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz>  下载的做法已经失效。
 - [SourceForge](https://sourceforge.net/projects/bzip2/files/) 上 bzip2 的最新版本还是 1.0.6（Last modified 2018-11-3），更高级版本的 bzip2 我也不知道是否存在，也不知道能不能用。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvgxGWlVJSxOCvgXFo9BPOa3ODm5.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvgxGWlVJSxOCvgXFo9BPOa3ODm5.png)
 
 **编译安装 Python-3.6.9：**
 

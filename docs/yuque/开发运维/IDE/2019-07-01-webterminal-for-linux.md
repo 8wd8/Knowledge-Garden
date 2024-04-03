@@ -42,9 +42,9 @@ $ wssh --address='0.0.0.0' --port=8000
 ```
 
 这时候，在浏览器打开 <http://ip:8000，输入登陆信息，登陆> web 终端：
-![webt.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsqW5kM2kU_rElrYV0WCyo0EFp9h.png)
+![webt.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsqW5kM2kU_rElrYV0WCyo0EFp9h.png)
 
-![webt-2.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlO0DMXBgSzrdAddMrEebbNUrw-p.png)
+![webt-2.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlO0DMXBgSzrdAddMrEebbNUrw-p.png)
 
 # 3. 参数
 

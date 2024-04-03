@@ -6,7 +6,7 @@ date: 2019-07-01
 updated: "2021-06-25 10:42:16"
 ---
 
-!![How-To-Install-Perl.jpeg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpxbOJPB_b-KaVp9LYgc4uRgF1a0.jpeg)
+!![How-To-Install-Perl.jpeg](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpxbOJPB_b-KaVp9LYgc4uRgF1a0.jpeg)
 Perl 是一种功能丰富的计算机程序语言，运行在超过 100 种计算机平台上，适用广泛，从大型机到便携设备，从快速原型创建到大规模可扩展开发。在生物信息分析领域，Perl 主要是做数据预处理、文本处理和格式转换、对算法效率要求不高的分析软件开发，系统管理和 pipeline 搭建等工作。这里对 Linux（主要是 CentOS）、windows 下 Perl 的安装做一个备忘。
 
 # 一、CentOS 7 下安装 Perl
@@ -149,27 +149,27 @@ windows 下的 Perl 安装推荐使用 ActivePerl（<https://www.activestate.com
 ## 2.2 安装与设置
 
 ActivePerl-5.26.3.2603-MSWin32-x64-a95bce075.exe 安装包下载完后，我们直接点击进行安装。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FltQ3ily8fUf7jsc8lkAaa1S6j2C.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FltQ3ily8fUf7jsc8lkAaa1S6j2C.png)
 
 选择 "Custom" 自定义安装：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjxzUF9spJfd0_xw1Gj1ebX64IC6.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjxzUF9spJfd0_xw1Gj1ebX64IC6.png)
 
 自定义安装路径：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlguUA_zw4HQ8RezvB8nGElAjhdt.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlguUA_zw4HQ8RezvB8nGElAjhdt.png)
 
 把 Perl 添加到系统环境变量：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlrvxARXJt3KCsxePwpEpKe6ZEJM.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlrvxARXJt3KCsxePwpEpKe6ZEJM.png)
 
 Perl 安装完成后，我们在 DOC 命令行输入 perl -V，可以看到详细的相关信息：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtVmx_MsNHaXijdtfSGVjZM3irE3.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtVmx_MsNHaXijdtfSGVjZM3irE3.png)
 
 如果我们在安装过程中没有勾选把 Perl 添加到系统环境变量，DOC 中直接执行 perl -V 会出现 **"'perl' is not recognized as an internal or external command"** 提示，这时候我们需要手动把 perl 添加到 Windows 的系统环境变量中就可以了。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FozuAmdNUImdIzTJhZmE2SIVFA6o.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FozuAmdNUImdIzTJhZmE2SIVFA6o.png)
 
 ## 2.3 配置 cpan
 
 为了更好对 Perl 进行扩展，方便以后的模块安装，我们最好配置一下 cpan。ActivePerl 有个好处就是在初始化 cpan 的时候会自动把 dmake、gcc、g++、mingw32-make 等 windows 常用的编译工具一起安装到 "**$Dprefix/site/bin**" 目录下，免去了我们手动安装这些编译器的各种麻烦。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk2vzpGMiygw3YHFIf3vV7_hj-5-.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fk2vzpGMiygw3YHFIf3vV7_hj-5-.png)
 
 ## 2.4 安装完成
 

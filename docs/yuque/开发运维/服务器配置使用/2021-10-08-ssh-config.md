@@ -9,7 +9,7 @@ updated: "2022-08-18 09:23:54"
 # 解决 SSH Failed Permission Denied
 
 在 SSH 服务器上修改了与权限相关的设置之后，会出现 SSH 权限拒绝错误（SSH Permission denied error）。通常的场景包括安装新的软件包或创建新用户。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuDhlk0w8wDpdRM2uh0B508OzPs9.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FuDhlk0w8wDpdRM2uh0B508OzPs9.png)
 在本教程中，您将学习如何排除 SSH Permission denied 错误并重新连接到 SSH 服务器。
 
 ### 前提条件
@@ -26,7 +26,7 @@ updated: "2022-08-18 09:23:54"
 Permission denied (publickey,gssapi-keyex,gssapi-with-mic)
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fl0Um1zz_a2haoBC95bM-E9iyATa.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fl0Um1zz_a2haoBC95bM-E9iyATa.png)
 在 Permission denied 语句之后，括号里面包含了在连接启动时失败时尝试的身份验证方法。这个错误表明公钥才是问题所在，这其实是一种误导。
 
 出现该错误的一个原因可能是与 **sshd_config** 的配置有关，这个文件包含了 SSH 服务器的配置。另一种可能性是授权的 **authorized_keys** 文件没有足够的权限，这个文件包含了允许从 Client 客户机 SSH 到远程服务器的公钥列表。因此，当系统无法正常读取文件就会导致“权限拒绝”错误。
@@ -49,7 +49,7 @@ sudo nano /etc/ssh/sshd_config
 - 在文件中，找到 **ChallengeResponseAuthentication** 选项，并通过添加 **no** 来禁用它。
 - 如果行被注释掉了，删除散列符号\*\* #\*\* 以取消注释。
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvmtituWoEUKfE68c3lIOvjlQZJD.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvmtituWoEUKfE68c3lIOvjlQZJD.png)
 保存文件并退出。
 
 最后，通过输入以下命令重新启动 SSH 服务：
@@ -75,7 +75,7 @@ PermitRootLogin no
 PubkeyAuthentication yes
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmBtxXXzvWUgnE0hmbGqc99dOFBz.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmBtxXXzvWUgnE0hmbGqc99dOFBz.png)
 :::tips
 \*\*注意: \*\*以上步骤被认为是最佳安全实践。如果需要使用 root 登录，请将相关行设置为 **yes**。
 :::
@@ -87,14 +87,14 @@ PubkeyAuthentication yes
 #GSSAPICleanupCredentials no
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvrgRKB3xIKFGJ5YH8CCouJtb_O1.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvrgRKB3xIKFGJ5YH8CCouJtb_O1.png)
 另外，确保 **UsePAM** 行设置为 **yes**：
 
 ```bash
 UsePAM yes
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuoChiJxnlCg3somKCSt5EKyBI1C.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FuoChiJxnlCg3somKCSt5EKyBI1C.png)
 保存文件并重新启动 sshd 服务：
 
 ```bash
@@ -107,7 +107,7 @@ systemctl restart sshd
 ls -ld
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhsXKH2Qsd6vgBpZnwUkkWShZw2A.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhsXKH2Qsd6vgBpZnwUkkWShZw2A.png)
 如果您的所有者权限没有设置为读、写和执行(**drwx------**) ，请使用 **chmod** 命令更改它们：
 
 ```bash
@@ -120,7 +120,7 @@ chmod 0700 /home/[your-username]
 ls -ld
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuSd31JgCeH2hRZ4FZ3xWed-sWtJ.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FuSd31JgCeH2hRZ4FZ3xWed-sWtJ.png)
 这个目录还应该具有文件所有者的读、写和执行权限，如果没有，请使用 **chmod** 命令更改它们：
 
 ```bash
@@ -133,7 +133,7 @@ chmod 0700 /home/your_home/.ssh
 ls –ld authorized_keys
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnrHAhLGh4q6rv9bfwj9izV45_wd.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FnrHAhLGh4q6rv9bfwj9izV45_wd.png)
 文件所有者应该具有该 **authorized_keys** 文件的读写权限。如果没有，请使用下面的方法修改：
 
 ```bash
@@ -141,7 +141,7 @@ chmod 0600 /home/[username]/.ssh/authorized_keys
 ```
 
 现在再次尝试使用密钥对登录。下面的输出显示了一次成功的登录尝试。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv4k89FRw83fFI31fSukTwPzjJ0X.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fv4k89FRw83fFI31fSukTwPzjJ0X.png)
 :::tips
 \*\*注意：\*\*有关 Linux 文件权限的详细信息，请阅读 Linux 文件权限教程。
 :::

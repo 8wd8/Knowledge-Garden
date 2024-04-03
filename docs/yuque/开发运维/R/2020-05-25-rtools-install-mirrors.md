@@ -15,20 +15,20 @@ updated: "2021-06-25 10:41:19"
 ## Rtools 安装
 
 在 RStudio 中安装 shiny 包的时候，就出现了要安装 Rtools 的 warning，提示信息中还给出了下载的链接地址。但问题是  <https://cran.rstudio.com/bin/windows/Rtools/>  是位于国外的服务器，下载速度慢的令人发指。
-![Rtools.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlFdrUE7yY-fxOa_xV4JL1njI0nP.png)
+![Rtools.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlFdrUE7yY-fxOa_xV4JL1njI0nP.png)
 
 ### 方法一
 
 使用清华大学的 CRAN 镜像下载 Rtools，镜像地址：<https://mirrors.tuna.tsinghua.edu.cn/CRAN/>，如果你记不住这一串常常地址，可以从 CRAN 官网点击进去。
-![cran-mirrors.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh9lDB_tIj_d10FyEu489TCJYQgD.png)
+![cran-mirrors.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fh9lDB_tIj_d10FyEu489TCJYQgD.png)
 
 在清华大学的 CRAN 页面选择  [Download R for Windows](https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/)，在出现的 R for Windows 页面选择 Rtools：
-![r-for-win.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvVvo41dX4Ii00yCL-vrbouQDjYJ.png)
-![rtootls.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FohxkjxwTpndCpbuN04GLyZIZe5Q.png)
+![r-for-win.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvVvo41dX4Ii00yCL-vrbouQDjYJ.png)
+![rtootls.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FohxkjxwTpndCpbuN04GLyZIZe5Q.png)
 
 在 Rtools 选择下载最新版本的 Rtools，或者下载 R 版本对应 Rtools：
-![rtools-main.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoJQZqNUIiZ7D5K2m7VZnY5OpzNu.png)
-![rtools-download.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FouJ2qmcRIHkGPhHtEdgtacDQec7.png)\*\*
+![rtools-main.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoJQZqNUIiZ7D5K2m7VZnY5OpzNu.png)
+![rtools-download.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FouJ2qmcRIHkGPhHtEdgtacDQec7.png)\*\*
 
 :::tips
 **注意！！！**
@@ -44,10 +44,10 @@ updated: "2021-06-25 10:41:19"
 
 [Building R for Windows](https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/windows/Rtools/history.html)
 
-![bug-cran-rtools.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FstA08MbJIAHF0uIfZD7i-ZYGVrU.png)
+![bug-cran-rtools.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FstA08MbJIAHF0uIfZD7i-ZYGVrU.png)
 
 最后，安装 Rtools，这没什么好说的，按照默认设置一路 Next 下去，最后就安装成功，这里只强调一点是把勾选添加 rtools 到环境变量中。
-![add-rtools-to-path.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsJDVwIrbX-Bi9RkRtqzJ7TI3fMm.png)
+![add-rtools-to-path.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsJDVwIrbX-Bi9RkRtqzJ7TI3fMm.png)
 
 ### 方法二
 

@@ -58,7 +58,7 @@ ipython kernel install --user
 - 不加 `--user`  和 `--prefix` ，IPython kernel spec 默认安装到 **/usr/local/share/jupyter/kernels** 或者 **/usr/share/jupyter/kernels**。
 - IPython kernel spec 安装可以使用 `python -m ipykernel install` ，也可以使用 `ipython-kernel-install`  命令，两者是一样的。
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fq0EgIerNH9zn2ev655rVUkDn655.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fq0EgIerNH9zn2ev655rVUkDn655.png)
 
 ## 实战
 
@@ -89,7 +89,7 @@ ipython kernel install --user
       python2    /Bio/Anaconda2.5/share/jupyter/kernels/python2
       python3    /Bio/Anaconda2.5/share/jupyter/kernels/python3
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlO_YbUp6yXTyoQyM1adTWUQctvu.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlO_YbUp6yXTyoQyM1adTWUQctvu.png)
 
 1.  在 python2 和 python3 环境中分别安装 ipykernel。
 2.  手动为当前用户( `--user`  )，或者指定路径( ` --prefix`  )安装 IPython kernel spec。其中 ` --user`  与 `--prefix`  不能同时使用。

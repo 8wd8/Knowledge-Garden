@@ -23,9 +23,9 @@ Conda 是一种通用包管理系统，旨在构建和管理任何语言的任�
 最初接触到 Anaconda 是用于 Python 包的安装。Anaconda 囊括了 100 多个常用的 Python 包，一键式安装，解决 Python 包安装的痛苦。
 
 但后来发现，其还有更多的功能，尤其是其增加了 bionconda （<https://bioconda.github.io/index.html>）通道后，生物信息分析的 7925 多个软件都可以一键安装了（具体列表在：<https://anaconda.org/bioconda/repo>），免去了编译时间浪费和解决库文件安装的问题。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiVmAJzEocNOqjtiRRAnSqyeY1Pe.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FiVmAJzEocNOqjtiRRAnSqyeY1Pe.png)
 另外其最有吸引力的是它的虚拟软件环境概念，可以简单的配置不同 Python 版本的环境、不同 Python 包的环境、不同 R 环境和 R 包的环境，对于生物信息软件繁杂的应用和频繁的更新提供了很大的便利。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlOefyuCt6xvvRxlcAszyQkBYPcl.webp)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlOefyuCt6xvvRxlcAszyQkBYPcl.webp)
 
 ### 1.1 Conda 安装和配置
 
@@ -641,7 +641,7 @@ conda 在安装或者导入某些包/环境过程中出现 `json.decoder.JSONDec
 ## 2.2 CondaHTTPError: HTTP 000 CONNECTION FAILED
 
 通过 conda update conda 的方式把 base 环境的 conda 升级到 4.10.3 后，使用 conda create/install 等命令安装软件时发现一直提示 **CondaHTTPError: HTTP 000 CONNECTION FAILED**！
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fnu_mYP_TGKymTOvRVoqRp0rzh_e.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fnu_mYP_TGKymTOvRVoqRp0rzh_e.png)
 在 <https://github.com/conda/conda/issues/9746> 上有这个问题的一些讨论和解决方法，个人尝试过都没办法解决！最后，重装 conda 后，问题解决。
 
 ```bash
@@ -707,7 +707,7 @@ mamba update mamba -n base -c conda-forge
 ## 3.2 mamba 的使用
 
 安装完成之后，当你运行 **mamba -V** 查看其版本时会发现返回的是 Conda 的版本信息，这是因为 Mamba 的本质是对 Conda 功能的覆盖，因此我们在使用 Mamba 时其实只要将原有的 Conda 语句中的 **conda** 替换为 **mamba** 即可，譬如我们常用的 **conda clean --all**，即清空本地缓存安装包：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsE1SM3Q6qwaLNKQxBezL7i0mTo4.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsE1SM3Q6qwaLNKQxBezL7i0mTo4.png)
 很有意思的是 Mamba 在执行命令时会先打印出 logo 等信息，对应其名称**黑曼巴**\~
 
 当然 Mamba 并不是重写了 Conda 所有的功能，只是针对一些 Conda 低效的功能进行重写，并添加了一些实用的新功能，接下来我们来对这些知识进行学习。
@@ -717,18 +717,18 @@ mamba update mamba -n base -c conda-forge
 作为 Mamba 最核心的功能，Mamba 对 conda install 语句进行并行化改造，达到加速下载过程的目的。
 
 以下载 qgis 为例，使用 mamba install -c conda-forge qgis -y 代替以前的安装方式，执行命令后，Mamba 会在短暂获取资源下载链接之后，以并行的方式按计划同时下载多个资源，比老方法要快很多。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FobJkNs5kfza8egEv0RuIfFAIBn5.webp)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FobJkNs5kfza8egEv0RuIfFAIBn5.webp)
 对于其他涉及下载资源的命令譬如 conda update 同样适用，你可以自行体验。
 
 ### 2. 查看指定库所有可用版本
 
 这是 Mamba 异于 Conda 的新功能，使用 mamba repoquery search 库名可以查看指定库全部所有可用版本，以 pandas 为例：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvkpzTRITOKIYb5uTVBemvVBRqNh.webp)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvkpzTRITOKIYb5uTVBemvVBRqNh.webp)
 
 ### 3. 查看依赖关系
 
 Mamba 中还提供了 **mamba repoquery depends** 和 **mamba repoquery whoneeds**，分别用于查看指定库依赖哪些库，以及指定库被哪些库依赖，如官方文档的示例：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrPmq37pTOWBCl11ShGDJKgfPO61.webp)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrPmq37pTOWBCl11ShGDJKgfPO61.webp)
 
 # 参考资料
 

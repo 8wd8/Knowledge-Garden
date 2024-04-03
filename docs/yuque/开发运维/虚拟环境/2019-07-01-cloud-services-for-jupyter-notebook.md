@@ -10,7 +10,7 @@ updated: "2021-06-30 09:38:08"
 \*\*编译：\*\*Steven Shen
 **原文：**<https://www.dataschool.io/cloud-services-for-jupyter-notebook/>
 
-![1_oj36TMqOkHmi6u3kCSsr7Q.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmI-XQJskzKJrjXg9rD0pZPaF0g0.png)
+![1_oj36TMqOkHmi6u3kCSsr7Q.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmI-XQJskzKJrjXg9rD0pZPaF0g0.png)
 
 有许多方法可以与其他人共享静态 Jupyter 笔记本，例如把它发布在 GitHub 上或通过 nbviewer 链接进行分享。 但是，如果接收人已经安装了 Jupyter Notebook 环境，那么他们只能通过笔记本文件进行交互。
 
@@ -46,7 +46,7 @@ updated: "2021-06-30 09:38:08"
 
 ## 1. Binder
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FglCc-7KKOQBnabvlJeE2wwrSFbg.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FglCc-7KKOQBnabvlJeE2wwrSFbg.png)
 
 [Binde](https://mybinder.org/)r 是 Binder 项目提供的服务，它是 Project Jupyter 开源生态系统的一员。它允许您输入任何公共 Git 存储库的 URL，它将在本机的 Jupyter Notebook 界面中打开该存储库。您可以在存储库中运行任何笔记本，但您所做的任何更改都不会保存回存储库。您不必使用 Binder 创建帐户，也不需要是存储库的所有者，但你所使用的存储库必须包含指定其软件包要求的配置文件。
 
@@ -91,7 +91,7 @@ Binder 有大量[文档](https://mybinder.readthedocs.io/en/latest/)。它通过
 
 ## 2. Kaggle Kernels
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiByayBnDfsViNwGuiruJCfJuotz.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FiByayBnDfsViNwGuiruJCfJuotz.png)
 
 [Kaggle](https://www.kaggle.com/)  是最着名的数据科学竞赛平台。但是，他们还提供可以独立于竞争对手使用，名为  [Kernels](https://www.kaggle.com/kernels)  的免费服务。创建 Kaggle 帐户（或使用 Google 或 Facebook 登录）后，您可以创建一个使用笔记本或脚本界面的内核，但我更专注于下面提到的的笔记本界面信息。
 
@@ -140,7 +140,7 @@ Kaggle\*\* \*\*预先安装了数百个软件包，您可以使用 pip 或通�
 
 ## 3. Google Colaboratory (Colab)
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fi9errwbCxeyVLKqqSmQ8oPAGdbm.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fi9errwbCxeyVLKqqSmQ8oPAGdbm.png)
 
 [Google Colaboratory](https://colab.research.google.com/)，通常称为"Google Colab"，适用于拥有 Google 帐户的任何人。只要您已登录 Google，就可以快速开始创建空笔记本，上传现有笔记本或从任何公共 GitHub 存储库导入笔记本。您的 Colab 笔记本会自动保存 在 Google 云端硬盘中的特殊文件夹中，您甚至可以直接从云端硬盘创建新笔记本。
 
@@ -199,7 +199,7 @@ Colab 的最大优势在于它易于上手，因为大多数人已经拥有 Goog
 
 ## 4. Microsoft Azure Notebooks
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Frcw6uwHZy_6OvfeZR2Zk0QFI5aI.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Frcw6uwHZy_6OvfeZR2Zk0QFI5aI.png)
 
 要开始使用  [Azure 笔记本](https://notebooks.azure.com/)，请先使用 Microsoft 或 Outlook 帐户登录（或创建一个帐户）。然后是创建一个 "项目"，其结构与 GitHub 存储库相同：它可以包含一个或多个笔记本、Markdown 文件、数据集以及您要创建或上传的任何其他文件，所有这些都可以组织到文件夹中。与 GitHub 一样，您可以使用 README 文件初始化项目，该文件将自动显示在项目页面上。如果您的工作已存储在 GitHub 上，则可以将整个存储库直接导入到项目中。
 
@@ -247,7 +247,7 @@ Azure Notebooks 的最大优势在于它的易用性：项目结构（从 GitHub
 
 ## 5. CoCalc
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgYugeMt0L6WDKav-ZUCKhz-MozM.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FgYugeMt0L6WDKav-ZUCKhz-MozM.png)
 
 [CoCalc](https://cocalc.com/)，是 "collaborative calculation" 的缩写，是用于 Python，R，Julia 和许多其他语言计算的在线工作空间。 它允许您创建和编辑 Jupyter 笔记本，Sage 工作表和 LaTeX 文档。创建 CoCalc 帐户后，第一步是创建一个 "项目"，其中可以包含一个或多个笔记本、Markdown 文件、数据集以及您要创建或上传的任何其他文件，并且所有这些文件都可以组织到文件夹中。项目界面起初有点让人应接不暇，但是一旦你创建或打开笔记本，它看起来就会更加熟悉。
 
@@ -298,7 +298,7 @@ CoCalc 拥有[大量文档](https://doc.cocalc.com/)。用户可通过电子邮�
 
 ## 6. Datalore
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqarRqe6A--JlmBCX2nycwxA6gzK.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqarRqe6A--JlmBCX2nycwxA6gzK.png)
 
 [Datalore](https://datalore.io/)  是由 JetBrains，一个制作 PyCharm（一种流行的 Python IDE）的公司创建的。它的入门就像创建帐户或使用 Google 或 JetBrains 帐户登录一样简单。您可以创建新的 Datalore "工作簿(workbook)" 或上传现有的 Jupyter Notebook。 Datalore 工作簿以专有格式存储，但它支持导入和导出标准  `.ipynb`  文件格式。
 

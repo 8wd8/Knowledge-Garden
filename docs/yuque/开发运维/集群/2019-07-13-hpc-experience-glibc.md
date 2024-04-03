@@ -71,46 +71,46 @@ SHA-256: a51b90f3dd4585781293ea08adde60eeb9cfa94670943bd99e9c07f13a259539
 Linux 下用光盘进行 rescue 模式的方法，需要注意的是实体机跟虚拟机还是有很大差别的，在实体机中通过光盘启动，可能会自动进入到安装界面，所有我们需要在进入安装界面前（会提示 press any key 之类）快速按键盘上的按键（只有三秒钟需要关注。）
 
 如果不理会就会进入以下界面：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flr1CrojXmnEg_2em-aHFB_ZyMid.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Flr1CrojXmnEg_2em-aHFB_ZyMid.png)
 
 ### 2.2. rescue 模式步骤
 
 ① 选择 rescue 模式
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FowJrdDDjjJBtVov9_xukgxLYjKZ.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FowJrdDDjjJBtVov9_xukgxLYjKZ.png)
 
 ② 选择语言
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fq3vh_e8ugXleZOIaD7y3-ILoSno.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fq3vh_e8ugXleZOIaD7y3-ILoSno.png)
 
 ③ 选择键盘
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fq5qzAaPbsLpyyq335wnpuQ-Ph6F.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fq5qzAaPbsLpyyq335wnpuQ-Ph6F.png)
 
 ④ 我们选择不启用网络，因为启用也没用。
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhJkIf92Jaci3qOIFeuUgfjXzpWd.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhJkIf92Jaci3qOIFeuUgfjXzpWd.png)
 
 ⑤ 选择继续（continue）
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FngDcpJPqB7CbXgLps-PBJVAOcls.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FngDcpJPqB7CbXgLps-PBJVAOcls.png)
 
 ⑥ 选择 OK
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fhu8Yihd2hMI37qnz9inDflC04cw.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fhu8Yihd2hMI37qnz9inDflC04cw.png)
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsPl6QBM7FGfiS0LxNZe8peHByWm.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsPl6QBM7FGfiS0LxNZe8peHByWm.png)
 
 ⑦ 选择回车键，打开 shell
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fj3KltY6YrLO9X7RBANPhiafXof8.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fj3KltY6YrLO9X7RBANPhiafXof8.png)
 
 ⑧ 进入模式后，我们就可以进行命令行操作了，此时会把硬盘的文件系统挂载在 `/mnt/sysimage` 目录下，如果未挂载使用如下命令挂载:
 
     chroot /mnt/sysimage
 
 此时我们进入到 `/mnt/sysimage`，这里其实就是原系统的根目录，我们进行一些补救操作即可。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Ftqf2nKZyurMm59dtSgjcxsAXXTd.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Ftqf2nKZyurMm59dtSgjcxsAXXTd.png)
 
 ⑨ 重启后重新进入系统一切正常。
 ⑩ 作为集群，需要重新执行一些必须的挂载、开启必要服务，在这里不详述。

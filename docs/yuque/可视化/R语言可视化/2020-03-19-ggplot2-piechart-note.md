@@ -17,7 +17,7 @@ updated: "2021-06-30 09:42:41"
 极坐标应该是高中数学的知识，对我而言，基本都已经忘光了，结合网上的一些资料重温一下。
 
 > 极坐标是指在平面内取一个定点 O，叫极点，引一条射线  Ox，叫做极轴，再选定一个长度单位和角度的正方向（通常取逆时针方向）。对于平面内任何一点 M，用   ρ 表示线段 OM 的长度（有时也用 r 表示），θ 表示从 Ox 到 OM 的角度，ρ 叫做点 M 的极径，θ 叫做点 M 的极角，有序数对 (ρ, θ) 就叫点 M 的极坐标，这样建立的坐标系叫做极坐标系。通常情况下，M 的极径坐标单位为 1（长度单位），极角坐标单位为 rad（或 °）。
-> ![jizuobiao.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fru75ZVd87mbHUQ7fqymH0cBDe3a.jpeg)
+> ![jizuobiao.jpg](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fru75ZVd87mbHUQ7fqymH0cBDe3a.jpeg)
 > 极坐标系中一个重要的特性是，平面直角坐标中的任意一点，可以在极坐标系中有无限种表达形式。通常来说，点（r, θ）可以任意表示为（r, θ ± n×360°）或 (−r, θ ± (2n + 1)180°)，这里 n 是任意整数。如果某一点的 r 坐标为 0，那么无论 θ 取何值，该点的位置都落在了极点上。
 
 笛卡尔坐标和极坐标之间的转换，请参考数学乐网站的《[极坐标与笛卡尔坐标](https://www.shuxuele.com/polar-cartesian-coordinates.html)》一文，非常详细直观。
@@ -54,7 +54,7 @@ coord_polar(theta = "x", start = 0, direction = 1, clip = "on")
 > 角的度量单位通常有两种，一种是角度制，另一种就是弧度制。 角度制，就是用角的大小来度量角的大小的方法。在角度制中，我们把周角的 1/360 看作 1 度，那么，半周就是 180 度，一周就是 360 度。由于 1 度的大小不因为圆的大小而改变，所以角度大小是一个与圆的半径无关的量。
 >
 > 弧度制，顾名思义，就是用弧的长度来度量角的大小的方法。单位弧度定义为圆周上长度等于半径的圆弧与圆心构成的角。由于圆弧长短与圆半径之比，不因为圆的大小而改变，所以弧度数也是一个与圆的半径无关的量。角度以弧度给出时，通常不写弧度单位，有时记为 rad 或 R。
-> ![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmdfS2smgvYnMMV49idOwSHHJv9J.png)
+> ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmdfS2smgvYnMMV49idOwSHHJv9J.png)
 
 ### 参数示例
 
@@ -71,7 +71,7 @@ g1 <- g + coord_polar(theta="x") + labs(title="theta=\"x\"")
 ggarrange(p, g, p1, g1, ncol=2, nrow=2, labels=c("p", "g", "p1", "g1"))
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fq2xCE3JEYXVFwD8ydg-5JRWxJ_D.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fq2xCE3JEYXVFwD8ydg-5JRWxJ_D.png)
 
 - **theta="y"**
 
@@ -85,7 +85,7 @@ g2 <- g + coord_polar(theta="y") + labs(title="theta=\"y\"")
 ggarrange(p, g, p2, g2, ncol=2, nrow=2, labels=c("p", "g", "p2", "g2"))
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FooAcYWzTBI28dhA-SbEVIR5qYB1.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FooAcYWzTBI28dhA-SbEVIR5qYB1.png)
 
 - **start=pi/6, direction=1**
 
@@ -99,7 +99,7 @@ g3 <- g + coord_polar(theta="y", start=pi/6, direction=1) + labs(title="theta=\"
 ggarrange(p, g, p3, g3, ncol=2, nrow=2, labels=c("p", "g", "p3", "g3"))
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrUrp8Ekifh52FLtL1PfWqHECxYI.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrUrp8Ekifh52FLtL1PfWqHECxYI.png)
 
 - **start=pi/6, direction=-1**
 
@@ -111,7 +111,7 @@ g4 <- g + coord_polar(theta="y", start=pi/6, direction=-1) + labs(title="theta=\
 ggarrange(p, g, p4, g4, ncol=2, nrow=2, labels=c("p", "g", "p4", "g4"))
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtrpqycSJnrCtX7W8gGtxnoNTR9N.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtrpqycSJnrCtX7W8gGtxnoNTR9N.png)
 
 - **start=-pi/6, direction=1**
 
@@ -123,7 +123,7 @@ g5 <- g + coord_polar(theta="y", start=-pi/6, direction=1) + labs(title="theta=\
 ggarrange(p, g, p5, g5, ncol=2, nrow=2, labels=c("p", "g", "p5", "g5"))
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtUC1RZKUkypbz4UrLLHUS8P0fdH.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtUC1RZKUkypbz4UrLLHUS8P0fdH.png)
 
 Github 上有关于  [coord-pola.r](https://github.com/tidyverse/ggplot2/blob/master/R/coord-polar.r)  的源码，整个代码只有 300 多行，有兴趣的同学可以去研究一下，上面的理解如有不对的地方还请看官们帮忙指正。
 
@@ -144,7 +144,7 @@ ggplot(data, aes(x="", y=value, fill=group)) +
   coord_polar("y", start=0)
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg1XhYHrN4WThwmqRUPzOgoYbeAh.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fg1XhYHrN4WThwmqRUPzOgoYbeAh.png)
 
 需要理解的点是饼图的排布是按照 `aes(fill)`  的因子顺序确定的。譬如数据如下：
 
@@ -199,7 +199,7 @@ p_pie
 
 > 参考：<https://ggplot2.tidyverse.org/reference/scale_brewer.html>
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FglvptxBVHUIXq9NdznBXv0KbfWc.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FglvptxBVHUIXq9NdznBXv0KbfWc.png)
 
 结合图片中反向对应的关系，在 A 区块上中间位置填充上对应的文字 "Num:90"，它的坐标因该是 `sum(dat$Num)-90 +90/2` ；如果是 B 区块对应的应该坐标为 `sum(dat$Num)-90-34 +34/2` ，归纳为：**sum(dat$Num)-cumsum(dat$Num)+dat$Num/2**，即：
 
@@ -242,7 +242,7 @@ p_pie=p_pie+
 p_pie
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrSnhOW-AnO6gsfPPW-ZC5P9fFfO.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrSnhOW-AnO6gsfPPW-ZC5P9fFfO.png)
 
 **如果最初构建有序因子的方向和实际数据的方向反向对应呢？**
 
@@ -259,7 +259,7 @@ p_pie=ggplot(dat,aes(x="",y=dat[,2],fill=dat[,1]))+
 p_pie
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjKTpPtJF6z2PFUysRBxWiLFPh-L.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjKTpPtJF6z2PFUysRBxWiLFPh-L.png)
 
 结合图片可以知道，第一个因子 "E" 对应了第一个颜色，不过从图片显示坐标中可以看到，"A" 在前，而 "A" 在原始数据  `dat$Num`  中对应的数据也在前 90，这样计算位置就会发生改变了，这时候 "A" 文字应该对应 90-90/2，文字 "B" 将对应 90+34-34/2，...，归纳为 `cumsum(dat$Num)-dat$Num/2` 。
 
@@ -286,7 +286,7 @@ p_pie=ggplot(dat,aes(x="",y=dat[,2],fill=dat[,1]))+
 p_pie
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlvlTbhhFNnCcGcbap0cm_pB-IIL.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlvlTbhhFNnCcGcbap0cm_pB-IIL.png)
 
 总结可知：ggplot2 在画饼图的过程中设定填充的因子方向总和图片坐标中的方向相反，不过因子的顺序和数据 `dat$Num`  的对应关系是正向对应或者反向对应，会影响相关区块的中心位置值计算的方式，从而影响 `geom_text`  中文字定位。
 
@@ -326,7 +326,7 @@ p_pie=ggplot(dat,aes(x="",y=dat[,2],fill=dat[,1]))+
 p_pie
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu9u6YldPecFMlftZDCaea1uFlRf.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fu9u6YldPecFMlftZDCaea1uFlRf.png)
 
 - 极坐标变换与颜色等设置
 
@@ -337,7 +337,7 @@ p_pie=p_pie+
 p_pie
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmgNLxhe6L9pJzrTAJ2vcOek8TMs.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmgNLxhe6L9pJzrTAJ2vcOek8TMs.png)
 
 ```r
 ###修改颜色、标签
@@ -348,7 +348,7 @@ p_pie=p_pie+
 p_pie
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtBWV16l00gIPBrWpqCAxAtzbHt4.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtBWV16l00gIPBrWpqCAxAtzbHt4.png)
 
 - 控制 geom_text(position)
 
@@ -360,7 +360,7 @@ p_pie=p_pie+
 p_pie
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiHk_Iyf1ei0YCwUg3YSDeHexkx4.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FiHk_Iyf1ei0YCwUg3YSDeHexkx4.png)
 
 ## sessionInfo
 
@@ -404,9 +404,9 @@ loaded via a namespace (and not attached):
 
 有没有通用的 R 包或者函数，可以得到下面效果的饼图？
 
-![pie-1.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkPAgSbYbQXKkQEE_UrAtkW81dEK.png)
+![pie-1.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkPAgSbYbQXKkQEE_UrAtkW81dEK.png)
 
-![pie-2.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm1Y5snZLSLrsEMGUglSerAevW0e.jpeg)
+![pie-2.jpg](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fm1Y5snZLSLrsEMGUglSerAevW0e.jpeg)
 \*\*
 
 ## 参考资料

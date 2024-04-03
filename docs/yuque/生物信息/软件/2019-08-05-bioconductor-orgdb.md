@@ -8,7 +8,7 @@ updated: "2021-11-17 09:19:40"
 
 在 bioconductor 的官网里面可以查找到 "**OrgDb**" 的包大约有 20 个，基本上跨越了我们生物信息分析中最常用的物种啦！
 
-![Bioconductor-BiocViews.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqHhM0AsWb5-p7OdLHYa0CH6i7c2.png)
+![Bioconductor-BiocViews.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqHhM0AsWb5-p7OdLHYa0CH6i7c2.png)
 
 完整链接：[`http://bioconductor.org/packages/release/BiocViews.html#___OrgDb`](http://bioconductor.org/packages/release/BiocViews.html#___OrgDb)
 

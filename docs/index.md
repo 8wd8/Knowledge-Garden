@@ -79,7 +79,7 @@ template: home.html
 - [doc.weiyan.cc](https://doc.weiyan.cc)：基于 [GitHub Pages](https://pages.github.com/)，国内访问可能有一定延迟。
 
 <p align="center">
-    <img src="https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/mkdocs/kg-readme-cover.gif" alt><br>
+    <img src="https://shub.weiyan.tech/mkdocs/kg-readme-cover.gif" alt><br>
 </p>
 
 !!! abstract "希望所有读到此博客文章的读者都有所收获"
@@ -137,7 +137,7 @@ template: home.html
 如果你觉得本站点的一些文章或者工具对你有所帮助(启发)，欢迎赞赏，有你的支持，我们一定会越来越好！
 
 <figure markdown>
-![微信-支付宝赞赏码](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/mkdocs/donate.jpg "感谢你的一路支持")
+![微信-支付宝赞赏码](https://shub.weiyan.tech/mkdocs/donate.webp "感谢你的一路支持")
 <figcaption>Random acts of kindness.</figcaption>
 </figure>
 

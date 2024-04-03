@@ -187,7 +187,7 @@ sub_dir
 
 以下是目录列表功能：
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkAzAEk1Qnh6fnc4B0W8wFblUsj_.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkAzAEk1Qnh6fnc4B0W8wFblUsj_.png)
 
 这些函数返回了一个包含了目录中所有内容的列表，包括子目录。这些操作可能并不总是您想要的。下一节我们将介绍如何从目录列表中进行结果过滤。
 
@@ -419,7 +419,7 @@ file2.txt       Last modified:  17 Sep 2018
 
 我们编写的程序需要创建目录以便在其中存储数据时，可以参考`os`和`pathlib`中包含用于创建目录的函数。
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmQolOuA8sSrkClyR9VM6f6sYjnQ.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmQolOuA8sSrkClyR9VM6f6sYjnQ.png)
 
 ## 创建单个目录
 
@@ -716,7 +716,7 @@ docs.pdf
 
 回顾一下，这是我们在本节中介绍的功能表：
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqqflHxqAIGJBSNRO6nOgjnwmruW.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqqflHxqAIGJBSNRO6nOgjnwmruW.png)
 
 # 遍历目录和文件
 
@@ -1012,7 +1012,7 @@ for dirpath, dirnames, files in os.walk('.', topdown=False):
 
 下表列出了本节中涉及的功能：
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhnGoA-AuSfdhwSq0vpk3LfI90mc.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhnGoA-AuSfdhwSq0vpk3LfI90mc.png)
 
 # 文件和目录复制，移动及重命名
 
@@ -1264,7 +1264,7 @@ with tarfile.open('example.tar', 'r') as tar_file:
 
 使用 "r"，"w" 或 "a" 模式分别打开未压缩的 TAR 文件以进行读取，写入和追加。要打开压缩的 TAR 文件，需要将模式参数传递给`tarfile.open()`，其格式为`filemode [:compression]`。下表列出了可以打开 TAR 文件的可能模式：
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgziSqW07iV6C4R7KR0e66AkoSuO.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FgziSqW07iV6C4R7KR0e66AkoSuO.png)
 
 `.open()` 默认以 'r' 模式打开文件。要读取未压缩的 TAR 文件并检索其中的文件名，可以使用`.getnames()`：
 

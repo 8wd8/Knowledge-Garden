@@ -7,7 +7,7 @@ updated: "2021-06-25 10:46:47"
 ---
 
 早在《[使用码云同步谷歌 Chrome 浏览器书签 · 语雀](https://www.yuque.com/shenweiyan/cookbook/chrome-bookmark-sync)》中就吐槽过 win7 下安装 Microsoft Edge 一大堆错误代码的问题，一直都折腾不出个所以然。然而公司的 PC 一直都是 Windowns 7，又不想重装 Windows 10。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgOzpaaBeNVDx6t5iibxFZ33IdOo.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FgOzpaaBeNVDx6t5iibxFZ33IdOo.png)
 既然和 Google Chrome 一样基于 Chroumium 内核，Google Chrome 可以有便携版本，Microsoft Edge 应该也可以有。于是，开始各种谷歌+百度搜索，终于发现 <https://shuax.com/project/edge/> 这个可爱曲线救国的项目。
 
 # 使用
@@ -23,12 +23,12 @@ updated: "2021-06-25 10:46:47"
     2.  把最新安装的 Microsoft Edge 的 Application 整个目录拷贝到当前目录，重命名为 App。
     3.  把 App2 旧目录内的 version.dll 拷贝到 App 内。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkiv5jhaClVSKo72vrGS-JgrL_xe.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fkiv5jhaClVSKo72vrGS-JgrL_xe.png)
 
 3.  运行测试正常后可以安全删除 App2 老版本。
 4.  建议保留上个版本压缩包以便出问题时还原。
 5.  最后，双击 mesedge.exe，发现已经移除更新错误警告（因为是绿色版没有自动更新功能）。
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqTj3JRSbg5N-06rJG_5YqWvUkNN.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqTj3JRSbg5N-06rJG_5YqWvUkNN.png)
 
 最后说一下，Microsoft Edge 虽然比较符合国人使用习惯，也不需要搭梯子，要是折腾成本太高，Google Chrome 也是很香的。

@@ -13,7 +13,7 @@ Bioconductor 是一个基于 R 语言的生物信息软件包，主要用于生�
 R 每年（通常是 4 月中旬）在 'x.y.z' 中发布一个 '.y' 版本，但 Bioconductor 每 6 个月（4 月中旬和 10 月中旬）发布一个 '.y' 版本。
 
 Bioconductor 与 R 各自对应的版本如下：（参考：[Bioconductor releases](https://bioconductor.org/about/release-announcements/)）
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FuWsjeYOiJKjpvrMD1vvWkclbemC.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FuWsjeYOiJKjpvrMD1vvWkclbemC.png)
 
 ## biocLite 使用
 
@@ -192,7 +192,7 @@ BiocManager::available("BSgenome.Hsapiens")
 
 ## 安装旧版本的 Bioconductor R 包
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsWdeAuTnAbrncvAU1q5kl7QcebP.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsWdeAuTnAbrncvAU1q5kl7QcebP.png)
 
 ### R≥3.5，Bioconductor≥3.7
 
@@ -240,9 +240,9 @@ Bioconductor 是与特定版本的 R 绑定的，正常来说当 Bioconductor �
 > From：<https://cran.r-project.org/web/packages/BiocManager/vignettes/BiocManager.html>
 
 所以，当有些 R 包是基于高版本的 Bioconductor 开发的，在低版本的 Bioconductor/R 中直接执行 `BiocManager::install("package")`，安装得到的 package 版本默认是与当前版本 Bioconductor/R 相匹配的，而并非是最新的版本。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrfiotBKifOnRNkqsPWL2co_udL6.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrfiotBKifOnRNkqsPWL2co_udL6.png)
 以 **DiffBind** 包为例，[DiffBind==3.4.0](https://bioconductor.org/packages/3.14/bioc/html/DiffBind.html) 是基于 Bioconductor==3.14（对应 R-4.1）开发的；我们在 Bioconductor==3.13（对应 R-4.0）中执行 `BiocManager::install("DiffBind")`，默认安装的是 [DiffBind==3.0.15](https://bioconductor.org/packages/3.12/bioc/html/DiffBind.html)！
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fidxv_6XZ_eQf1AEOOj52EQdgkME.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fidxv_6XZ_eQf1AEOOj52EQdgkME.png)
 
 ### 1. 源码方式安装
 
@@ -326,7 +326,7 @@ utils::setRepositories(ind=1:2)
 ## 安装体积比较大的 R 包
 
 安装 CRAN 或者 Bioconductor 中一些体积比较大的 R 包，如果网络不太好，经常可能会出现包下载不完（Timeout of 60 seconds was reached），从而导致无法正常安装。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkT19wEWbN-7DeYe42UDzDiZJKsR.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkT19wEWbN-7DeYe42UDzDiZJKsR.png)
 参考 [How do i set a timeout for utils::download.file() in R - Stack Overflow](https://stackoverflow.com/questions/35282928/how-do-i-set-a-timeout-for-utilsdownload-file-in-r/35283374)，增加 timeout 时长的同时使用国内的镜像进行加速：
 
 ```r
@@ -336,7 +336,7 @@ getOption('timeout')
 options(timeout=100)
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fv20PVmbB48T5yQ79Us0sXjVJiZy.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fv20PVmbB48T5yQ79Us0sXjVJiZy.png)
 
 以上，就是  Bioconductor R 包安装和使用的全部内容，希望对大家有所帮助。
 

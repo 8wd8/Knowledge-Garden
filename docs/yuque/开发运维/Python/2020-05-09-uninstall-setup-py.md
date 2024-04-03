@@ -58,7 +58,7 @@ pip show <packagename>
 ```
 
 例如，输入`pip show cryptography`，即可看到类似  `'Requires: six, cffi'`  的依赖提示：
-![pip-show.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FiXQc_h02lAJdYuTKQux-GJM__xl.png)
+![pip-show.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FiXQc_h02lAJdYuTKQux-GJM__xl.png)
 
 然后，可以使用 `pip uninstall`  命令来卸载这些依赖项。 但是，在卸载之前，应确保这些软件包不与其他现有软件包相关。
 

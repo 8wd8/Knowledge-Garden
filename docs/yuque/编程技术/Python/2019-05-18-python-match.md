@@ -15,7 +15,7 @@ updated: "2021-06-30 09:41:45"
 正则表达式并不是 Python 的一部分。正则表达式是用于处理字符串的强大工具，拥有自己独特的语法以及一个独立的处理引擎，效率上可能不如 str 自带的方法，但功能十分强大。得益于这一点，在提供了正则表达式的语言里，正则表达式的语法都是一样的，区别只在于不同的编程语言实现支持的语法数量不同；但不用担心，不被支持的语法通常是不常用的部分。
 
 下图展示了使用正则表达式进行匹配的流程：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvuDNdFw-IjvFx1yRa2RT6WV8vqM.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvuDNdFw-IjvFx1yRa2RT6WV8vqM.png)
 
 正则表达式的大致匹配过程是：依次拿出表达式和文本中的字符比较，如果每一个字符都能匹配，则匹配成功；一旦有匹配不成功的字符则匹配失败。
 

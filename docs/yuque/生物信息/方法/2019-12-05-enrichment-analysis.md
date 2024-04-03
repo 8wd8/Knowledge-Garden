@@ -21,11 +21,11 @@ Fisher 精确检验是进行统计分析时经常碰到的一种分析方法，�
 超几何分布是统计学上一种离散概率分布。它描述了由有限个物件中抽出 n 个物件，成功抽出指定种类的物件的个数（不归还）。
 
 例如在有 N 个样本，其中 m 个是不及格的。超几何分布描述了在该 N 个样本中抽出 n 个，其中 k 个是不合格的的机率：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fixh0BtmkTX3nlHgKV3_C-MqKTUv.svg)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fixh0BtmkTX3nlHgKV3_C-MqKTUv.svg)
 
 上式可如此理解：
 
-- ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FggaFQ7YVyMX-k13j8zG7SNG72Fh.svg)  表示所有在 N 个样本中抽出 n 个，而抽出的结果不一样的数目。![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkNIh2xj3hNQ5oNrIpEbxO6z2tXC.svg) 表示在 m 个样本中，抽出 k 个的方法数目。剩下来的样本都是及格的，而及格的样本有 N-m 个，剩下的抽法便有  ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk_dHEbwssUmqR94UNL0JsANO1PH.svg) 种。
+- ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FggaFQ7YVyMX-k13j8zG7SNG72Fh.svg)  表示所有在 N 个样本中抽出 n 个，而抽出的结果不一样的数目。![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkNIh2xj3hNQ5oNrIpEbxO6z2tXC.svg) 表示在 m 个样本中，抽出 k 个的方法数目。剩下来的样本都是及格的，而及格的样本有 N-m 个，剩下的抽法便有  ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fk_dHEbwssUmqR94UNL0JsANO1PH.svg) 种。
 - 若 n=1，超几何分布还原为伯努利分布。
 - 若 N 接近 ∞，超几何分布可视为二项分布(二项式分布，是有放回的抽样)。
 

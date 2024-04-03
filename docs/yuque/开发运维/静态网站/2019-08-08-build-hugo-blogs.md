@@ -8,7 +8,7 @@ updated: "2023-01-05 11:16:14"
 
 模仿 R 语言大神谢益辉，搭建了一个 Hugo+Blogdown 的博客：<https://www.shumlab.com>
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FofWGzhVVKFkuXNKeP0e3a932SWw.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FofWGzhVVKFkuXNKeP0e3a932SWw.png)
 
 主要记录：
 

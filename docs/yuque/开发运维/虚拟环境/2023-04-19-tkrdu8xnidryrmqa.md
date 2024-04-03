@@ -35,7 +35,7 @@ sudo ln -s /ifs1/micromamba/bin/micromamba /usr/local/bin
 micromamba -r /ifs1/micromamba create -n singularity -c conda-forge singularity
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoNAPrE0dElBxqdCrxRL6Dv6kIEW.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoNAPrE0dElBxqdCrxRL6Dv6kIEW.png)
 
 ```bash
 $ export MAMBA_ROOT_PREFIX=/ifs1/micromamba

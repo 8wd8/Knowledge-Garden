@@ -7,7 +7,7 @@ updated: "2023-07-19 15:40:31"
 ---
 
 根据官网最新的产品规范，CentOS 7 在 2024 年停止支持，CentOS 8 将在今年年末停止支持。产品规范链接：<https://wiki.centos.org/zh/About/Product>
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu0JN7Zh4-HTqsIrrd4i_dkLUB5l.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fu0JN7Zh4-HTqsIrrd4i_dkLUB5l.png)
 
 :::tips
 **Rocky Linux 8 (released **[**June 2021**](https://forums.rockylinux.org/t/rocky-linux-8-4-available-now/3015)**, LTS EOL **[**May 2029**](https://forums.rockylinux.org/t/what-is-eol-of-rl8/3316)**)**

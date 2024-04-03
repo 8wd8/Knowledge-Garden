@@ -58,7 +58,7 @@ The blast.lib library file will be found in c++\compilers\msvc800_prj\static\lib
 
 - `--with-build-root=ReleaseMT`，将会安装到当前目录的 ReleaseMT 目录下；
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoG_RuZNkxg3zk0ce5iDaQaYUYbr.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoG_RuZNkxg3zk0ce5iDaQaYUYbr.png)
 
 - `--with-build-root=/usr/local/shenweiyan/ncbi-blast-2.13.0+`，将会安装到该指定的路径中。
 
@@ -77,7 +77,7 @@ GCC 安装完以后需要执行以下两步：
 1.  把可执行程序添加到 PATH 环境：**export PATH=/Path/To/gcc-7.3.0/bin:$PATH**
 2.  解决 \*\*libstdc++.so.6: version \`GLIBCXX_3.4.22' not found \*\*
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpcXY1qyhMM4EIGgd5lx2ashEm8-.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpcXY1qyhMM4EIGgd5lx2ashEm8-.png)
 
 ```python
 export LD_LIBRARY_PATH=/Path/To/gcc-7.3.0/lib:/Path/To/gcc-7.3.0/lib64:$LD_LIBRARY_PATH

@@ -95,7 +95,7 @@ $ make install
 ### 5、安装依赖二：QT
 
 使用 conda 安装的 qt >= 5.6.2：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fm2cbO_hsVvL_WajxcYc7SP2K8x7.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fm2cbO_hsVvL_WajxcYc7SP2K8x7.png)
 
 下面是通过源码安装 qt-4.8.x 的一些记录（使用 conda 应该也可以安装 qt-4.8.x，感兴趣的童鞋可以尝试一下）：
 
@@ -117,7 +117,7 @@ $ make install
 
     $ ./configure -prefix /Bio/Bioinfo/Pipeline/SoftWare/Qt-5.6.0  # 报错信息如截图所示
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu7r9S18lVtBbSIEe8HG4gRQgZ1I.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fu7r9S18lVtBbSIEe8HG4gRQgZ1I.png)
 
 ② 在 Qt 4.8 中实现多媒体播放图形界面主要依赖于 phonon 框架，通常情况下，**Qt 基本库已经安装好，默认 phonon 是没有被安装的**，我们需要 configure 后加好参数，然后单独进入 phonon 的文件夹进行编译。
 

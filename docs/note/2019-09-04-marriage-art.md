@@ -7,7 +7,7 @@ updated: "2023-05-19 14:45:19"
 ---
 
 婚姻是一种修行，体现了个人的素质和修养；婚姻是否平静、长久，取决于双方或其中一方的修养程度，这种修养，不是指文化修养，而是指婚姻修养——当然，文化修养必不可少，却不是决定性的——所谓的婚姻修养，是指一个人对于自身和他人欲望、心理的认识程度，反省能力，特别是自我调整和适应能力。
-![hunyin.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-notebook-img/FiJnUwRJPylbDPyZXUlGGFMftjy5.jpeg)
+![hunyin.jpg](https://shub.weiyan.tech/yuque/elog-notebook-img/FiJnUwRJPylbDPyZXUlGGFMftjy5.jpeg)
 
 婚姻修养好的人，善于控制自身的欲望，对人性，对自己，特别是爱人的心理、为人有不同程度的了解，情绪稳定，知足常乐，适应生活、爱人和婚姻的能力强。
 

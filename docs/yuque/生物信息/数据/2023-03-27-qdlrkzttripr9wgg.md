@@ -27,7 +27,7 @@ ACCCTGAGCCACTCCAATCG
 ['ATGAACCACTCGCCGCTCAAGACCGCCTTGGCGTACGAATGCTTCCAGGACCAGGACAACTCCACGTTGGCTTTGCCGTCGGACCAAAAG', 'ATGAAAACAGGCACGTCTGGCAGGCAGCGCGTGCAGGAGCAGGTGATGATGACCGTCAAGCGGCAGAAGTCCAAGTCTTCCCAGTCGTCC', 'ACCCTGAGCCACTCCAATCG']
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fly8Kei6b_-KOFSCu-hPTa6rZNhT.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fly8Kei6b_-KOFSCu-hPTa6rZNhT.png)
 
 ```python
 my_string = 'abcdefghijklmnopqrstuvwxyz'

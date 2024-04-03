@@ -52,7 +52,7 @@ $ perl -MBio::SeqIO -e1
 $ export PERL5LIB=$PERL5LIB:/home/shenweiyan/perl_modules/lib/site_perl  //或者把该行内容添加到 ~/.bashrc
 ```
 
-![bioperl-install.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhLB4yFtOuNLVOxoTHdk3Zdn6bI3.png)
+![bioperl-install.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhLB4yFtOuNLVOxoTHdk3Zdn6bI3.png)
 
 上述步骤适合于 Linux/Unix 下绝大多数的 Perl 模块。可能还有少数模块的安装方法略有差别，所以最好先看看安装目录里的 README 或 INSTALL。
 
@@ -75,12 +75,12 @@ Linux/Unix 下自动安装 Perl 模块主要有两种方法，一是利用 `perl
 
 - 执行 `perl -MCPAN -e shell`  命令，或者直接运行 `cpan`  命令，都可以进入 cpan 交互模式。
 
-![cpan-linux.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FrNJmN-R_EWHmfd9gkTml9QAgPYi.png)
+![cpan-linux.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FrNJmN-R_EWHmfd9gkTml9QAgPYi.png)
 
 - 安装前需要先联上网，有无 root 权限均可。对于非 root 用户，Perl 提供了 '**local::lib**'、'**sudo**' or '**manual**' 三种使用 CPAN 模块自动安装的方式，初次运行 CPAN 时需要用户自行进行选择设置，默认为  **'local::lib**'。
 - 初次运行 CPAN 时需要做一些设置，如果我们的机器是直接与因特网相联，那么一路回车就行了。
 
-![cpan-setting.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp9FTaXM_d0X4ICluF8bE1-hocoI.jpeg)
+![cpan-setting.jpg](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp9FTaXM_d0X4ICluF8bE1-hocoI.jpeg)
 
 - 常用 cpan 命令：
 
@@ -251,7 +251,7 @@ cpan[1]> o conf urllist
 Type 'o conf' to view all configuration items
 ```
 
-![2.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpK9DQ7f5IGk-5Mu17d9IPdBCVAn.png)
+![2.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpK9DQ7f5IGk-5Mu17d9IPdBCVAn.png)
 
 - 如果对当前的当前所有的 cpan shell 的配置不满意，也可以通过命令重新初始化该文件，如下：
 

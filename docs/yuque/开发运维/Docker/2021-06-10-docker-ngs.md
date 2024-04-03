@@ -106,17 +106,17 @@ updated: "2021-06-25 10:48:55"
     cp: cannot stat `03.3.Peak_idr/*/*.conservative.regionPeak.gz*': No such file or directory
     cp: cannot stat `StatInfo/*': No such file or directory
 
-![docker-error.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FirC_PY6pW40EQs1hqCu1MTHyX2I.jpeg)
+![docker-error.jpg](https://shub.weiyan.tech/yuque/elog-cookbook-img/FirC_PY6pW40EQs1hqCu1MTHyX2I.jpeg)
 
 出于学习和折腾，针对这个问题，个人在 **hubq/tanginstall:latest** 的镜像基础上做了一点小调整，并重新打包成一个名为 **shenweiyan/tanginstall:latest** 的新镜像 push 到了 Docker Hub，抛砖引玉，供大家学习参考。
 
-![docker-chip.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgSRFBvzOjGE7lr9xgQZ-TesY5oP.jpeg)
+![docker-chip.jpg](https://shub.weiyan.tech/yuque/elog-cookbook-img/FgSRFBvzOjGE7lr9xgQZ-TesY5oP.jpeg)
 
 简单说一下这个镜像的几点细节。
 
 1.  整个镜像体积比较大，总共约 7.37GB，pull 下来可能比较慢。
 
-    ![docker-images.jpg](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fu0orywtHuCSuf_-s0aSQ56KK_VN.jpeg)
+    ![docker-images.jpg](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fu0orywtHuCSuf_-s0aSQ56KK_VN.jpeg)
 
 2.  如果没有 ref（hg19/hg38 or mm9/mm10），镜像执行过程中会首先执行下载，然后拆分合并，建立 index。
 

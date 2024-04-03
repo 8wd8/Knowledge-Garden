@@ -15,12 +15,12 @@ updated: "2022-05-27 12:05:55"
 ## 安装前准备
 
 步骤 1. 首先，把你的服务器变更成 CentOS 8.x 系统。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk1qd_KA0bQQGzVlj9Uu_tQQZ9uy.png)
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqaH_jPUZfUgkZAmwc4ArAdgoh9P.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fk1qd_KA0bQQGzVlj9Uu_tQQZ9uy.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqaH_jPUZfUgkZAmwc4ArAdgoh9P.png)
 
 如果你用的是阿里云的 ECS（或者轻量云服务，个人用的是轻量云服务器），可以先升级到 CentOS 8.2 的系统。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtaE7Ybb8ewn_cJAxlYFqd9Zah5B.png)
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjCrRWqy1hrIsHHOYghc8rB78VmF.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtaE7Ybb8ewn_cJAxlYFqd9Zah5B.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjCrRWqy1hrIsHHOYghc8rB78VmF.png)
 
 步骤 2. 然后，让我们先确保您的系统是最新的（如果已经是 CentOS 8.0 及以上，可以不用执行这一步）。
 
@@ -107,9 +107,9 @@ Done, please reboot your system.
 A log of this installation can be found at /var/log/migrate2rocky.log
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fr1ZwTn16QfdEweKjhpCu1Yajb9K.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fr1ZwTn16QfdEweKjhpCu1Yajb9K.png)
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FitnvEWO4d23TX-NSQz-pObx8xuO.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FitnvEWO4d23TX-NSQz-pObx8xuO.png)
 
 然后，运行以下命令来同步已安装的软件包，然后只需重新启动系统：
 
@@ -118,8 +118,8 @@ sudo dnf distro-sync -y
 sudo reboot
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsTMKsGBRiRbvRM3DdeYrEfYgDU0.png)
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fus9rZsnBGvgLohr18SnW1ZKByPu.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsTMKsGBRiRbvRM3DdeYrEfYgDU0.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fus9rZsnBGvgLohr18SnW1ZKByPu.png)
 
 ## 检查操作系统版本
 
@@ -135,9 +135,9 @@ cat /etc/redhat-release
 Rocky Linux release 8.4 (Green Obsidian)
 ```
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlNtsYaHWfIDJhP9Vb5x1fq7gtsg.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlNtsYaHWfIDJhP9Vb5x1fq7gtsg.png)
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp801elk1r_VJpvx1bzvp4L0Q-ks.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp801elk1r_VJpvx1bzvp4L0Q-ks.png)
 
 ## 参考资料
 

@@ -31,52 +31,52 @@ updated: "2023-03-01 15:24:35"
 ## 1.1 注册，并新建对象存储的存储空间
 
 七牛云注册，实名认证，这里不细说，很简单。新建对象存储的存储空间也很简单：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhD1lAfu-UV6bpzBTXa7vns2waaO.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhD1lAfu-UV6bpzBTXa7vns2waaO.png)
 
 ## 1.2 增加镜像存储的镜像源
 
 在创建好的对象存储空间（note-db）中，选择 "镜像存储"，添加语雀镜像源地址：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqnSjqQ1h_AGmImexpTVpUuHqrGf.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqnSjqQ1h_AGmImexpTVpUuHqrGf.png)
 
 ## 1.3 绑定域名
 
 七牛云绑定域名，并且设置 CNAME 的一个重要前提是：域名必须备案成功了才可以使用的！
 
 简单说一下绑定了域名的作用：我们在七牛云上存储了图片文件什么的，访问地址都需要加上一个域名的。起初我们开通对象存储的时候，七牛云会给我们一个测试域名。但是测试域名会被收回，公告如下：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FijLo6r-uVq2ZLTbH_MvILEk3piD.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FijLo6r-uVq2ZLTbH_MvILEk3piD.png)
 
 所以我们需要用我们自己的二级域名来绑定七牛云进行访问（最好不用 www 开头的二级域名来绑定，因为 www 开头的域名，我们都是作为主域名的），具体绑定步骤如下。
 
 ### 1.3.1 绑定域名
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fjq2sidHfcWc1BP9pZn9EM2jQvq2.png)
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fg2gkw0JFg8QVidXq5rQ7NqVDM7h.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fjq2sidHfcWc1BP9pZn9EM2jQvq2.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fg2gkw0JFg8QVidXq5rQ7NqVDM7h.png)
 
 ### 1.3.2 配置 CNAME
 
 **首先**，上面 3.1 步骤，点击 "确认" 完成后，即可看到新增加域名的 CNAME 信息：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjBW4--eURX63coCfMwPmOTkE_oR.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjBW4--eURX63coCfMwPmOTkE_oR.png)
 
 **第二步**，到你买域名的地方去配置。我是在阿里云上面买的，下面以阿里云为例：
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmVa6wK7g8yWzYayK-NCR1HeFHSQ.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmVa6wK7g8yWzYayK-NCR1HeFHSQ.png)
 \*\*做到这一步就算已经完成了。成功之后，回到七牛云对象存储，在存储空间的概览也可以看到 CNAME 状态显示为"成功"：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqUy4JQdwDQ1EM_k1dRzGZCTUtVu.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqUy4JQdwDQ1EM_k1dRzGZCTUtVu.png)
 
 **第三**，在博客中把博客所有  [https://cdn.nlark.com](https://cdn.nlark.com/)  的域名都替换成  [http://qiniu.bioinit.com](http://qiniu.bioinit.com/)  即可。
 
 **第四**，如果想要换成  [https://qiniu.bioinit.com](http://qiniu.bioinit.com/)，需要在存储空间的 **"域名管理"**  中修改 https 配置。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpYa6F1OQtJVZ7_8n4raCIyNU40b.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpYa6F1OQtJVZ7_8n4raCIyNU40b.png)
 
 HTTPS 配置中的 SSL 证书可以选择申请七牛与的免费证书；也可以申请阿里云的\*\* "免费型 DV SSL" **证书，然后选择本地上传 **"证书内容"** 和 **"证书私钥"**，我这里选择的是阿里云的** "免费型 DV SSL" \*\*证书。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fq5JW6xmF4nNAp4LU1HUH3Ymmlar.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fq5JW6xmF4nNAp4LU1HUH3Ymmlar.png)
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkezkzI6uURpQNZfRzZjTtVGWWvz.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkezkzI6uURpQNZfRzZjTtVGWWvz.png)
 
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FgFHSAFRhVRDMysAoCY4vHN1x9Bw.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FgFHSAFRhVRDMysAoCY4vHN1x9Bw.png)
 
 **"确认"**  提交后，等待大约 10 分钟，可以在七牛云对象存储空间的 **"域名管理"** → **"HPPTS 配置"**  看到 HTTPS 已经开启。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuv4WG_FNYVPd_ntz4H4xht6NGAa.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fuv4WG_FNYVPd_ntz4H4xht6NGAa.png)
 
 **最后**，在博客中把博客所有  [https://cdn.nlark.com](https://cdn.nlark.com/)  的域名都替换成  [https://qiniu.bioinit.com](http://qiniu.bioinit.com/)，并检查图片是否正常显示。
 
@@ -87,12 +87,12 @@ HTTPS 配置中的 SSL 证书可以选择申请七牛与的免费证书；也可
 ## 2.1 创建 bucket，选择镜像回源
 
 我们可以在 oss 的 bucket 中选择 "**基础设置**" 页面的   "**镜像回源**" 设置。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fkuic0mx5CeObKnuCjAaIZC1nh-D.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fkuic0mx5CeObKnuCjAaIZC1nh-D.png)
 
 ## 2.2 添加镜像回源规则
 
 在 "**镜像回源**" 设置中 "**添加规则**"，添加规则时，会问你是否需要镜像，如果不镜像，就不会自动备份迁移一个到 OSS 中，下次访问的时候，虽然还会回源，但不一定正常显示图片，因此这里选择"**镜像**"。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoqlqaHkkKXxB0avqMsrInEc_GVM.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoqlqaHkkKXxB0avqMsrInEc_GVM.png)
 
 这里有两个前缀的选项，比较好玩：
 
@@ -107,11 +107,11 @@ HTTPS 配置中的 SSL 证书可以选择申请七牛与的免费证书；也可
 上一步镜像回源的规则创建好，点击 "确定" 后，在博客中我们只需要把博客所有 `https://cdn.nlark.com` 的域名都替换成你 oss 对应的外网访问 Bucket 域名（如， `https://bucketname.oss-endpoint.com`  即可），并检查图片是否正常显示。
 
 对于其他镜像回源规则的链接变更：
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhwUMa1xlPdbZ91XKtVQ-hTWQpin.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhwUMa1xlPdbZ91XKtVQ-hTWQpin.png)
 
 - 把 cdn.nlark.com/yuque/0 替换成 notedb.oss-cn-shenzhen.aliyuncs.com 即可。
 
 # 三、个人博客
 
 最后，附上与语雀文章同步更新，基于 Hugo 的个人博客。
-![shen-bioitee.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjMPtnGLbxm5-GoDa34mLICaFti5.png)
+![shen-bioitee.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjMPtnGLbxm5-GoDa34mLICaFti5.png)

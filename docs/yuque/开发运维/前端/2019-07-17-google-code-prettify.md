@@ -63,7 +63,7 @@ google-code-prettify 默认每五行显示一次行号，如果想要显示所�
 li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk8fPWIL8yWxeBJCxFjzJ001cJ2h.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fk8fPWIL8yWxeBJCxFjzJ001cJ2h.png)
 
 ## 3.3. Markdown
 

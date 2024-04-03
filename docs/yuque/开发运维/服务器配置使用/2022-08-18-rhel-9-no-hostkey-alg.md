@@ -7,7 +7,7 @@ updated: "2023-08-11 05:21:07"
 ---
 
 昨天把阿里云的一个轻量云服务器升级到了 AlmaLinux release 9.0 (Emerald Puma)，开启 RHEL 9 系列的新体验。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fp2J6etLXPMJzUxy_TqI3q4deG0A.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fp2J6etLXPMJzUxy_TqI3q4deG0A.png)
 
 发现的第一个比较直观的问题：
 **从 RHEL 6.x 的服务器 ssh 到 AlmaLinux 9 的轻量云服务器时候出现 no hostkey alg 错误！**
@@ -18,7 +18,7 @@ no hostkey alg
 ```
 
 一开始拿着这个错误去谷歌，找了不少答案（例如，KexAlgorithms 算法支持问题；`/etc/ssh/ssh_host_*key`问题；权限问题，等等）都没办法解决，后来去 AlmaLinux 社区提问，才最终把这个问题解决了。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flgu92Si4SO1GDPjqVHq-UPUBRCX.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Flgu92Si4SO1GDPjqVHq-UPUBRCX.png)
 从 RHEL9 的官网文档《[1.0.2. Crypto-policies, RHEL core cryptographic components, and protocols](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/considerations_in_adopting_rhel_9/index#ref_considerations-security-crypto_changes-to-security)（加密策略、RHEL 核心加密组件和协议）》可以看到 SHA-1 已经在 RHEL9 中弃用了！
 
 > In RHEL 9, SHA-1 usage for signatures is restricted in the DEFAULT system-wide cryptographic policy. Except for HMAC, SHA-1 is no longer allowed in TLS, DTLS, SSH, IKEv2, DNSSEC, and Kerberos protocols. Individual applications not controlled by the RHEL system-wide crypto policies are also moving away from using SHA-1 hashes in RHEL 9.

@@ -25,7 +25,7 @@ ipython notebook 是一个基于浏览器的 python 数据分析工具，使用�
 
 这有点类似做应用题。而这是传统的 IDE (e.g. PyCharm) 没有办法做到的。假如全部都写脚本+输出，那么你 > **每张图可能都要保存下来，然后再单独点进去看**，很麻烦。而 Notebook 做这个要更方便，结果直接产生在 Cell 下面。>
 
-> ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqtURTj4UvTyPmTTkMAS-SLDNTJc.jpg)>
+> ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqtURTj4UvTyPmTTkMAS-SLDNTJc.jpg)>
 
 反言之，如果你不需要这种频繁的计算-画图的话，那么 notebook 可能还真没什么大不了.>
 
@@ -37,11 +37,11 @@ ipython notebook 是一个基于浏览器的 python 数据分析工具，使用�
 
 >
 
-> ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flsdnj1w2kd21uCCBSTtsQwXPWcK.jpg)>
+> ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Flsdnj1w2kd21uCCBSTtsQwXPWcK.jpg)>
 
 再比如，在分析电影数据的时候，我觉得用 card 来展示更方便一点，所以可以这样显示数据：>
 
-> ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk6z9MvQflcnWFXW8s4dNm76zU3m.jpg) > ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk6z9MvQflcnWFXW8s4dNm76zU3m.jpg) > ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fk6z9MvQflcnWFXW8s4dNm76zU3m.jpg)
+> ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fk6z9MvQflcnWFXW8s4dNm76zU3m.jpg) > ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fk6z9MvQflcnWFXW8s4dNm76zU3m.jpg) > ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fk6z9MvQflcnWFXW8s4dNm76zU3m.jpg)
 
 参考链接： > [https://www.zhihu.com/question/37490497/answer/212044783]()
 
@@ -100,13 +100,13 @@ Known labextensions:
 ```
 
 这时候，Jupyter 会自动生成一个用于登陆 jupyter Notebook 的 token，我们在浏览器打开 token 的链接：<http://localhost:8888/?token=120a457da88d214270e...22a376d3d4>，即可进入登陆后的 Jupyter Notebook 页面：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FjLdbfzpjjE-jrDy-xh-eEh1d74k.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FjLdbfzpjjE-jrDy-xh-eEh1d74k.png)
 
 ## 3. 使用
 
 在 jupyter notebook web 页面，我们可以点击 " **New**" → "**Python2**" 创建 python2 笔记。我们可以在这两个笔记中使用 markdown 语法进行编辑，也可以交互执行 python 代码。
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FguaClDlBgOp0-om0nxmKehCWUJk.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FguaClDlBgOp0-om0nxmKehCWUJk.png)
 
 Jupyter Notebook web 登陆后，点击右上角 "**Logout**" 可退出；通过输入上面的 token 可重新登陆。或者我们可以通过 `jupyter notebook password` 命令设置密码进行登陆（如果忘记密码也可以通过该命令进行重置）。默认 jupyter notebook passwd 保存在 `~/.jupyter/jupyter_notebook_config.json` ，如下：
 
@@ -195,7 +195,7 @@ $ jupyter notebook
 
 打开阿里云域名管理，增加 A 记录解析：
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmKiF8RjMkyospa5fBRWx4ZT6QWR.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmKiF8RjMkyospa5fBRWx4ZT6QWR.png)
 
 ### 4) 配置 nginx
 
@@ -252,7 +252,7 @@ server{
 其中 fullchain.pem 与 privkey.pem 是你的网址的 SSL 证书，如果没有，可以参考 Letsencrypt 免费证书。
 
 至此，大功告成，打开你的网址 xxx.xxx.com 就可以看到熟悉的 Jupyter 了。
-![jupyter_server.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkZqx8CGwdqzGoyn_BFYwJNNEafn.png)
+![jupyter_server.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkZqx8CGwdqzGoyn_BFYwJNNEafn.png)
 
 ## 3. 后台模式运行
 
@@ -318,7 +318,7 @@ ipython kernel install --user
 4.  不加 --user 和 --prefix，IPython kernel spec 默认安装到 /usr/local/share/jupyter/kernels 或者 /usr/share/jupyter/kernels。
 5.  IPython kernel spec 安装可以使用 python -m ipykernel install，也可以使用 ipython-kernel-install 命令，两者是一样的。
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fq0EgIerNH9zn2ev655rVUkDn655.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fq0EgIerNH9zn2ev655rVUkDn655.png)
 
 ## 2. 实际操作
 
@@ -353,4 +353,4 @@ Available kernels:
   python3    /Bio/Anaconda2.5/share/jupyter/kernels/python3
 ```
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FlO_YbUp6yXTyoQyM1adTWUQctvu.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FlO_YbUp6yXTyoQyM1adTWUQctvu.png)

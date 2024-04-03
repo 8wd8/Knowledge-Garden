@@ -20,7 +20,7 @@ updated: "2021-06-30 09:36:01"
 > - 分析海量图片：将您的照片存储在云开发云存储中，使用图像标签扩展能力，轻松完成图片标签识别，帮您实现相册分类。
 > - 构建运营管理后台：使用 CMS 扩展功能，帮您完成文章编辑和发布、素材管理等数据和内容的管理，省去您手动线上修改数据库数据或者开发管理后台的麻烦。
 
-![腾讯云静态网站托管.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FntONRJ0rSf3jLzL0FUwISnD_-tP.png)
+![腾讯云静态网站托管.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FntONRJ0rSf3jLzL0FUwISnD_-tP.png)
 腾讯云最近在官网上线了一个静态网站托管的产品，结合腾讯云提供的 CloudBase CLI 工具，可以实现的第三方的任意一个服务器快速持续部署自己的 [Hexo](https://cloud.tencent.com/document/product/1210/43365)、[VuePress](https://cloud.tencent.com/document/product/1210/43388)、[Hugo](https://cloud.tencent.com/document/product/1210/43389)。
 
 ```bash
@@ -37,8 +37,8 @@ cloudbase hosting:deploy ./public  -e EnvID
 # 可以找到默认的域名，单击域名，就可以看到您刚部署的 Hugo。
 ```
 
-![静态网站托管.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FpbDxt-TXvDHCrVR3ioH45KEOsG1.png)
-![cloudbase-deploy.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fqq-2_UYPAbz_tUPDyJpgyenrAYJ.png)
+![静态网站托管.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FpbDxt-TXvDHCrVR3ioH45KEOsG1.png)
+![cloudbase-deploy.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fqq-2_UYPAbz_tUPDyJpgyenrAYJ.png)
 
 腾讯云静态网站下 cloudbase CLI 详细操作：
 [403 Forbidden](https://cloud.tencent.com/document/product/876/41543)
@@ -54,7 +54,7 @@ cloudbase hosting:deploy ./public  -e EnvID
 - 本活动自本日起到 2020 年 12 月 31 日期间 每个周四当天 0:00-24:00，原价 55 元的 COM 优惠价 20 元可注册。不可再使用其他优惠券等再次优惠。
 - 有的周四只有 20 元的 COM，有的周四 COM NET 域名都有优惠。
 
-![txcom20200917.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fsgt19kDrhYHffbz9JmuZPUIbJPi.png)
+![txcom20200917.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fsgt19kDrhYHffbz9JmuZPUIbJPi.png)
 
 ### 腾讯云域名续费优惠券
 

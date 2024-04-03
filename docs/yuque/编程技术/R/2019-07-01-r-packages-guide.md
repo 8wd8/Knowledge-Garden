@@ -138,7 +138,7 @@ install.packages('vioplot')
 > R 每年（通常是 4 月中旬）在 'x.y.z' 中发布一个 '.y' 版本，但 Bioconductor 每 6 个月（4 月中旬和 10 月中旬）发布一个 '.y' 版本。
 >
 > Bioconductor 与 R 各自对应的版本如下：（参考：[Bioconductor releases](https://bioconductor.org/about/release-announcements/)）
-> ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkXS0_Pc5QLBO1v0i83uWMVnnkF3.png)
+> ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkXS0_Pc5QLBO1v0i83uWMVnnkF3.png)
 
 ```r
 BiocManager::version()

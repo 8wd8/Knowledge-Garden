@@ -80,7 +80,7 @@ $ jupyter notebook --ip=0.0.0.0 --port=9000
 ```
 
 如果在启动过程中出现：OSError: \[Errno 99] Cannot assign requested address，请参考下面的方法解决。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqT8n9qwwYgNtlidpEI2XMzHH7rf.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqT8n9qwwYgNtlidpEI2XMzHH7rf.png)
 
 \*\*解决：\*\*运行 Jupyter 时增加 `--ip=0.0.0.0`  参数。
 
@@ -90,7 +90,7 @@ $ jupyter notebook --ip=0.0.0.0 --port=9000
 
 配置 nginx 前需要把你已经申请的域名跟 Jupyter Notebook 的服务器 ip 进行绑定解析。打开阿里云域名管理，增加 A 记录解析：
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FmKiF8RjMkyospa5fBRWx4ZT6QWR.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FmKiF8RjMkyospa5fBRWx4ZT6QWR.png)
 
 ## 5. 配置 nginx
 
@@ -148,7 +148,7 @@ server{
 
 至此，大功告成，打开你的网址 **xxx.xxx.com** 是不是可以看到熟悉的 jupyter 了呢？如有疑问，欢迎留言讨论。
 
-![jupyter_server.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FkZqx8CGwdqzGoyn_BFYwJNNEafn.png)
+![jupyter_server.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FkZqx8CGwdqzGoyn_BFYwJNNEafn.png)
 
 以上就是远程 Jupter Notebook 服务安装与配置的全部内容，下一篇我们介绍一下如何在  Jupyter Notebook  中使用不同内核（Kernel）实现支持包括 python2、python3、R 在的多种不同编程环境。
 

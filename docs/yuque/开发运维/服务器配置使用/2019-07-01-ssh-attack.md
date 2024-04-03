@@ -16,7 +16,7 @@ updated: "2021-06-25 11:05:52"
 
 `lastb` 查看的是 /var/log/btmp 中的内容，而 /var/log/btmp 是一个二进制的文件；
 `last` 查看的是 /var/log/wtmp 中的内容，而  /var/log/wtmp 也是一个二进制的文件；
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FheZchvExI1ORbh4j8LVpue1Kv0X.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FheZchvExI1ORbh4j8LVpue1Kv0X.png)
 
 东北大学收集的发动 SSH 攻击的 IP 地址列表：<http://antivirus.neu.edu.cn/scan/ssh.php>
 

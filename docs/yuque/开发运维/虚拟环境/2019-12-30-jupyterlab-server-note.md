@@ -10,7 +10,7 @@ updated: "2022-06-14 16:27:08"
 
 > JupyterLab is a next-generation web-based user interface for Project Jupyter. JupyterLab enables you to work with documents and activities such as [Jupyter notebooks](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html#notebook), text editors, terminals, and custom components in a flexible, integrated, and extensible manner.
 
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fpq9ObNYavMIyXe5rmYWRmGLBNDw.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fpq9ObNYavMIyXe5rmYWRmGLBNDw.png)
 
 ## 安装
 
@@ -81,11 +81,11 @@ $ source activate jupyterlab
 $ jupyter lab --ip 0.0.0.0 --port 9090
 ```
 
-![jupyterlab-with-ip.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FqhJp4xMpbPY3IB4o8VQOYW9RjPg.png)
+![jupyterlab-with-ip.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqhJp4xMpbPY3IB4o8VQOYW9RjPg.png)
 JupyterLab 各种 Conda 环境与语言版本
 
 这样就可以在单一一个 JupyterLab 界面中同时使用不同 Conda 环境下的各种语言与版本了。
-![jupyterlab-multi-env.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FhU7QRtOnp-HFCm1VQwT1Mme44P3.png)
+![jupyterlab-multi-env.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FhU7QRtOnp-HFCm1VQwT1Mme44P3.png)
 
 ## 配置远程访问
 
@@ -128,7 +128,7 @@ c.NotebookApp.allow_remote_access = True
 ```
 
 接下来输入`jupyter lab` 就可以启动 jupyter-lab 服务啦！
-![jupyter-lab.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtVANgfX9_hkr7wXWf9zHQgVOSMo.png)
+![jupyter-lab.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtVANgfX9_hkr7wXWf9zHQgVOSMo.png)
 
 ## 域名配置
 
@@ -184,7 +184,7 @@ server{
 }
 ```
 
-![jupyterlab-domain.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fuau3xcI0zxDGpwoDM__RS-Xe-l5.png)
+![jupyterlab-domain.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fuau3xcI0zxDGpwoDM__RS-Xe-l5.png)
 
 ## 遇到的问题
 

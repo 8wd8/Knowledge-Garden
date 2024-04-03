@@ -37,8 +37,8 @@ MySQL Community Edition(社区免费版，<https://dev.mysql.com/downloads/>) �
 # 二、MySQL 免安装版
 
 MySQL 提供了 rpm、源码、免安装等多种安装方式，其中通过源码编译安装是比较耗时，过程相对复杂的一个过程。对于不想使用源码编译安装的童鞋，MySQL 提供了免安装直接解压可用的版本。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fh5NUAWJ25GUb2vn7p982emfFEMd.png)
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FoWgUlawC4kF4iH8tajp8oE2fFNM.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fh5NUAWJ25GUb2vn7p982emfFEMd.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FoWgUlawC4kF4iH8tajp8oE2fFNM.png)
 
 ```bash
 wget https://cdn.mysql.com/archives/mysql-8.0/mysql-8.0.12-el7-x86_64.tar.gz
@@ -51,10 +51,10 @@ wget https://cdn.mysql.com/archives/mysql-8.0/mysql-8.0.12-el7-x86_64.tar.gz
 - Source Code：源代码下载
 
 - Generic Linux (Architecture Independent)：通用的 Linux（独立结构）。
-  ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FtDJUdcOkvmSrWsdwxDiNp_PbMLE.png)
+  ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FtDJUdcOkvmSrWsdwxDiNp_PbMLE.png)
 
 - 点击下载，需要注册 Oracle 账号，这里不细说。
-  ![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FvhmYBnQMuo7TS6r3G-BWkPSMZou.png)
+  ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvhmYBnQMuo7TS6r3G-BWkPSMZou.png)
 
 ```bash
 $ wget https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-boost-8.0.12.tar.gz
@@ -63,7 +63,7 @@ $ wget https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-boost-8.0.12.tar.gz
 - 其他下载版本
 
 如果想要下载其他版本的 MySQL，可以在 <https://downloads.mysql.com/archives/community/> 选择符合自己服务器的版本进行下载。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FsNFOVdmpE8AX7AQf5GWHNtDwF5I.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FsNFOVdmpE8AX7AQf5GWHNtDwF5I.png)
 
 # 四、MySQL 源码编译安装
 
@@ -255,7 +255,7 @@ $ /usr/local/software/mysql/bin/mysql -uroot
 ```
 
 MySQL 第一次安装完成后，是没有设置 root 密码的，直接回车 Enter 即可登陆：
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Fpuu6dEhzbjLu__GrRbGu3sS_dDG.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fpuu6dEhzbjLu__GrRbGu3sS_dDG.png)
 
 ## 10. 数据库其他配置
 

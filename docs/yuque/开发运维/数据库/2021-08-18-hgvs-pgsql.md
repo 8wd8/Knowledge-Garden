@@ -37,12 +37,12 @@ Out[5]: ''
 ```
 
 除此之外，可以通过 conda 的方式查看（**conda search hgvs --info**）。
-![](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/Flw6SnwGbNRSvoRHx_41pZSFo1Pe.png)
+![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Flw6SnwGbNRSvoRHx_41pZSFo1Pe.png)
 
 ## Psycopg requires libpq >= 9.1
 
 hgvs 的安装依赖于 psycopg2-binary，而 psycopg2-binary 又依赖于 psycopg2。
-![image.png](https://shub-1251708715.cos.ap-guangzhou.myqcloud.com/elog-cookbook-img/FnNQMS7enSQOEFDZswwvcNDGCFZ0.png)
+![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FnNQMS7enSQOEFDZswwvcNDGCFZ0.png)
 
 ```python
 $ pip install psycopg2
