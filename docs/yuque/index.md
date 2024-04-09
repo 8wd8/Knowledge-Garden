@@ -24,3 +24,5 @@ updated: "2024-01-24 08:08:08"
 
 这个节点的文章最初是保存在语雀的 "[技术私房菜](https://www.yuque.com/shenweiyan/cookbook)" 知识库，后来借助 [LetTTGACO/elog](https://github.com/LetTTGACO/elog) 备份到了个人托管在 GitHub 的 [Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden) 仓库（对部分文章内容已经进行了更新），并最终基于 [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) 在这里展现了出来。
 
+![yuque-cookbook](https://shub.weiyan.tech/mkdocs/yuque-cookbook.webp)
+
