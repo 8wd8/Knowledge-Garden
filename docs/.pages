@@ -10,4 +10,4 @@ nav:
     - 留言: message
     - 关于: readme
     - 友链: flinks
-    - RSS: https://weiyan.cc/feed_rss_created.xml
+    - RSS: feed_rss_created.xml
