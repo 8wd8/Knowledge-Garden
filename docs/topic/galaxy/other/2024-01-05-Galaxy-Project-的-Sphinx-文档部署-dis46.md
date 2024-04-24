@@ -6,8 +6,8 @@ url: https://github.com/shenweiyan/Knowledge-Garden/discussions/46
 date: 2024-01-05
 authors: [shenweiyan]
 categories: 
-  - 3.4-其他文章
-labels: ['公众号', '3.4.1-GalaxyOther']
+  - 3.1-Galaxy
+labels: ['公众号', '3.1.x-GalaxyOther']
 ---
 
 <https://docs.galaxyproject.org/> 是 Galaxy Project 官方的文档地址链接，这是一个基于 [Sphinx](https://www.sphinx-doc.org/) + [Read the Docs](https://readthedocs.org/) 的文档站点。如果我们也想要创建一个这样一模一样的 Galaxy 文档需要怎么操作呢？

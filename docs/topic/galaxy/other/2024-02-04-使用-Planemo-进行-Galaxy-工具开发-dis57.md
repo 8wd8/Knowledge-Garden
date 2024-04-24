@@ -6,8 +6,8 @@ url: https://github.com/shenweiyan/Knowledge-Garden/discussions/57
 date: 2024-02-04
 authors: [shenweiyan]
 categories: 
-  - 3.4-其他文章
-labels: ['3.4.1-GalaxyOther']
+  - 3.1-Galaxy
+labels: ['3.1.x-GalaxyOther']
 ---
 
 > 说明：本文章原文发布于 《[使用 Planemo 进行 Galaxy 工具开发 - 语雀](https://www.yuque.com/shenweiyan/biox/planemo-for-galaxy)》，部分内容已更新。
