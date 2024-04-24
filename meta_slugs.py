@@ -1,4 +1,11 @@
-"""MkDocs hook to replace destination urls with custom slugs
+# -*- coding:utf-8 -*-
+# vim:et:ts=4:sw=4:
+#!/usr/bin/env python
+
+"""
+Via: https://github.com/squidfunk/mkdocs-material/discussions/5161
+
+MkDocs hook to replace destination urls with custom slugs
 
 The main issue of this feature is the fact that the front matter header is loaded 
 for each page sequentially in the on_page_markdown event. To avoid issues with 
@@ -12,6 +19,7 @@ Current limitations:
 
 Licence MIT 2024 Kamil Krzyśków (HRY)
 """
+
 import os
 from mkdocs.plugins import get_plugin_logger
 from mkdocs.utils import meta

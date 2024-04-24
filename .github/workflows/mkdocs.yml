@@ -38,7 +38,7 @@ jobs:
         run: python3 script/discussions2blog.py -i docs/Discussions.txt
 
       - name: Generate mkdocs posts
-        run: python3 script/discussions2mkdocs.py -i docs/Discussions.txt -c nav.yml 
+        run: python3 script/discussions2mkdocs.py -i docs/Discussions.txt -c nav4dir.yml
 
       - name: Generate mkdocs special pages
         run: python3 script/discussions4pages.py -i docs/Discussions.txt
