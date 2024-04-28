@@ -51,7 +51,7 @@ updated: 2024-03-21
 
     以我观物，故物皆著我之色彩。
 
-- __[Jayden's site](https://xxu.do/)
+- __[Jayden's site](https://xxu.do/)__
 
     为天地立心，为生民立命，为往圣继绝学，为万世开太平。
 
