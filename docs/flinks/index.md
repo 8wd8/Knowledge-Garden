@@ -55,6 +55,14 @@ updated: 2024-03-21
 
     为天地立心，为生民立命，为往圣继绝学，为万世开太平。
 
+- __[Shitao Wu | 吴诗涛](https://shitao5.org/)__
+
+    喜欢捣鼓电脑，UseR，喜欢[阅读](https://shitao5.org/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/)，重度使用 Kindle。甘愿做一个平庸的人，走在成为我自己的道路上。
+
+- __[椒盐豆豉](https://blog.douchi.space/)__
+
+    一个写了二十年博客，现居美国西雅图的女博主+码农。
+
 </div>
 
 <script src="https://giscus.app/client.js"
