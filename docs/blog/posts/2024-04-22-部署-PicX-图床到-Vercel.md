@@ -28,6 +28,12 @@ labels: []
 - 在 Vercel 新建项目，绑定个人 GitHub 仓库的 PicX v2 源码；Framework Preset 选择 "Vue.js"；
 - 部署完成后为域名添加一条 CNAME 到 `cname-china.vercel-dns.com`。
 
+基于以上的步骤，个人成功部署的一个 PicX 站点，以供参考和使用：
+
+- https://github.com/shenweiyan/PicX
+- 链接1：<https://v2picx.vercel.app/>
+- 链接2：<https://picx.weiyan.cc/>
+
 <script src="https://giscus.app/client.js"
 	data-repo="shenweiyan/Knowledge-Garden"
 	data-repo-id="R_kgDOKgxWlg"
