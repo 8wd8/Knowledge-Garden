@@ -34,6 +34,8 @@ labels: []
 - 链接1：<https://v2picx.vercel.app/>
 - 链接2：<https://picx.weiyan.cc/>
 
+![picx-weiyan-cc](https://kg.weiyan.cc/2024/05/picx-weiyan-cc.webp)
+
 <script src="https://giscus.app/client.js"
 	data-repo="shenweiyan/Knowledge-Garden"
 	data-repo-id="R_kgDOKgxWlg"
