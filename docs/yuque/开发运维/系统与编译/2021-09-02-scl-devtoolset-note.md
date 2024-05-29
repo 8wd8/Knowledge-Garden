@@ -1,22 +1,22 @@
 ---
-title: SCL 笔记 | Devtoolset 安装与使用笔记
+title: SCL 笔记之 Devtoolset 安装与使用
 urlname: 2021-09-02-scl-devtoolset-note
 author: 章鱼猫先生
 date: 2021-09-02
-updated: "2022-04-13 10:53:41"
+updated: 2024-05-29
 ---
 
-# 1. 背景
+## 1. 背景
 
 > CentOS/RHEL Linux 发行版以稳定性著称，所有的软件都要尽可能 stable，导致的一个结果就是基础软件的版本非常的低，比如 CentOS 6.7（15 年发布） 中 gcc 版本还是 4.4.7（12 年的版本）。这对开发来说就不是很友好，比如我们想用 C++ 11 中的某个特性，就必须自己编译一个高版本的 gcc 出来，但是这会有另外一个问题，开发环境不好维护，如果自己有多台电脑或者多个人合作的项目，每台机器上都要自己编一份，维护起来就比较麻烦。
 
-## SCL
+### SCL
 
 SCL(Software Collections)是一个 CentOS/RHEL Linux 平台的软件多版本共存解决方案，为 RHEL/CentOS Linux 用户提供一种方便、安全地安装和使用应用程序和运行时环境的多个版本的方式，同时避免把系统搞乱。
 
 SCL 项目主页：[https://www.softwarecollections.org](https://www.softwarecollections.org/)
 
-## Devtoolset
+### Devtoolset
 
 > 不同平台的编译环境不一样，所以 RedHat 就推出了 scl (Software Collections) ，它可以根据 devtoolset 一起配合来快速统一开发环境，不用一个个的去找各个官网再去编译源码安装。
 
@@ -30,13 +30,13 @@ SCL 项目主页：[https://www.softwarecollections.org](https://www.softwarecol
 当然，除了 devtoolset 这些专门用于编译开发的工具集，SCL 上还有其他的很多工具集，如 [Ruby](https://www.softwarecollections.org/en/scls/rhscl/rh-ruby26/)，[Redis](https://www.softwarecollections.org/en/scls/rhscl/rh-redis5/)，[nginx](https://www.softwarecollections.org/en/scls/rhscl/rh-nginx114/) 等等。
 ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvAWwL60Wum2uXQtQxggO4CKtCeP.png)
 
-# 2. 安装
+## 2. 安装
 
-## 安装配置 SCL YUM 源
+### 安装配置 SCL YUM 源
 
 首先，要解决的第一个问题就是 yum 源的问题。尤其是在 CentOS 6 已经停止了维护（2020 年 11 月 30 日）的前提下，yum 源如果失效/错误，一切都将免谈。
 
-### CenOS 7
+#### CenOS 7
 
 CentOS 7 最晚在 2024 年 6 月 30 后停止更新维护，在此之前在 CentOS 7 可以通过 yum 直接安装 SCL 源基本都是可以正常使用的。
 
@@ -48,82 +48,80 @@ yum install centos-release-scl centos-release-scl-rh
 安装完成后，会默认在 **/etc/yum.repos.d** 下生成 2 个 repo 源文件：
 
 - **CentOS-SCLo-scl.repo**
+  ```
+  # CentOS-SCLo-sclo.repo
+  #
+  # Please see http://wiki.centos.org/SpecialInterestGroup/SCLo for more
+  # information
 
-<!---->
+  [centos-sclo-sclo]
+  name=CentOS-7 - SCLo sclo
+  # baseurl=http://mirror.centos.org/centos/7/sclo/$basearch/sclo/
+  mirrorlist=http://mirrorlist.centos.org?arch=$basearch&release=7&repo=sclo-sclo
+  gpgcheck=1
+  enabled=1
+  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    # CentOS-SCLo-sclo.repo
-    #
-    # Please see http://wiki.centos.org/SpecialInterestGroup/SCLo for more
-    # information
+  [centos-sclo-sclo-testing]
+  name=CentOS-7 - SCLo sclo Testing
+  baseurl=http://buildlogs.centos.org/centos/7/sclo/$basearch/sclo/
+  gpgcheck=0
+  enabled=0
+  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    [centos-sclo-sclo]
-    name=CentOS-7 - SCLo sclo
-    # baseurl=http://mirror.centos.org/centos/7/sclo/$basearch/sclo/
-    mirrorlist=http://mirrorlist.centos.org?arch=$basearch&release=7&repo=sclo-sclo
-    gpgcheck=1
-    enabled=1
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+  [centos-sclo-sclo-source]
+  name=CentOS-7 - SCLo sclo Sources
+  baseurl=http://vault.centos.org/centos/7/sclo/Source/sclo/
+  gpgcheck=1
+  enabled=0
+  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    [centos-sclo-sclo-testing]
-    name=CentOS-7 - SCLo sclo Testing
-    baseurl=http://buildlogs.centos.org/centos/7/sclo/$basearch/sclo/
-    gpgcheck=0
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
-
-    [centos-sclo-sclo-source]
-    name=CentOS-7 - SCLo sclo Sources
-    baseurl=http://vault.centos.org/centos/7/sclo/Source/sclo/
-    gpgcheck=1
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
-
-    [centos-sclo-sclo-debuginfo]
-    name=CentOS-7 - SCLo sclo Debuginfo
-    baseurl=http://debuginfo.centos.org/centos/7/sclo/$basearch/
-    gpgcheck=1
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
-
+  [centos-sclo-sclo-debuginfo]
+  name=CentOS-7 - SCLo sclo Debuginfo
+  baseurl=http://debuginfo.centos.org/centos/7/sclo/$basearch/
+  gpgcheck=1
+  enabled=0
+  gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+  ```
+  
 - **CentOS-SCLo-scl-rh.repo**
+   ```
+   # CentOS-SCLo-rh.repo
+   #
+   # Please see http://wiki.centos.org/SpecialInterestGroup/SCLo for more
+   # information
 
-<!---->
+   [centos-sclo-rh]
+   name=CentOS-7 - SCLo rh
+   #baseurl=http://mirror.centos.org/centos/7/sclo/$basearch/rh/
+   mirrorlist=http://mirrorlist.centos.org?arch=$basearch&release=7&repo=sclo-rh
+   gpgcheck=1
+   enabled=1
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    # CentOS-SCLo-rh.repo
-    #
-    # Please see http://wiki.centos.org/SpecialInterestGroup/SCLo for more
-    # information
+   [centos-sclo-rh-testing]
+   name=CentOS-7 - SCLo rh Testing
+   baseurl=http://buildlogs.centos.org/centos/7/sclo/$basearch/rh/
+   gpgcheck=0
+   enabled=0
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    [centos-sclo-rh]
-    name=CentOS-7 - SCLo rh
-    #baseurl=http://mirror.centos.org/centos/7/sclo/$basearch/rh/
-    mirrorlist=http://mirrorlist.centos.org?arch=$basearch&release=7&repo=sclo-rh
-    gpgcheck=1
-    enabled=1
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+   [centos-sclo-rh-source]
+   name=CentOS-7 - SCLo rh Sources
+   baseurl=http://vault.centos.org/centos/7/sclo/Source/rh/
+   gpgcheck=1
+   enabled=0
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    [centos-sclo-rh-testing]
-    name=CentOS-7 - SCLo rh Testing
-    baseurl=http://buildlogs.centos.org/centos/7/sclo/$basearch/rh/
-    gpgcheck=0
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+   [centos-sclo-rh-debuginfo]
+   name=CentOS-7 - SCLo rh Debuginfo
+   baseurl=http://debuginfo.centos.org/centos/7/sclo/$basearch/
+   gpgcheck=1
+   enabled=0
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+   ```
 
-    [centos-sclo-rh-source]
-    name=CentOS-7 - SCLo rh Sources
-    baseurl=http://vault.centos.org/centos/7/sclo/Source/rh/
-    gpgcheck=1
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
-
-    [centos-sclo-rh-debuginfo]
-    name=CentOS-7 - SCLo rh Debuginfo
-    baseurl=http://debuginfo.centos.org/centos/7/sclo/$basearch/
-    gpgcheck=1
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
-
-### CentOS 6
+#### CentOS 6
 
 如果您使用 yum 安装 centos-release-SCL/centos-release-scl 时遇到 Error: Nothing to do 异常（尤其是在已经停止维护的 CentOS 6 的系统中）：
 
@@ -150,7 +148,7 @@ sudo yum install centos-release-scl
 
 > \*\*Important: \*\*Please, mind, that packages build by SCLo SIG are not supported and are not part of the supported Red Hat portfolio. For installing supported Software Collections packages, install packages from official RHSCL repository only.
 
-### 手动调整 SCL YUM 源
+#### 手动调整 SCL YUM 源
 
 如果您通过 rpm（或者其他的方式）成功安装了 centos-release-scl，但是安装 devtoolset（或者其他工具集时）提示 404 异常。
 
@@ -189,80 +187,78 @@ Error: Cannot retrieve repository metadata (repomd.xml) for repository: centos-s
 第一，在 /etc/yum.repos.d 手动创建 CentOS-SCLo-scl.repo 和 CentOS-SCLo-scl-rh.repo 文件。
 
 - **CentOS-SCLo-scl.repo**
+   ```
+   # CentOS-SCLo-sclo.repo
+   #
+   # Please see http://wiki.centos.org/SpecialInterestGroup/SCLo for more
+   # information
 
-<!---->
+   [centos-sclo-sclo]
+   name=CentOS-6 - SCLo sclo
+   #baseurl=http://vault.centos.org/centos/6/sclo/$basearch/sclo/
+   baseurl=https://mirrors.aliyun.com/centos-vault/6.9/sclo/x86_64/sclo/
+   gpgcheck=1
+   enabled=1
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    # CentOS-SCLo-sclo.repo
-    #
-    # Please see http://wiki.centos.org/SpecialInterestGroup/SCLo for more
-    # information
+   [centos-sclo-sclo-testing]
+   name=CentOS-6 - SCLo sclo Testing
+   baseurl=http://buildlogs.centos.org/centos/6/sclo/$basearch/sclo/
+   gpgcheck=0
+   enabled=0
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    [centos-sclo-sclo]
-    name=CentOS-6 - SCLo sclo
-    #baseurl=http://vault.centos.org/centos/6/sclo/$basearch/sclo/
-    baseurl=https://mirrors.aliyun.com/centos-vault/6.9/sclo/x86_64/sclo/
-    gpgcheck=1
-    enabled=1
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+   [centos-sclo-sclo-source]
+   name=CentOS-6 - SCLo sclo Sources
+   baseurl=http://vault.centos.org/centos/6/sclo/Source/sclo/
+   gpgcheck=1
+   enabled=0
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    [centos-sclo-sclo-testing]
-    name=CentOS-6 - SCLo sclo Testing
-    baseurl=http://buildlogs.centos.org/centos/6/sclo/$basearch/sclo/
-    gpgcheck=0
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
-
-    [centos-sclo-sclo-source]
-    name=CentOS-6 - SCLo sclo Sources
-    baseurl=http://vault.centos.org/centos/6/sclo/Source/sclo/
-    gpgcheck=1
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
-
-    [centos-sclo-sclo-debuginfo]
-    name=CentOS-6 - SCLo sclo Debuginfo
-    baseurl=http://debuginfo.centos.org/centos/6/sclo/$basearch/
-    gpgcheck=1
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+   [centos-sclo-sclo-debuginfo]
+   name=CentOS-6 - SCLo sclo Debuginfo
+   baseurl=http://debuginfo.centos.org/centos/6/sclo/$basearch/
+   gpgcheck=1
+   enabled=0
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+   ```
 
 - **CentOS-SCLo-scl-rh.repo**
+   ```
+   # CentOS-SCLo-rh.repo
+   #
+   # Please see http://wiki.centos.org/SpecialInterestGroup/SCLo for more
+   # information
 
-<!---->
+   [centos-sclo-rh]
+   name=CentOS-6 - SCLo rh
+   #baseurl=http://vault.centos.org/centos/6/sclo/$basearch/rh/
+   baseurl=https://mirrors.aliyun.com/centos-vault/6.9/sclo/x86_64/rh/
+   gpgcheck=1
+   enabled=1
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    # CentOS-SCLo-rh.repo
-    #
-    # Please see http://wiki.centos.org/SpecialInterestGroup/SCLo for more
-    # information
+   [centos-sclo-rh-testing]
+   name=CentOS-6 - SCLo rh Testing
+   baseurl=http://buildlogs.centos.org/centos/6/sclo/$basearch/rh/
+   gpgcheck=0
+   enabled=0
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    [centos-sclo-rh]
-    name=CentOS-6 - SCLo rh
-    #baseurl=http://vault.centos.org/centos/6/sclo/$basearch/rh/
-    baseurl=https://mirrors.aliyun.com/centos-vault/6.9/sclo/x86_64/rh/
-    gpgcheck=1
-    enabled=1
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+   [centos-sclo-rh-source]
+   name=CentOS-6 - SCLo rh Sources
+   baseurl=http://vault.centos.org/centos/6/sclo/Source/rh/
+   gpgcheck=1
+   enabled=0
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
 
-    [centos-sclo-rh-testing]
-    name=CentOS-6 - SCLo rh Testing
-    baseurl=http://buildlogs.centos.org/centos/6/sclo/$basearch/rh/
-    gpgcheck=0
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
-
-    [centos-sclo-rh-source]
-    name=CentOS-6 - SCLo rh Sources
-    baseurl=http://vault.centos.org/centos/6/sclo/Source/rh/
-    gpgcheck=1
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
-
-    [centos-sclo-rh-debuginfo]
-    name=CentOS-6 - SCLo rh Debuginfo
-    baseurl=http://debuginfo.centos.org/centos/6/sclo/$basearch/
-    gpgcheck=1
-    enabled=0
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+   [centos-sclo-rh-debuginfo]
+   name=CentOS-6 - SCLo rh Debuginfo
+   baseurl=http://debuginfo.centos.org/centos/6/sclo/$basearch/
+   gpgcheck=1
+   enabled=0
+   gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo
+   ```
 
 第二，更新 yum 源的缓存。
 
@@ -282,7 +278,7 @@ $ yum list all --enablerepo='entos-sclo-rh'
 $ yum search scl-utils --enablerepo='centos-sclo-rh'
 ```
 
-## 安装 scl-utils
+### 安装 scl-utils
 
 scl-utils 是管理 SCL (Software Collection) 环境设置和运行软件的一套软件工具。
 
@@ -301,7 +297,7 @@ yum install scl-utils --enablerepo=centos-scl
 
 ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fok5q0BGjSkmvxSFFcTuxaXBoVnI.png)
 
-## 安装 Devtoolset
+### 安装 Devtoolset
 
 不同的 devtoolset 对应了不同的 gcc 版本，如：
 
@@ -315,7 +311,7 @@ yum install scl-utils --enablerepo=centos-scl
 ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FqndSUnRCVy4b_UtbBOiUeFAeVM9.png)
 CentOS 7 的 centos-sclo-rh/centos-sclo 默认支持 devtoolset-7 及以上，如果想要使用 devtoolset-3 到 7 之间的版本，可以参考下面的做法：
 
-1.  创建一个 /etc/yum.repos.d/centos-scl.repo 文件，内容如下：
+1. 创建一个 /etc/yum.repos.d/centos-scl.repo 文件，内容如下：
 
 ```bash
 [centos-scl]
@@ -326,13 +322,13 @@ gpgcheck=0
 enabled=0
 ```
 
-2.  创建完了以后，安装 scl-utils，如果你前面已经安装这一步可以跳过：
+2. 创建完了以后，安装 scl-utils，如果你前面已经安装这一步可以跳过：
 
 ```bash
 $ yum install scl-utils --enablerepo=centos-scl
 ```
 
-3.  创建一个 /etc/yum.repos.d/centos-devtools.repo，内容如下：
+3. 创建一个 /etc/yum.repos.d/centos-devtools.repo，内容如下：
 
 ```bash
 [centos-devtools]
@@ -343,15 +339,15 @@ gpgcheck=1
 enabled=1
 ```
 
-4.  安装 devtools：
+4. 安装 devtools：
 
 ```bash
 yum install devtoolset-4 --enablerepo='centos-devtools'
 ```
 
-# 3. 使用
+## 3. 使用
 
-## 激活与切换
+### 激活与切换
 
 可以使用下面的命令查看通过 scl 安装了哪些软件：
 
@@ -364,7 +360,7 @@ devtoolset-4
 激活 scl 安装的软件：
 
 ```bash
-$  scl enable devtoolset-4 bash
+$ scl enable devtoolset-4 bash
 
 # 如果 scl enable 不起作用，可使用 source 激活
 $ source /opt/rh/devtoolset-4/enable
@@ -378,7 +374,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FgsRX8bDdqMjLPQDL7U3YIIMZQV3.png)
 
-## 卸载
+### 卸载
 
 可能大家用完开发工具集后就会想要删除它，其实很简单，输入以下命令：
 
@@ -392,11 +388,11 @@ yum remove devtoolset-3\*
 yum remove scl-utils\*
 ```
 
-# 3. 参考资料
+## 3. 参考资料
 
-1.  [Installing node.js v8.11.1 to centos 6.5 server. - kakts-log](https://kakts-tec.hatenablog.com/entry/2018/04/11/000613)
-2.  [RedHat6 系列 Devtool-Set - SegmentFault 思否](https://segmentfault.com/a/1190000004193587)
-3.  [Software Collections — Software Collections](https://www.softwarecollections.org/en/)，SCL 官网
-4.  [Product Documentation for Red Hat Developer Toolset 4 | Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_developer_toolset/4)
-5.  [Fedora copr Rhscl's Projects Project List](https://copr.fedorainfracloud.org/coprs/rhscl/)，Fedora copr Rhscl's Projects 官网
-6.  [Index - Developer Toolset](https://linux.web.cern.ch/devtoolset/)，devtoolset1-3，Linux @ CERN
+1. [Installing node.js v8.11.1 to centos 6.5 server. - kakts-log](https://kakts-tec.hatenablog.com/entry/2018/04/11/000613)
+2. [RedHat6 系列 Devtool-Set - SegmentFault 思否](https://segmentfault.com/a/1190000004193587)
+3. [Software Collections — Software Collections](https://www.softwarecollections.org/en/)，SCL 官网
+4. [Product Documentation for Red Hat Developer Toolset 4 | Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_developer_toolset/4)
+5. [Fedora copr Rhscl's Projects Project List](https://copr.fedorainfracloud.org/coprs/rhscl/)，Fedora copr Rhscl's Projects 官网
+6. [Index - Developer Toolset](https://linux.web.cern.ch/devtoolset/)，devtoolset1-3，Linux @ CERN
