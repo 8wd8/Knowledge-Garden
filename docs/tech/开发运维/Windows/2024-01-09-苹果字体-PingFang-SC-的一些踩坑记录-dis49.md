@@ -36,7 +36,8 @@ body {
 >    font-family: PingFang SC,microsoft yahei,sans-serif;
 > }
 > ```
-> 比如，上述 css 定义，就来自于腾讯云主页。在实际的应用过程中，只有安装好的 pingfang sc 系列字体才能被识别【如下图中的右侧字体】。**注意：萍方/苹方，在安装的时候，文件名也都是 pingfang-sc 之类的文件名。但是，安装完成的真正成品，可不是这个拼音名字。进而导致字体不能识别。**
+> 比如，上述 css 定义，就来自于腾讯云主页。在实际的应用过程中，只有安装好的 pingfang sc 系列字体才能被识别【如下图中的右侧字体】。    
+> **注意：萍方/苹方，在安装的时候，文件名也都是 pingfang-sc 之类的文件名。但是，安装完成的真正成品，可不是这个拼音名字。进而导致字体不能识别。**
 > ![pingfang sc 区别](https://shub.weiyan.tech/kgarden/2024/01/fingfang-sc.png)
 >     
 > From 《[由 pingfang sc 字体缺失，所暴露的字体加载顺序的潜规则](https://newsn.net/say/css-font-family-pingfang.html)》
@@ -47,12 +48,13 @@ body {
 
 ### 安装 PingFang SC
 
-名称为 **PingFang SC** (英文) 的字体找了很久才在 GitHub 翻到一个：[shenweiyan/PingFangSC-Fonts](https://github.com/shenweiyan/PingFangSC-Fonts)，如有需要可以直接下载安装。
+名称为 **PingFang SC** (英文) 的字体找了很久才在 GitHub 翻到一个(以防丢失，个人 Fork 了过来)：[shenweiyan/PingFangSC-Fonts](https://github.com/shenweiyan/PingFangSC-Fonts)，如有需要可以直接下载安装。
 
-> 国内大多数网页，在定义网页字体的时候，都是先定义 PingFang SC，然后定义微软雅黑。那么：
-> - 正常来说，win 系统是不会安装 PingFang SC 字体的，所以，显示微软雅黑，页面正常。
-> - 但是，一旦单独安装了 PingFang SC Light，页面就会识别出这个 Light 字体，页面不正常。
-> - 解决方案是：再安装一个 PingFang SC Regular，页面会在 Light 之前优先识别 Regular，页面正常。
+> 国内大多数网页，在定义网页字体的时候，都是先定义 PingFang SC，然后定义微软雅黑。那么：    
+>    
+> - 正常来说，win 系统是不会安装 PingFang SC 字体的，所以，显示微软雅黑，页面正常。    
+> - 但是，一旦单独安装了 PingFang SC Light，页面就会识别出这个 Light 字体，页面不正常。    
+> - 解决方案是：再安装一个 PingFang SC Regular，页面会在 Light 之前优先识别 Regular，页面正常。    
 
 >    
 > 如果您非要在 win 下面安装 pingfang sc 字体，可能要三思而后安装了。李鬼似乎有点多...
@@ -68,8 +70,8 @@ body {
 
 参考：《[电脑安装新字体，浏览器字体全变了，如何删除正在使用的苹方字体](https://www.bilibili.com/video/BV1nc411575s/)》 - 哔哩哔哩
 
-- 在 Windows 任务管理的进程中把浏览器相关的全部结束掉，如 360 浏览器相关的进程、Microsoft edge、Google Chrome 等等，全部选择结束任务。
-- 把其他可能使用苹方字体的，如 OneNote、WPS、微信、... 这些的进程也全部结束掉。
+- 在 Windows 任务管理的进程中把浏览器相关的全部结束掉，如 360 浏览器相关的进程、Microsoft edge、Google Chrome 等等，全部选择结束任务。    
+- 把其他可能使用苹方字体的，如 OneNote、WPS、微信、... 这些的进程也全部结束掉。    
 
 最后，回到 `C:\Windows\Fonts` 中再次删除相应的苹方字体，发现即可成功删除。删除了这些苹方字体，浏览器上的字体显示也就恢复正常了。
 
