@@ -20,12 +20,12 @@ jobs:
           hugo-version: '0.122.0'	# 获取指定版本的 hugo
           extended: false
 
-      - name: wendy8 Build Site
+      - name: Build Site
         run: |
           pwd
           ls
-          cp -R exampleSite/* .
-          hugo --themesDir ../ --baseURL https://shenweiyan.github.io/WebStack-Hugo/
+          cp -R wendy8/* .
+          hugo --themesDir ../ --baseURL https://wendy8.com/WebStack-Hugo/
           
       - name: Deploy Pages
         uses: peaceiris/actions-gh-pages@v3	  # 一个自动发布 github pages 的 action
